@@ -13,7 +13,7 @@ process.
 
 ## What This Hub Is Not
 
-- **Not a product recommendation engine.** Entries in frameworks.csv describe what tools exist and
+- **Not a product recommendation engine.** Entries in `data/frameworks_tools.csv` describe what tools exist and
   what they do; they do not rank, endorse, or recommend one over another. Evaluation is your job.
 - **Not exhaustive.** The field moves extremely fast. New frameworks, protocols, and agent types
   emerge monthly. This hub covers what has been verified as of its last update date. The
@@ -32,9 +32,9 @@ process.
 | Your role | Where to start |
 |-----------|----------------|
 | New to AI agents | Start with the Foundations learning path in `data/learning_paths.csv` |
-| Developer building agents | Start with the Builder learning path; see `data/frameworks.csv` |
-| Architect or tech lead | Start with the Architect learning path; see `data/patterns.csv` and `data/protocols.csv` |
-| Security or governance focus | Start with the Security and Governance learning path; see `data/risks.csv` |
+| Developer building agents | Start with the Builder learning path; see `data/frameworks_tools.csv` |
+| Architect or tech lead | Start with the Architect learning path; see `data/patterns.csv` and `data/protocols_standards.csv` |
+| Security or governance focus | Start with the Security and Governance learning path; see `data/risks_security.csv` |
 | Team lead evaluating adoption | Start with the Team Lead learning path; see `data/use_cases.csv` |
 
 ### By Learning Path
@@ -56,9 +56,7 @@ across all datasets. You can filter by category, status, confidence, maturity, a
 
 ### By Relationships
 
-Every row ID can appear in `data/relationships.csv`. Each relationship has a `type` (e.g.,
-`uses`, `implements`, `extends`, `contrasts_with`, `requires`) and a `weight`. Use the interactive
-force graph to explore the relationship network visually, or query `relationships.csv` directly.
+Every entity row ID (`CP-*`, `AT-*`, `PT-*`, `PS-*`, `FW-*`, `UC-*`, `RS-*`, `EV-*`, `LP-*`, `RES-*`) can appear in `data/relationships.csv`. Each edge has `from_id`, a typed `relation` (for example `requires`, `part_of`, `implements`, `enables`, `mitigates`, `measures`, `uses`, `contrasts_with`, `specializes`, `example_of`), `to_id`, and a `note`. Use the interactive graph to explore the relationship network visually, or query `data/relationships.csv` directly.
 
 ## Understanding Confidence Scores
 
@@ -90,17 +88,17 @@ This hub is a starting point, not an endpoint. Always verify claims from primary
 - Advising a team or organization based on data here
 - Selecting a tool, framework, or protocol for a critical use case
 
-The `source_url` field on every row points directly to the primary source used to verify that
-row. Use it.
+The `source_ids` field on every content row links directly to verified source records (`url`) in
+`data/sources.csv`. Use it.
 
 ## How to Find Related Items
 
-1. **relationships.csv** — Contains all typed, weighted relationships between row IDs. Filter by
-   `source_id` or `target_id` to find what a given entry connects to.
-2. **Interactive explorer** — Click any node in the force graph to highlight its neighbors.
-   The sidebar shows all relationships with their types and weights.
-3. **source_ids field** — Several datasets include a `source_ids` field that references entries in
-   `sources.csv`. This is the bibliographic layer, separate from the relationship graph.
+1. **relationships.csv** — Contains all typed, directed relationships between row IDs. Filter by
+   `from_id` or `to_id` to find what a given entry connects to.
+2. **Interactive explorer** — Click any node in the graph to highlight its neighbors.
+   The detail panel shows connected relationships, predicate types, and source citations.
+3. **source_ids field** — All datasets include a pipe-separated `source_ids` field that references entries in
+   `data/sources.csv`. This is the bibliographic layer, separate from the relationship graph.
 
 ## How to Contribute
 

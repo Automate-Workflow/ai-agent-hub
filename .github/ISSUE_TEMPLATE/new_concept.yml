@@ -71,7 +71,7 @@ body:
     id: related
     attributes:
       label: Related Entries (optional)
-      description: Row IDs of related concepts, agent types, or patterns, comma-separated.
+      description: Row IDs of related concepts, agent types, or patterns, pipe-separated ('|').
     validations:
       required: false
 

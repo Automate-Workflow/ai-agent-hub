@@ -7,8 +7,10 @@ abstract: >
   industry use cases, and primary references. Currently in pre-release development toward
   full dataset, diagram, and validation tooling coverage. Maintained by Automate Workflow.
 authors:
-  - alias: ayushcmd
-    name: "Automate Workflow"
+  - alias: "ayushcmd"
+    email: "ayush_24a12res897@iitp.ac.in"
+    affiliation: "Automate Workflow"
+  - name: "Automate Workflow"
 repository-code: "https://github.com/Automate-Workflow/ai-agent-hub"
 url: "https://github.com/Automate-Workflow/ai-agent-hub"
 license: MIT

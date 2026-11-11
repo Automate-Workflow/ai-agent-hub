@@ -28,9 +28,9 @@ A row's confidence level reflects which tier of source was used to verify it.
 Each new entry follows this process:
 
 1. Identify the concept, tool, or pattern to be added
-2. Locate at least one primary source (tier 1 or 2 above)
+2. Locate at least one primary source (tier 1 or 2 above) and record it in `data/sources.csv`
 3. Write the definition using language from or consistent with the primary source
-4. Record the `source_url`, `verified_date`, and `next_review_date`
+4. Record `source_ids`, `verified_date`, and `next_review_date`
 5. Assign `confidence` and `status` according to the rules below
 6. Run `validate_data.py` to check schema compliance
 7. Run `check_integrity.py` to verify cross-references and relationship consistency

@@ -88,6 +88,8 @@ secrets.yaml
 *.tmp
 *.orig
 
-# Local seed planning files
+# Local seed, audit, and build progress files
 .seed/
 seed/
+audit/
+.build_state.md
