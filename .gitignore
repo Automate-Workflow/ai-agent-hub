@@ -88,3 +88,6 @@ secrets.yaml
 *.tmp
 *.orig
 
+# Local seed planning files
+.seed/
+seed/
