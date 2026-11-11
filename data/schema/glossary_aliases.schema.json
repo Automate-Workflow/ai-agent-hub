@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Automate-Workflow/ai-agent-hub/blob/main/data/schema/glossary_aliases.schema.json",
+  "title": "AI Agent Hub Glossary Alias Entry",
+  "description": "Schema for a single row in data/glossary_aliases.csv.",
+  "type": "object",
+  "required": [
+    "alias",
+    "canonical_id",
+    "note"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "alias": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "canonical_id": {
+      "type": "string",
+      "pattern": "^((CP|AT|PT|PS|FW|UC|RS|EV|LP|RES)-[0-9]{3}|RL-[0-9]{4}|SRC-[0-9]{4})$"
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 500
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Automate-Workflow/ai-agent-hub/blob/main/data/schema/use_cases.schema.json",
+  "title": "AI Agent Hub Use Case Entry",
+  "description": "Schema for a single row in data/use_cases.csv.",
+  "type": "object",
+  "required": [
+    "id",
+    "industry",
+    "use_case",
+    "agent_type_ids",
+    "pattern_ids",
+    "concept_ids",
+    "risk_ids",
+    "human_oversight_level",
+    "maturity",
+    "expected_value",
+    "main_risks",
+    "example_scenario",
+    "source_ids",
+    "confidence",
+    "status",
+    "verified_date",
+    "next_review_date"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^UC-[0-9]{3}$"
+    },
+    "industry": {
+      "type": "string",
+      "enum": [
+        "customer_support",
+        "cybersecurity",
+        "education",
+        "finance",
+        "government",
+        "healthcare_administration",
+        "hospitality",
+        "hr",
+        "it_operations",
+        "legal",
+        "logistics",
+        "manufacturing",
+        "media_content",
+        "real_estate",
+        "research",
+        "retail_ecommerce",
+        "sales",
+        "software_engineering"
+      ]
+    },
+    "use_case": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160
+    },
+    "agent_type_ids": {
+      "type": "string",
+      "pattern": "^AT-[0-9]{3}(\\|AT-[0-9]{3})*$"
+    },
+    "pattern_ids": {
+      "type": "string",
+      "pattern": "^PT-[0-9]{3}(\\|PT-[0-9]{3})*$"
+    },
+    "concept_ids": {
+      "type": "string",
+      "pattern": "^CP-[0-9]{3}(\\|CP-[0-9]{3})*$"
+    },
+    "risk_ids": {
+      "type": "string",
+      "pattern": "^RS-[0-9]{3}(\\|RS-[0-9]{3})*$"
+    },
+    "human_oversight_level": {
+      "type": "string",
+      "enum": [
+        "approval",
+        "review",
+        "supervised",
+        "autonomous"
+      ]
+    },
+    "maturity": {
+      "type": "string",
+      "enum": [
+        "established",
+        "growing",
+        "emerging"
+      ]
+    },
+    "expected_value": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 500
+    },
+    "main_risks": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 500
+    },
+    "example_scenario": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 800
+    },
+    "source_ids": {
+      "type": "string",
+      "pattern": "^SRC-[0-9]{4}(\\|SRC-[0-9]{4})*$"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "needs-review",
+        "deprecated"
+      ]
+    },
+    "verified_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "next_review_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    }
+  }
+}

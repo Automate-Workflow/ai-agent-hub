@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Automate-Workflow/ai-agent-hub/blob/main/data/schema/relationships.schema.json",
+  "title": "AI Agent Hub Relationship Edge",
+  "description": "Schema for a single row in data/relationships.csv.",
+  "type": "object",
+  "required": [
+    "id",
+    "from_id",
+    "relation",
+    "to_id",
+    "note",
+    "source_ids",
+    "confidence",
+    "verified_date"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^RL-[0-9]{4}$"
+    },
+    "from_id": {
+      "type": "string",
+      "pattern": "^(CP|AT|PT|PS|FW|UC|RS|EV|LP|RES)-[0-9]{3}$"
+    },
+    "relation": {
+      "type": "string",
+      "enum": [
+        "requires",
+        "part_of",
+        "implements",
+        "enables",
+        "mitigates",
+        "measures",
+        "uses",
+        "contrasts_with",
+        "specializes",
+        "example_of"
+      ]
+    },
+    "to_id": {
+      "type": "string",
+      "pattern": "^(CP|AT|PT|PS|FW|UC|RS|EV|LP|RES)-[0-9]{3}$"
+    },
+    "note": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 500
+    },
+    "source_ids": {
+      "type": "string",
+      "pattern": "^SRC-[0-9]{4}(\\|SRC-[0-9]{4})*$"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "verified_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    }
+  }
+}

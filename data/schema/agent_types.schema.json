@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Automate-Workflow/ai-agent-hub/blob/main/data/schema/agent_types.schema.json",
+  "title": "AI Agent Hub Agent Type Entry",
+  "description": "Schema for a single row in data/agent_types.csv (decision logic, job, and architecture lenses).",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "view",
+    "parent_id",
+    "definition",
+    "how_it_works",
+    "strengths",
+    "limitations",
+    "typical_examples",
+    "key_concept_ids",
+    "related_pattern_ids",
+    "maturity",
+    "difficulty",
+    "source_ids",
+    "confidence",
+    "status",
+    "verified_date",
+    "next_review_date"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^AT-[0-9]{3}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 120
+    },
+    "view": {
+      "type": "string",
+      "enum": [
+        "decision_logic",
+        "job",
+        "architecture"
+      ]
+    },
+    "parent_id": {
+      "type": "string",
+      "pattern": "^(AT-[0-9]{3}(\\|AT-[0-9]{3})*|)$"
+    },
+    "definition": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 280
+    },
+    "how_it_works": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 1200
+    },
+    "strengths": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 800
+    },
+    "limitations": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 800
+    },
+    "typical_examples": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 800
+    },
+    "key_concept_ids": {
+      "type": "string",
+      "pattern": "^CP-[0-9]{3}(\\|CP-[0-9]{3})*$"
+    },
+    "related_pattern_ids": {
+      "type": "string",
+      "pattern": "^PT-[0-9]{3}(\\|PT-[0-9]{3})*$"
+    },
+    "maturity": {
+      "type": "string",
+      "enum": [
+        "established",
+        "growing",
+        "emerging"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ]
+    },
+    "source_ids": {
+      "type": "string",
+      "pattern": "^SRC-[0-9]{4}(\\|SRC-[0-9]{4})*$"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "needs-review",
+        "deprecated"
+      ]
+    },
+    "verified_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "next_review_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    }
+  }
+}
