@@ -1,0 +1,923 @@
+id,from_id,relation,to_id,note,source_ids,confidence,verified_date
+RL-0001,CP-002,requires,CP-001,agentic AI builds on prerequisite concept agent.,SRC-0163|SRC-0166|SRC-0162,high,2026-11-11
+RL-0002,CP-004,requires,CP-001,planning builds on prerequisite concept agent.,SRC-0162|SRC-0020|SRC-0024,high,2026-11-11
+RL-0003,CP-004,requires,CP-003,planning builds on prerequisite concept LLM.,SRC-0020|SRC-0024|SRC-0162,high,2026-11-11
+RL-0004,CP-005,requires,CP-001,utility and reward optimization builds on prerequisite concept agent.,SRC-0162|SRC-0030|SRC-0163,high,2026-11-11
+RL-0005,CP-006,requires,CP-001,adaptive learning in agents builds on prerequisite concept agent.,SRC-0162|SRC-0023|SRC-0026,high,2026-11-11
+RL-0006,CP-006,requires,CP-004,adaptive learning in agents builds on prerequisite concept planning.,SRC-0162|SRC-0023|SRC-0026,high,2026-11-11
+RL-0007,CP-007,requires,CP-003,conversation state and turns builds on prerequisite concept LLM.,SRC-0167|SRC-0169|SRC-0009,high,2026-11-11
+RL-0008,CP-008,requires,CP-003,prompt builds on prerequisite concept LLM.,SRC-0216|SRC-0220|SRC-0009,high,2026-11-11
+RL-0009,CP-009,requires,CP-002,stateful workflow execution builds on prerequisite concept agentic AI.,SRC-0163|SRC-0034|SRC-0166,high,2026-11-11
+RL-0010,CP-010,requires,CP-003,voice and audio interaction builds on prerequisite concept LLM.,SRC-0169|SRC-0223|SRC-0009,high,2026-11-11
+RL-0011,CP-010,requires,CP-007,voice and audio interaction builds on prerequisite concept conversation state and turns.,SRC-0169|SRC-0223|SRC-0167,high,2026-11-11
+RL-0012,CP-011,requires,CP-008,programmatic prompt optimization builds on prerequisite concept prompt.,SRC-0050|SRC-0222|SRC-0216,high,2026-11-11
+RL-0013,CP-011,requires,CP-081,programmatic prompt optimization builds on prerequisite concept evaluation.,SRC-0050|SRC-0222|SRC-0067,high,2026-11-11
+RL-0014,CP-012,requires,CP-003,visual understanding and perception builds on prerequisite concept LLM.,SRC-0164|SRC-0208|SRC-0009,high,2026-11-11
+RL-0015,CP-013,requires,CP-002,intent classification and routing builds on prerequisite concept agentic AI.,SRC-0163|SRC-0202|SRC-0166,high,2026-11-11
+RL-0016,CP-013,requires,CP-017,intent classification and routing builds on prerequisite concept structured output.,SRC-0163|SRC-0202|SRC-0051,high,2026-11-11
+RL-0017,CP-014,requires,CP-032,episodic memory builds on prerequisite concept long-term memory.,SRC-0196|SRC-0172|SRC-0211,high,2026-11-11
+RL-0018,CP-015,requires,CP-022,policy constraints and action bounds builds on prerequisite concept tool calling.,SRC-0181|SRC-0182|SRC-0013,high,2026-11-11
+RL-0019,CP-015,requires,CP-066,policy constraints and action bounds builds on prerequisite concept guardrails.,SRC-0181|SRC-0182|SRC-0093,high,2026-11-11
+RL-0020,CP-016,requires,CP-001,human-in-the-loop builds on prerequisite concept agent.,SRC-0074|SRC-0244|SRC-0162,high,2026-11-11
+RL-0021,CP-016,requires,CP-002,human-in-the-loop builds on prerequisite concept agentic AI.,SRC-0074|SRC-0244|SRC-0163,high,2026-11-11
+RL-0022,CP-017,requires,CP-003,structured output builds on prerequisite concept LLM.,SRC-0051|SRC-0218|SRC-0009,high,2026-11-11
+RL-0023,CP-018,requires,CP-017,JSON Schema builds on prerequisite concept structured output.,SRC-0218|SRC-0005|SRC-0051,high,2026-11-11
+RL-0024,CP-019,requires,CP-008,prompt chaining builds on prerequisite concept prompt.,SRC-0163|SRC-0217|SRC-0216,high,2026-11-11
+RL-0025,CP-020,requires,CP-008,system prompt builds on prerequisite concept prompt.,SRC-0216|SRC-0220,high,2026-11-11
+RL-0026,CP-021,requires,CP-003,context window builds on prerequisite concept LLM.,SRC-0208|SRC-0213|SRC-0009,high,2026-11-11
+RL-0027,CP-022,requires,CP-003,tool calling builds on prerequisite concept LLM.,SRC-0013|SRC-0151|SRC-0152,high,2026-11-11
+RL-0028,CP-022,requires,CP-017,tool calling builds on prerequisite concept structured output.,SRC-0013|SRC-0151|SRC-0152,high,2026-11-11
+RL-0029,CP-023,requires,CP-022,tool registry builds on prerequisite concept tool calling.,SRC-0001|SRC-0138|SRC-0013,high,2026-11-11
+RL-0030,CP-024,requires,CP-008,context engineering builds on prerequisite concept prompt.,SRC-0213|SRC-0216|SRC-0220,high,2026-11-11
+RL-0031,CP-024,requires,CP-021,context engineering builds on prerequisite concept context window.,SRC-0213|SRC-0208,high,2026-11-11
+RL-0032,CP-025,requires,CP-022,code execution by agents builds on prerequisite concept tool calling.,SRC-0098|SRC-0137|SRC-0174,high,2026-11-11
+RL-0033,CP-025,requires,CP-030,code execution by agents builds on prerequisite concept sandboxing.,SRC-0137|SRC-0098|SRC-0174,high,2026-11-11
+RL-0034,CP-026,requires,CP-022,browser automation builds on prerequisite concept tool calling.,SRC-0135|SRC-0136|SRC-0200,high,2026-11-11
+RL-0035,CP-027,requires,CP-012,computer use builds on prerequisite concept visual understanding and perception.,SRC-0164|SRC-0198|SRC-0208,high,2026-11-11
+RL-0036,CP-027,requires,CP-022,computer use builds on prerequisite concept tool calling.,SRC-0164|SRC-0198|SRC-0013,high,2026-11-11
+RL-0037,CP-028,requires,CP-022,delegated tool authentication builds on prerequisite concept tool calling.,SRC-0008|SRC-0229|SRC-0238,high,2026-11-11
+RL-0038,CP-029,requires,CP-032,memory write-back builds on prerequisite concept long-term memory.,SRC-0171|SRC-0196|SRC-0140,high,2026-11-11
+RL-0039,CP-030,requires,CP-001,sandboxing builds on prerequisite concept agent.,SRC-0137|SRC-0232|SRC-0233,high,2026-11-11
+RL-0040,CP-030,requires,CP-022,sandboxing builds on prerequisite concept tool calling.,SRC-0137|SRC-0232|SRC-0233,high,2026-11-11
+RL-0041,CP-031,requires,CP-007,short-term memory builds on prerequisite concept conversation state and turns.,SRC-0171|SRC-0196|SRC-0245,high,2026-11-11
+RL-0042,CP-032,requires,CP-031,long-term memory builds on prerequisite concept short-term memory.,SRC-0171|SRC-0196|SRC-0245,high,2026-11-11
+RL-0043,CP-033,requires,CP-032,semantic memory builds on prerequisite concept long-term memory.,SRC-0196|SRC-0245|SRC-0171,high,2026-11-11
+RL-0044,CP-034,requires,CP-032,procedural memory builds on prerequisite concept long-term memory.,SRC-0196|SRC-0026|SRC-0171,high,2026-11-11
+RL-0045,CP-035,requires,CP-003,RAG builds on prerequisite concept LLM.,SRC-0012|SRC-0035|SRC-0009,high,2026-11-11
+RL-0046,CP-036,requires,CP-003,embeddings builds on prerequisite concept LLM.,SRC-0012|SRC-0056|SRC-0057,high,2026-11-11
+RL-0047,CP-037,requires,CP-036,vector store builds on prerequisite concept embeddings.,SRC-0056|SRC-0057|SRC-0059,high,2026-11-11
+RL-0048,CP-038,requires,CP-035,chunking builds on prerequisite concept RAG.,SRC-0058|SRC-0193|SRC-0012,high,2026-11-11
+RL-0049,CP-039,requires,CP-035,reranking builds on prerequisite concept RAG.,SRC-0237|SRC-0045|SRC-0012,high,2026-11-11
+RL-0050,CP-039,requires,CP-036,reranking builds on prerequisite concept embeddings.,SRC-0237|SRC-0045|SRC-0012,high,2026-11-11
+RL-0051,CP-040,requires,CP-035,hybrid search builds on prerequisite concept RAG.,SRC-0235|SRC-0236|SRC-0012,high,2026-11-11
+RL-0052,CP-040,requires,CP-036,hybrid search builds on prerequisite concept embeddings.,SRC-0235|SRC-0236|SRC-0012,high,2026-11-11
+RL-0053,CP-041,requires,CP-033,knowledge graph builds on prerequisite concept semantic memory.,SRC-0196|SRC-0141|SRC-0245,high,2026-11-11
+RL-0054,CP-041,requires,CP-035,knowledge graph builds on prerequisite concept RAG.,SRC-0141|SRC-0196|SRC-0012,high,2026-11-11
+RL-0055,CP-042,requires,CP-035,citation builds on prerequisite concept RAG.,SRC-0215|SRC-0015|SRC-0012,high,2026-11-11
+RL-0056,CP-043,requires,CP-003,grounding builds on prerequisite concept LLM.,SRC-0015|SRC-0215|SRC-0206,high,2026-11-11
+RL-0057,CP-043,requires,CP-035,grounding builds on prerequisite concept RAG.,SRC-0015|SRC-0215|SRC-0206,high,2026-11-11
+RL-0058,CP-044,requires,CP-035,document parsing and ingestion builds on prerequisite concept RAG.,SRC-0035|SRC-0193|SRC-0194,high,2026-11-11
+RL-0059,CP-045,requires,CP-002,orchestration builds on prerequisite concept agentic AI.,SRC-0163|SRC-0166|SRC-0034,high,2026-11-11
+RL-0060,CP-046,requires,CP-045,multi-agent system builds on prerequisite concept orchestration.,SRC-0027|SRC-0160|SRC-0212,high,2026-11-11
+RL-0061,CP-047,requires,CP-045,orchestrator and workers builds on prerequisite concept orchestration.,SRC-0163|SRC-0213|SRC-0034,high,2026-11-11
+RL-0062,CP-047,requires,CP-046,orchestrator and workers builds on prerequisite concept multi-agent system.,SRC-0163|SRC-0213|SRC-0027,high,2026-11-11
+RL-0063,CP-048,requires,CP-046,supervisor builds on prerequisite concept multi-agent system.,SRC-0034|SRC-0166|SRC-0027,high,2026-11-11
+RL-0064,CP-049,requires,CP-045,handoff builds on prerequisite concept orchestration.,SRC-0166|SRC-0168|SRC-0034,high,2026-11-11
+RL-0065,CP-049,requires,CP-046,handoff builds on prerequisite concept multi-agent system.,SRC-0166|SRC-0168|SRC-0027,high,2026-11-11
+RL-0066,CP-050,requires,CP-009,agent state management builds on prerequisite concept stateful workflow execution.,SRC-0034|SRC-0186|SRC-0245,high,2026-11-11
+RL-0067,CP-050,requires,CP-031,agent state management builds on prerequisite concept short-term memory.,SRC-0245|SRC-0034|SRC-0186,high,2026-11-11
+RL-0068,CP-051,requires,CP-046,swarm coordination builds on prerequisite concept multi-agent system.,SRC-0027|SRC-0166|SRC-0160,high,2026-11-11
+RL-0069,CP-052,requires,CP-017,document information extraction builds on prerequisite concept structured output.,SRC-0218|SRC-0175|SRC-0051,high,2026-11-11
+RL-0070,CP-052,requires,CP-044,document information extraction builds on prerequisite concept document parsing and ingestion.,SRC-0175|SRC-0218|SRC-0193,high,2026-11-11
+RL-0071,CP-053,requires,CP-007,guided multi-turn workflow builds on prerequisite concept conversation state and turns.,SRC-0176|SRC-0178|SRC-0167,high,2026-11-11
+RL-0072,CP-053,requires,CP-017,guided multi-turn workflow builds on prerequisite concept structured output.,SRC-0176|SRC-0178|SRC-0051,high,2026-11-11
+RL-0073,CP-054,requires,CP-018,MCP builds on prerequisite concept JSON Schema.,SRC-0001|SRC-0002|SRC-0238,high,2026-11-11
+RL-0074,CP-054,requires,CP-022,MCP builds on prerequisite concept tool calling.,SRC-0001|SRC-0002|SRC-0238,high,2026-11-11
+RL-0075,CP-055,requires,CP-046,A2A builds on prerequisite concept multi-agent system.,SRC-0003|SRC-0027|SRC-0160,high,2026-11-11
+RL-0076,CP-055,requires,CP-054,A2A builds on prerequisite concept MCP.,SRC-0003|SRC-0001|SRC-0002,high,2026-11-11
+RL-0077,CP-056,requires,CP-055,agent card builds on prerequisite concept A2A.,SRC-0003|SRC-0156,high,2026-11-11
+RL-0078,CP-057,requires,CP-003,streaming events and SSE builds on prerequisite concept LLM.,SRC-0228|SRC-0230|SRC-0009,high,2026-11-11
+RL-0079,CP-058,requires,CP-018,tool schema contract builds on prerequisite concept JSON Schema.,SRC-0001|SRC-0004|SRC-0151,high,2026-11-11
+RL-0080,CP-058,requires,CP-022,tool schema contract builds on prerequisite concept tool calling.,SRC-0151|SRC-0001|SRC-0004,high,2026-11-11
+RL-0081,CP-059,requires,CP-022,parallel tool execution builds on prerequisite concept tool calling.,SRC-0151|SRC-0163|SRC-0013,high,2026-11-11
+RL-0082,CP-060,requires,CP-001,ReAct builds on prerequisite concept agent.,SRC-0010|SRC-0162|SRC-0163,high,2026-11-11
+RL-0083,CP-060,requires,CP-022,ReAct builds on prerequisite concept tool calling.,SRC-0010|SRC-0013|SRC-0151,high,2026-11-11
+RL-0084,CP-061,requires,CP-003,chain of thought builds on prerequisite concept LLM.,SRC-0011|SRC-0209|SRC-0009,high,2026-11-11
+RL-0085,CP-061,requires,CP-008,chain of thought builds on prerequisite concept prompt.,SRC-0011|SRC-0209|SRC-0216,high,2026-11-11
+RL-0086,CP-062,requires,CP-004,tree search reasoning builds on prerequisite concept planning.,SRC-0020|SRC-0030|SRC-0024,high,2026-11-11
+RL-0087,CP-062,requires,CP-061,tree search reasoning builds on prerequisite concept chain of thought.,SRC-0020|SRC-0030|SRC-0011,high,2026-11-11
+RL-0088,CP-063,requires,CP-004,reflection builds on prerequisite concept planning.,SRC-0023|SRC-0015|SRC-0020,high,2026-11-11
+RL-0089,CP-063,requires,CP-061,reflection builds on prerequisite concept chain of thought.,SRC-0023|SRC-0015|SRC-0011,high,2026-11-11
+RL-0090,CP-064,requires,CP-061,self-consistency decoding builds on prerequisite concept chain of thought.,SRC-0021|SRC-0011|SRC-0209,high,2026-11-11
+RL-0091,CP-065,requires,CP-008,zero-shot vs few-shot prompting builds on prerequisite concept prompt.,SRC-0209|SRC-0217|SRC-0216,high,2026-11-11
+RL-0092,CP-066,requires,CP-002,guardrails builds on prerequisite concept agentic AI.,SRC-0093|SRC-0094|SRC-0168,high,2026-11-11
+RL-0093,CP-067,requires,CP-066,programmable dialogue rails builds on prerequisite concept guardrails.,SRC-0094|SRC-0143|SRC-0093,high,2026-11-11
+RL-0094,CP-068,requires,CP-008,prompt injection builds on prerequisite concept prompt.,SRC-0073|SRC-0161|SRC-0232,high,2026-11-11
+RL-0095,CP-068,requires,CP-020,prompt injection builds on prerequisite concept system prompt.,SRC-0073|SRC-0161|SRC-0232,high,2026-11-11
+RL-0096,CP-069,requires,CP-068,indirect prompt injection builds on prerequisite concept prompt injection.,SRC-0232|SRC-0125|SRC-0073,high,2026-11-11
+RL-0097,CP-069,requires,CP-035,indirect prompt injection builds on prerequisite concept RAG.,SRC-0125|SRC-0232|SRC-0012,high,2026-11-11
+RL-0098,CP-070,requires,CP-068,data exfiltration builds on prerequisite concept prompt injection.,SRC-0073|SRC-0232|SRC-0125,high,2026-11-11
+RL-0099,CP-071,requires,CP-022,least privilege builds on prerequisite concept tool calling.,SRC-0073|SRC-0232|SRC-0013,high,2026-11-11
+RL-0100,CP-071,requires,CP-066,least privilege builds on prerequisite concept guardrails.,SRC-0073|SRC-0232|SRC-0093,high,2026-11-11
+RL-0101,CP-072,requires,CP-071,permission scopes builds on prerequisite concept least privilege.,SRC-0006|SRC-0008|SRC-0238,high,2026-11-11
+RL-0102,CP-073,requires,CP-022,audit log builds on prerequisite concept tool calling.,SRC-0074|SRC-0145|SRC-0013,high,2026-11-11
+RL-0103,CP-074,requires,CP-071,secrets management builds on prerequisite concept least privilege.,SRC-0073|SRC-0232,high,2026-11-11
+RL-0104,CP-075,requires,CP-017,output validation builds on prerequisite concept structured output.,SRC-0051|SRC-0218|SRC-0093,high,2026-11-11
+RL-0105,CP-075,requires,CP-066,output validation builds on prerequisite concept guardrails.,SRC-0093|SRC-0051|SRC-0218,high,2026-11-11
+RL-0106,CP-076,requires,CP-035,multi-source research synthesis builds on prerequisite concept RAG.,SRC-0176|SRC-0215|SRC-0012,high,2026-11-11
+RL-0107,CP-076,requires,CP-043,multi-source research synthesis builds on prerequisite concept grounding.,SRC-0215|SRC-0176|SRC-0015,high,2026-11-11
+RL-0108,CP-077,requires,CP-068,red teaming builds on prerequisite concept prompt injection.,SRC-0225|SRC-0226|SRC-0073,high,2026-11-11
+RL-0109,CP-077,requires,CP-081,red teaming builds on prerequisite concept evaluation.,SRC-0225|SRC-0226|SRC-0067,high,2026-11-11
+RL-0110,CP-078,requires,CP-016,approval gate builds on prerequisite concept human-in-the-loop.,SRC-0244|SRC-0163|SRC-0074,high,2026-11-11
+RL-0111,CP-078,requires,CP-022,approval gate builds on prerequisite concept tool calling.,SRC-0163|SRC-0244|SRC-0013,high,2026-11-11
+RL-0112,CP-079,requires,CP-028,agent identity builds on prerequisite concept delegated tool authentication.,SRC-0227|SRC-0231|SRC-0232,high,2026-11-11
+RL-0113,CP-079,requires,CP-071,agent identity builds on prerequisite concept least privilege.,SRC-0232|SRC-0227|SRC-0231,high,2026-11-11
+RL-0114,CP-080,requires,CP-066,input moderation and sanitization builds on prerequisite concept guardrails.,SRC-0094|SRC-0143|SRC-0093,high,2026-11-11
+RL-0115,CP-081,requires,CP-001,evaluation builds on prerequisite concept agent.,SRC-0067|SRC-0224|SRC-0162,high,2026-11-11
+RL-0116,CP-082,requires,CP-081,eval set builds on prerequisite concept evaluation.,SRC-0224|SRC-0069|SRC-0067,high,2026-11-11
+RL-0117,CP-083,requires,CP-081,LLM-as-judge builds on prerequisite concept evaluation.,SRC-0067|SRC-0032|SRC-0069,high,2026-11-11
+RL-0118,CP-084,requires,CP-081,benchmark builds on prerequisite concept evaluation.,SRC-0017|SRC-0018|SRC-0197,high,2026-11-11
+RL-0119,CP-085,requires,CP-081,regression testing builds on prerequisite concept evaluation.,SRC-0224|SRC-0069|SRC-0067,high,2026-11-11
+RL-0120,CP-085,requires,CP-082,regression testing builds on prerequisite concept eval set.,SRC-0224|SRC-0069,high,2026-11-11
+RL-0121,CP-086,requires,CP-001,observability builds on prerequisite concept agent.,SRC-0007|SRC-0064|SRC-0145,high,2026-11-11
+RL-0122,CP-087,requires,CP-086,tracing builds on prerequisite concept observability.,SRC-0007|SRC-0243|SRC-0066,high,2026-11-11
+RL-0123,CP-088,requires,CP-003,latency builds on prerequisite concept LLM.,SRC-0048|SRC-0131|SRC-0169,high,2026-11-11
+RL-0124,CP-089,requires,CP-021,token cost builds on prerequisite concept context window.,SRC-0214|SRC-0219|SRC-0148,high,2026-11-11
+RL-0125,CP-090,requires,CP-003,hallucination builds on prerequisite concept LLM.,SRC-0206|SRC-0009|SRC-0025,high,2026-11-11
+RL-0126,CP-091,requires,CP-021,caching builds on prerequisite concept context window.,SRC-0214|SRC-0219|SRC-0208,high,2026-11-11
+RL-0127,CP-091,requires,CP-088,caching builds on prerequisite concept latency.,SRC-0214|SRC-0219|SRC-0048,high,2026-11-11
+RL-0128,CP-092,requires,CP-045,fallbacks builds on prerequisite concept orchestration.,SRC-0049|SRC-0221|SRC-0034,high,2026-11-11
+RL-0129,CP-093,requires,CP-089,rate limiting builds on prerequisite concept token cost.,SRC-0221|SRC-0049|SRC-0214,high,2026-11-11
+RL-0130,CP-094,requires,CP-003,fine-tuning builds on prerequisite concept LLM.,SRC-0203|SRC-0222|SRC-0242,high,2026-11-11
+RL-0131,CP-094,requires,CP-082,fine-tuning builds on prerequisite concept eval set.,SRC-0203|SRC-0222|SRC-0242,high,2026-11-11
+RL-0132,CP-095,requires,CP-094,distillation builds on prerequisite concept fine-tuning.,SRC-0222|SRC-0205|SRC-0203,high,2026-11-11
+RL-0133,CP-096,requires,CP-003,small language models builds on prerequisite concept LLM.,SRC-0047|SRC-0240|SRC-0009,high,2026-11-11
+RL-0134,CP-097,requires,CP-003,multimodal builds on prerequisite concept LLM.,SRC-0116|SRC-0208|SRC-0009,high,2026-11-11
+RL-0135,CP-098,requires,CP-097,speech-to-text builds on prerequisite concept multimodal.,SRC-0204|SRC-0223|SRC-0116,high,2026-11-11
+RL-0136,CP-099,requires,CP-097,text-to-speech builds on prerequisite concept multimodal.,SRC-0169|SRC-0223|SRC-0116,high,2026-11-11
+RL-0137,CP-100,requires,CP-003,model routing builds on prerequisite concept LLM.,SRC-0049|SRC-0202|SRC-0009,high,2026-11-11
+RL-0138,CP-100,requires,CP-089,model routing builds on prerequisite concept token cost.,SRC-0049|SRC-0202|SRC-0214,high,2026-11-11
+RL-0139,CP-101,requires,CP-042,verifiability builds on prerequisite concept citation.,SRC-0215|SRC-0018|SRC-0015,high,2026-11-11
+RL-0140,CP-101,requires,CP-081,verifiability builds on prerequisite concept evaluation.,SRC-0018|SRC-0215|SRC-0067,high,2026-11-11
+RL-0141,CP-102,requires,CP-001,autonomy levels builds on prerequisite concept agent.,SRC-0075|SRC-0207|SRC-0162,high,2026-11-11
+RL-0142,CP-102,requires,CP-002,autonomy levels builds on prerequisite concept agentic AI.,SRC-0075|SRC-0207|SRC-0163,high,2026-11-11
+RL-0143,CP-103,requires,CP-022,agent payments and commerce builds on prerequisite concept tool calling.,SRC-0181|SRC-0182|SRC-0013,high,2026-11-11
+RL-0144,CP-103,requires,CP-028,agent payments and commerce builds on prerequisite concept delegated tool authentication.,SRC-0181|SRC-0182|SRC-0008,high,2026-11-11
+RL-0145,CP-104,requires,CP-004,long-horizon task builds on prerequisite concept planning.,SRC-0165|SRC-0186|SRC-0197,high,2026-11-11
+RL-0146,CP-104,requires,CP-024,long-horizon task builds on prerequisite concept context engineering.,SRC-0165|SRC-0186|SRC-0197,high,2026-11-11
+RL-0147,CP-105,requires,CP-022,agent-computer interface builds on prerequisite concept tool calling.,SRC-0174|SRC-0165|SRC-0013,high,2026-11-11
+RL-0148,CP-105,requires,CP-025,agent-computer interface builds on prerequisite concept code execution by agents.,SRC-0174|SRC-0165|SRC-0098,high,2026-11-11
+RL-0149,CP-106,requires,CP-026,browser agent builds on prerequisite concept browser automation.,SRC-0135|SRC-0200|SRC-0128,high,2026-11-11
+RL-0150,CP-107,requires,CP-022,agent-facing API design builds on prerequisite concept tool calling.,SRC-0001|SRC-0004|SRC-0163,high,2026-11-11
+RL-0151,CP-107,requires,CP-058,agent-facing API design builds on prerequisite concept tool schema contract.,SRC-0001|SRC-0004|SRC-0163,high,2026-11-11
+RL-0152,CP-108,requires,CP-045,retries builds on prerequisite concept orchestration.,SRC-0186|SRC-0221|SRC-0034,high,2026-11-11
+RL-0153,CP-109,requires,CP-024,context compaction builds on prerequisite concept context engineering.,SRC-0213|SRC-0171,high,2026-11-11
+RL-0154,CP-110,requires,CP-024,tool-result clearing builds on prerequisite concept context engineering.,SRC-0213,high,2026-11-11
+RL-0155,CP-111,requires,CP-024,subagent context isolation builds on prerequisite concept context engineering.,SRC-0213|SRC-0165,high,2026-11-11
+RL-0156,CP-111,requires,CP-047,subagent context isolation builds on prerequisite concept orchestrator and workers.,SRC-0213|SRC-0165|SRC-0163,high,2026-11-11
+RL-0157,CP-112,requires,CP-094,parameter-efficient fine-tuning (LoRA) builds on prerequisite concept fine-tuning.,SRC-0203|SRC-0242|SRC-0222,high,2026-11-11
+RL-0158,CP-113,requires,CP-003,reasoning models builds on prerequisite concept LLM.,SRC-0030|SRC-0163|SRC-0009,high,2026-11-11
+RL-0159,CP-113,requires,CP-061,reasoning models builds on prerequisite concept chain of thought.,SRC-0030|SRC-0163|SRC-0011,high,2026-11-11
+RL-0160,CP-114,requires,CP-003,speculative decoding builds on prerequisite concept LLM.,SRC-0129|SRC-0048|SRC-0009,high,2026-11-11
+RL-0161,CP-114,requires,CP-088,speculative decoding builds on prerequisite concept latency.,SRC-0048|SRC-0129|SRC-0131,high,2026-11-11
+RL-0162,CP-115,requires,CP-003,IO-aware attention (FlashAttention) builds on prerequisite concept LLM.,SRC-0130|SRC-0048|SRC-0009,high,2026-11-11
+RL-0163,CP-115,requires,CP-021,IO-aware attention (FlashAttention) builds on prerequisite concept context window.,SRC-0130|SRC-0048|SRC-0208,high,2026-11-11
+RL-0164,CP-116,requires,CP-036,semantic caching builds on prerequisite concept embeddings.,SRC-0062|SRC-0091|SRC-0012,high,2026-11-11
+RL-0165,CP-116,requires,CP-091,semantic caching builds on prerequisite concept caching.,SRC-0062|SRC-0091|SRC-0214,high,2026-11-11
+RL-0166,CP-117,requires,CP-003,edge and local inference builds on prerequisite concept LLM.,SRC-0047|SRC-0240|SRC-0009,high,2026-11-11
+RL-0167,CP-117,requires,CP-096,edge and local inference builds on prerequisite concept small language models.,SRC-0047|SRC-0240,high,2026-11-11
+RL-0168,CP-118,requires,CP-035,RAG Triad evaluation builds on prerequisite concept RAG.,SRC-0067|SRC-0068|SRC-0012,high,2026-11-11
+RL-0169,CP-118,requires,CP-081,RAG Triad evaluation builds on prerequisite concept evaluation.,SRC-0067|SRC-0068|SRC-0224,high,2026-11-11
+RL-0170,CP-119,requires,CP-081,trajectory evaluation builds on prerequisite concept evaluation.,SRC-0224|SRC-0199|SRC-0067,high,2026-11-11
+RL-0171,CP-119,requires,CP-087,trajectory evaluation builds on prerequisite concept tracing.,SRC-0199|SRC-0224|SRC-0007,high,2026-11-11
+RL-0172,CP-120,requires,CP-084,sandboxed environment simulation builds on prerequisite concept benchmark.,SRC-0017|SRC-0199|SRC-0200,high,2026-11-11
+RL-0173,CP-121,requires,CP-046,multi-agent debate builds on prerequisite concept multi-agent system.,SRC-0027|SRC-0210|SRC-0160,high,2026-11-11
+RL-0174,CP-121,requires,CP-063,multi-agent debate builds on prerequisite concept reflection.,SRC-0210|SRC-0027|SRC-0023,high,2026-11-11
+RL-0175,CP-122,requires,CP-036,embedding privacy and inversion risk builds on prerequisite concept embeddings.,SRC-0126|SRC-0012|SRC-0056,high,2026-11-11
+RL-0176,CP-122,requires,CP-070,embedding privacy and inversion risk builds on prerequisite concept data exfiltration.,SRC-0126|SRC-0073|SRC-0125,high,2026-11-11
+RL-0177,CP-123,requires,CP-005,inner alignment and goal misgeneralization builds on prerequisite concept utility and reward optimization.,SRC-0127|SRC-0014|SRC-0162,high,2026-11-11
+RL-0178,CP-123,requires,CP-081,inner alignment and goal misgeneralization builds on prerequisite concept evaluation.,SRC-0127|SRC-0014|SRC-0067,high,2026-11-11
+RL-0179,CP-124,requires,CP-063,constitutional AI alignment builds on prerequisite concept reflection.,SRC-0014|SRC-0023|SRC-0015,high,2026-11-11
+RL-0180,CP-125,requires,CP-081,non-determinism and execution variance builds on prerequisite concept evaluation.,SRC-0224|SRC-0199|SRC-0067,high,2026-11-11
+RL-0181,CP-125,requires,CP-084,non-determinism and execution variance builds on prerequisite concept benchmark.,SRC-0199|SRC-0224|SRC-0017,high,2026-11-11
+RL-0182,CP-126,requires,CP-085,shadow testing and canary rollout builds on prerequisite concept regression testing.,SRC-0224|SRC-0069|SRC-0159,high,2026-11-11
+RL-0183,CP-126,requires,CP-086,shadow testing and canary rollout builds on prerequisite concept observability.,SRC-0224|SRC-0007|SRC-0064,high,2026-11-11
+RL-0184,CP-127,requires,CP-045,DAG workflow scheduling builds on prerequisite concept orchestration.,SRC-0184|SRC-0185|SRC-0034,high,2026-11-11
+RL-0185,CP-128,requires,CP-045,durable execution builds on prerequisite concept orchestration.,SRC-0186|SRC-0187|SRC-0034,high,2026-11-11
+RL-0186,CP-128,requires,CP-050,durable execution builds on prerequisite concept agent state management.,SRC-0186|SRC-0187|SRC-0034,high,2026-11-11
+RL-0187,CP-129,requires,CP-016,constitutional and regulatory compliance builds on prerequisite concept human-in-the-loop.,SRC-0074|SRC-0075|SRC-0234,high,2026-11-11
+RL-0188,CP-129,requires,CP-073,constitutional and regulatory compliance builds on prerequisite concept audit log.,SRC-0074|SRC-0075|SRC-0234,high,2026-11-11
+RL-0189,CP-130,requires,CP-054,agentic skill supply chain risk builds on prerequisite concept MCP.,SRC-0232|SRC-0233|SRC-0001,high,2026-11-11
+RL-0190,CP-130,requires,CP-069,agentic skill supply chain risk builds on prerequisite concept indirect prompt injection.,SRC-0232|SRC-0233|SRC-0125,high,2026-11-11
+RL-0191,CP-131,requires,CP-014,episodic reflection and self-correction builds on prerequisite concept episodic memory.,SRC-0023|SRC-0030|SRC-0172,high,2026-11-11
+RL-0192,CP-131,requires,CP-063,episodic reflection and self-correction builds on prerequisite concept reflection.,SRC-0023|SRC-0030|SRC-0015,high,2026-11-11
+RL-0193,CP-132,requires,CP-017,schema-first tool generation builds on prerequisite concept structured output.,SRC-0051|SRC-0052|SRC-0218,high,2026-11-11
+RL-0194,CP-132,requires,CP-018,schema-first tool generation builds on prerequisite concept JSON Schema.,SRC-0051|SRC-0052|SRC-0005,high,2026-11-11
+RL-0195,CP-133,requires,CP-086,API gateway and proxy layer builds on prerequisite concept observability.,SRC-0049|SRC-0071|SRC-0007,high,2026-11-11
+RL-0196,CP-133,requires,CP-092,API gateway and proxy layer builds on prerequisite concept fallbacks.,SRC-0049|SRC-0071|SRC-0221,high,2026-11-11
+RL-0197,CP-134,requires,CP-029,memory poisoning builds on prerequisite concept memory write-back.,SRC-0232|SRC-0140|SRC-0171,high,2026-11-11
+RL-0198,CP-134,requires,CP-069,memory poisoning builds on prerequisite concept indirect prompt injection.,SRC-0232|SRC-0125,high,2026-11-11
+RL-0199,CP-135,requires,CP-104,asynchronous background agent builds on prerequisite concept long-horizon task.,SRC-0186|SRC-0189|SRC-0190,high,2026-11-11
+RL-0200,CP-135,requires,CP-128,asynchronous background agent builds on prerequisite concept durable execution.,SRC-0186|SRC-0189|SRC-0190,high,2026-11-11
+RL-0201,CP-136,requires,CP-035,corrective retrieval builds on prerequisite concept RAG.,SRC-0015|SRC-0019|SRC-0012,high,2026-11-11
+RL-0202,CP-136,requires,CP-043,corrective retrieval builds on prerequisite concept grounding.,SRC-0015|SRC-0019|SRC-0215,high,2026-11-11
+RL-0203,PT-014,requires,CP-035,Agentic RAG requires a retrieval-augmented generation pipeline with indexed corpora.,SRC-0035|SRC-0015|SRC-0012,high,2026-11-11
+RL-0204,PT-015,requires,PT-014,Corrective RAG extends baseline agentic retrieval with relevance grading and web/fallback search.,SRC-0015|SRC-0019|SRC-0035,high,2026-11-11
+RL-0205,PT-028,requires,CP-039,Hybrid search with reranking requires cross-encoder or late-interaction reranking over retrieved candidates.,SRC-0237|SRC-0235|SRC-0236,high,2026-11-11
+RL-0206,PT-032,requires,CP-055,Peer discovery and protocol delegation require standardized Agent2Agent interaction contracts.,SRC-0003|SRC-0156,high,2026-11-11
+RL-0207,PS-001,requires,PS-004,MCP tool input and output capability contracts rely on JSON Schema declarations.,SRC-0001|SRC-0002|SRC-0238,high,2026-11-11
+RL-0208,PS-002,requires,PS-012,Agent2Agent streaming task status updates rely on HTTP Server-Sent Events transport.,SRC-0003|SRC-0230|SRC-0156,high,2026-11-11
+RL-0209,PS-006,requires,PS-005,OAuth 2.1 consolidates and hardens the foundational OAuth 2.0 authorization framework.,SRC-0008|SRC-0238|SRC-0006,high,2026-11-11
+RL-0210,PS-013,requires,PS-005,OpenID Connect layers verifiable user identity tokens directly atop OAuth 2.0 flows.,SRC-0231|SRC-0006,high,2026-11-11
+RL-0211,PS-014,requires,PS-006,RFC 9728 Protected Resource Metadata empowers remote MCP clients using OAuth 2.1 flows.,SRC-0238|SRC-0229|SRC-0008,high,2026-11-11
+RL-0212,PS-009,requires,PS-010,Agentic Commerce Protocol uses signed JWT-style payment authorization credentials.,SRC-0182|SRC-0181|SRC-0227,high,2026-11-11
+RL-0213,FW-002,requires,CP-050,LangGraph orchestrates cyclical graphs using explicit persistent agent state schemas.,SRC-0034|SRC-0087|SRC-0186,high,2026-11-11
+RL-0214,FW-015,requires,CP-128,Temporal requires deterministic workflow replay semantics for durable execution.,SRC-0186|SRC-0187,high,2026-11-11
+RL-0215,CP-028,requires,CP-079,Delegated tool authentication requires verifiable workload and user agent identity bindings.,SRC-0008|SRC-0229|SRC-0238,high,2026-11-11
+RL-0216,AT-002,specializes,AT-001,model_based_reflex_agent specializes simple_reflex_agent within the agent type hierarchy.,SRC-0162,high,2026-11-11
+RL-0217,AT-003,specializes,AT-002,goal_based_agent specializes model_based_reflex_agent within the agent type hierarchy.,SRC-0162,high,2026-11-11
+RL-0218,AT-004,specializes,AT-003,utility_based_agent specializes goal_based_agent within the agent type hierarchy.,SRC-0162,high,2026-11-11
+RL-0219,AT-023,specializes,AT-021,supervisor_orchestrator specializes hierarchical_agent within the agent type hierarchy.,SRC-0034|SRC-0166|SRC-0163,high,2026-11-11
+RL-0220,AT-024,specializes,AT-021,worker_specialist specializes hierarchical_agent within the agent type hierarchy.,SRC-0034|SRC-0163|SRC-0037,high,2026-11-11
+RL-0221,AT-036,specializes,AT-020,autonomous_long_horizon_agent specializes long_horizon_agent within the agent type hierarchy.,SRC-0022|SRC-0026|SRC-0163,high,2026-11-11
+RL-0222,CP-069,specializes,CP-068,Indirect prompt injection specializes prompt injection by hiding directives inside external data sources.,SRC-0232|SRC-0125|SRC-0073,high,2026-11-11
+RL-0223,CP-136,specializes,CP-035,Corrective retrieval specializes RAG with automated relevance evaluation and fallback retrieval.,SRC-0015|SRC-0019|SRC-0012,high,2026-11-11
+RL-0224,CP-116,specializes,CP-091,Semantic caching specializes response caching using embedding similarity lookup instead of exact keys.,SRC-0062|SRC-0091|SRC-0214,high,2026-11-11
+RL-0225,CP-112,specializes,CP-094,LoRA parameter-efficient tuning specializes fine-tuning by updating small low-rank adapter matrices.,SRC-0203|SRC-0242|SRC-0222,high,2026-11-11
+RL-0226,CP-131,specializes,CP-063,Episodic reflection specializes general reflection by persisting verbal failure critiques across attempts.,SRC-0023|SRC-0030|SRC-0015,high,2026-11-11
+RL-0227,CP-118,specializes,CP-081,"RAG Triad evaluation specializes agent evaluation specifically for context relevance, groundedness, and answer quality.",SRC-0067|SRC-0068|SRC-0224,high,2026-11-11
+RL-0228,CP-119,specializes,CP-081,Trajectory evaluation specializes evaluation by scoring full intermediate tool sequences rather than final text alone.,SRC-0224|SRC-0199|SRC-0067,high,2026-11-11
+RL-0229,CP-106,specializes,CP-105,Browser agents specialize agent-computer interfaces specifically for DOM navigation and web forms.,SRC-0128|SRC-0135|SRC-0200,high,2026-11-11
+RL-0230,CP-014,specializes,CP-032,Episodic memory specializes long-term memory for chronological past interaction records.,SRC-0196|SRC-0172|SRC-0211,high,2026-11-11
+RL-0231,CP-033,specializes,CP-032,Semantic memory specializes long-term memory for structured factual and domain knowledge.,SRC-0196|SRC-0245|SRC-0171,high,2026-11-11
+RL-0232,CP-034,specializes,CP-032,Procedural memory specializes long-term memory for reusable routines and tool-use skills.,SRC-0196|SRC-0026|SRC-0171,high,2026-11-11
+RL-0233,CP-113,specializes,CP-003,Reasoning models specialize foundation LLMs with test-time RL-trained deliberative compute.,SRC-0030|SRC-0163|SRC-0009,high,2026-11-11
+RL-0234,CP-096,specializes,CP-003,Small language models specialize LLMs toward compact footprints optimized for low latency or edge hosts.,SRC-0047|SRC-0240|SRC-0009,high,2026-11-11
+RL-0235,CP-067,specializes,CP-066,Programmable dialogue rails specialize guardrails using stateful rule definitions such as Colang.,SRC-0094|SRC-0143|SRC-0093,high,2026-11-11
+RL-0236,PT-015,specializes,PT-014,Corrective RAG pattern specializes agentic RAG with quality checks before generation.,SRC-0015|SRC-0019|SRC-0035,high,2026-11-11
+RL-0237,PT-008,specializes,PT-007,ReAct loop specializes generic tool calling by interleaving explicit reasoning thoughts before each tool action.,SRC-0010|SRC-0151|SRC-0152,high,2026-11-11
+RL-0238,PT-028,specializes,PT-014,"Hybrid search with reranking specializes RAG pipelines through multi-stage dense, sparse, and neural scoring.",SRC-0235|SRC-0236|SRC-0237,high,2026-11-11
+RL-0239,AT-009,specializes,AT-006,Knowledge RAG agents specialize conversational interfaces with grounded corporate corpus retrieval.,SRC-0012|SRC-0015|SRC-0035,high,2026-11-11
+RL-0240,AT-013,specializes,AT-010,Browser and computer-use agents specialize vision-multimodal perception for live GUI execution.,SRC-0164|SRC-0135|SRC-0128,high,2026-11-11
+RL-0241,CP-036,part_of,CP-035,Embeddings convert documents and queries into vectors inside RAG pipelines.,SRC-0012|SRC-0056|SRC-0057,high,2026-11-11
+RL-0242,CP-037,part_of,CP-035,Vector stores persist and index document embeddings as a core RAG subsystem.,SRC-0056|SRC-0057|SRC-0059,high,2026-11-11
+RL-0243,CP-038,part_of,CP-035,Chunking partitions documents into retrievable segments during RAG ingestion.,SRC-0058|SRC-0193|SRC-0012,high,2026-11-11
+RL-0244,CP-039,part_of,CP-035,Reranking refines retrieved candidate chunks before prompt assembly in RAG pipelines.,SRC-0237|SRC-0045|SRC-0012,high,2026-11-11
+RL-0245,CP-040,part_of,CP-035,Hybrid search combines lexical and dense scoring inside retrieval stages of RAG.,SRC-0235|SRC-0236|SRC-0012,high,2026-11-11
+RL-0246,CP-044,part_of,CP-035,Document parsing and ingestion extract structured source text feeding RAG indexes.,SRC-0035|SRC-0193|SRC-0194,high,2026-11-11
+RL-0247,CP-056,part_of,CP-055,JSON Agent Cards serve as the discovery manifest component of the A2A protocol.,SRC-0003|SRC-0156,high,2026-11-11
+RL-0248,CP-058,part_of,CP-022,Tool schema contracts define parameter types and descriptions inside tool calling.,SRC-0151|SRC-0001|SRC-0004,high,2026-11-11
+RL-0249,CP-023,part_of,CP-022,Tool registries organize discoverable tool definitions for multi-tool calling.,SRC-0001|SRC-0138|SRC-0013,high,2026-11-11
+RL-0250,CP-059,part_of,CP-022,Parallel tool execution batches concurrent function calls within a single model turn.,SRC-0151|SRC-0163|SRC-0013,high,2026-11-11
+RL-0251,CP-087,part_of,CP-086,Distributed tracing captures span trees forming the backbone of agent observability.,SRC-0007|SRC-0243|SRC-0066,high,2026-11-11
+RL-0252,CP-088,part_of,CP-086,Latency measurements track per-turn timing telemetry inside production observability.,SRC-0048|SRC-0131|SRC-0169,high,2026-11-11
+RL-0253,CP-089,part_of,CP-086,Token cost telemetry tracks prompt and completion consumption for operational monitoring.,SRC-0214|SRC-0219|SRC-0148,high,2026-11-11
+RL-0254,CP-082,part_of,CP-081,Golden eval sets provide curated test inputs required for structured evaluation.,SRC-0224|SRC-0069|SRC-0067,high,2026-11-11
+RL-0255,CP-083,part_of,CP-081,LLM-as-judge grading provides scalable automated scoring within evaluation suites.,SRC-0067|SRC-0032|SRC-0069,high,2026-11-11
+RL-0256,CP-084,part_of,CP-081,Standardized benchmarks measure reproducible baseline performance within agent evaluation.,SRC-0017|SRC-0018|SRC-0197,high,2026-11-11
+RL-0257,CP-085,part_of,CP-081,Regression testing applies fixed evaluation checks across code and prompt revisions.,SRC-0224|SRC-0069|SRC-0067,high,2026-11-11
+RL-0258,CP-029,part_of,CP-032,Memory write-back extracts and persists durable facts into long-term agent memory.,SRC-0171|SRC-0196|SRC-0140,high,2026-11-11
+RL-0259,CP-047,part_of,CP-046,Orchestrator-worker delegation structures multi-agent system hierarchies.,SRC-0163|SRC-0213|SRC-0027,high,2026-11-11
+RL-0260,CP-048,part_of,CP-046,Supervisor routing controls execution flow within multi-agent systems.,SRC-0034|SRC-0166|SRC-0027,high,2026-11-11
+RL-0261,CP-049,part_of,CP-046,Handoffs transfer active conversation context between collaborating agents.,SRC-0166|SRC-0168|SRC-0027,high,2026-11-11
+RL-0262,CP-050,part_of,CP-045,Agent state management maintains durable turn context during workflow orchestration.,SRC-0034|SRC-0186|SRC-0245,high,2026-11-11
+RL-0263,CP-051,part_of,CP-046,Swarm coordination governs decentralized handoffs across peer multi-agent setups.,SRC-0027|SRC-0166|SRC-0160,high,2026-11-11
+RL-0264,CP-111,part_of,CP-045,Subagent context isolation prevents noisy intermediate tool logs from saturating coordinator prompts.,SRC-0213|SRC-0165|SRC-0034,high,2026-11-11
+RL-0265,CP-066,part_of,CP-015,Guardrails enforce deterministic runtime bounds within overall agent policy controls.,SRC-0093|SRC-0094|SRC-0168,high,2026-11-11
+RL-0266,CP-071,part_of,CP-015,Least privilege bounds tool scopes to enforce explicit agent security constraints.,SRC-0073|SRC-0232|SRC-0181,high,2026-11-11
+RL-0267,CP-072,part_of,CP-015,Permission scopes operationalize granular policy boundaries at API and connector boundaries.,SRC-0006|SRC-0008|SRC-0238,high,2026-11-11
+RL-0268,CP-073,part_of,CP-015,Audit logs record verifiable histories of agent decisions under governance policy constraints.,SRC-0074|SRC-0145|SRC-0181,high,2026-11-11
+RL-0269,CP-074,part_of,CP-015,Secrets management isolates credentials away from model prompts to honor action bounds.,SRC-0073|SRC-0232|SRC-0181,high,2026-11-11
+RL-0270,CP-075,part_of,CP-015,Output validation inspects generated actions and responses before execution against policy bounds.,SRC-0051|SRC-0093|SRC-0218,high,2026-11-11
+RL-0271,CP-078,part_of,CP-016,Approval gates realize concrete human-in-the-loop pause points before sensitive mutations.,SRC-0244|SRC-0163|SRC-0074,high,2026-11-11
+RL-0272,CP-080,part_of,CP-015,Input moderation filters untrusted prompts before policy-governed agent processing.,SRC-0094|SRC-0143|SRC-0181,high,2026-11-11
+RL-0273,CP-098,part_of,CP-010,Speech-to-text transcription forms the inbound hearing stage of voice interaction pipelines.,SRC-0223|SRC-0204|SRC-0169,high,2026-11-11
+RL-0274,CP-099,part_of,CP-010,Text-to-speech synthesis forms the outbound vocalization stage of voice agents.,SRC-0169|SRC-0223,high,2026-11-11
+RL-0275,CP-109,part_of,CP-024,Context compaction trims aging conversation turns as a core context engineering technique.,SRC-0213|SRC-0171,high,2026-11-11
+RL-0276,CP-110,part_of,CP-024,Tool-result clearing discards verbose stale tool payloads as part of context engineering.,SRC-0213,high,2026-11-11
+RL-0277,CP-020,part_of,CP-008,System prompts serve as the privileged instruction block inside composed model prompts.,SRC-0216|SRC-0220,high,2026-11-11
+RL-0278,CP-042,part_of,CP-043,Explicit citations provide verifiable references that operationalize grounded outputs.,SRC-0215|SRC-0015|SRC-0206,high,2026-11-11
+RL-0279,CP-062,part_of,CP-004,Tree search reasoning explores candidate branches systematically inside deliberate planning.,SRC-0020|SRC-0030|SRC-0024,high,2026-11-11
+RL-0280,CP-007,part_of,CP-053,Conversation turn tracking forms the state backbone of guided multi-turn workflows.,SRC-0167|SRC-0169|SRC-0176,high,2026-11-11
+RL-0281,CP-021,part_of,CP-003,The context window bounds the active working memory capacity of an LLM call.,SRC-0208|SRC-0213|SRC-0009,high,2026-11-11
+RL-0282,CP-115,part_of,CP-003,IO-aware attention kernels accelerate attention layers inside modern Transformer LLMs.,SRC-0130|SRC-0048|SRC-0009,high,2026-11-11
+RL-0283,CP-114,part_of,CP-003,Speculative decoding accelerates token emission from autoregressive LLMs.,SRC-0129|SRC-0048|SRC-0009,high,2026-11-11
+RL-0284,AT-024,part_of,AT-021,Worker specialists execute scoped subtasks delegated inside hierarchical agent architectures.,SRC-0034|SRC-0163|SRC-0037,high,2026-11-11
+RL-0285,EV-003,part_of,EV-011,Faithfulness scoring forms one of the three core axes of the RAG Triad diagnostic method.,SRC-0067|SRC-0068|SRC-0215,high,2026-11-11
+RL-0286,EV-004,part_of,EV-011,Context precision and recall form the retrieval quality axis inside RAG Triad evaluation.,SRC-0067|SRC-0068,high,2026-11-11
+RL-0287,CP-057,part_of,CP-054,Streaming SSE events form a standard remote transport capability inside MCP.,SRC-0228|SRC-0230|SRC-0001,high,2026-11-11
+RL-0288,CP-127,part_of,CP-045,DAG workflow scheduling represents deterministic multi-step execution within orchestration systems.,SRC-0184|SRC-0185|SRC-0034,high,2026-11-11
+RL-0289,PS-001,implements,CP-054,The Model Context Protocol specification formally defines MCP client-server contracts.,SRC-0001|SRC-0002|SRC-0238,high,2026-11-11
+RL-0290,PS-002,implements,CP-055,The Agent2Agent specification formally defines the A2A peer interoperability protocol.,SRC-0003|SRC-0156,high,2026-11-11
+RL-0291,PS-004,implements,CP-018,JSON Schema Draft 2020-12 defines the formal vocabulary underlying JSON Schema contracts.,SRC-0005|SRC-0218,high,2026-11-11
+RL-0292,PS-007,implements,CP-086,OpenTelemetry implements vendor-neutral observability traces and GenAI semantic conventions.,SRC-0007|SRC-0070|SRC-0243,high,2026-11-11
+RL-0293,PS-008,implements,CP-022,The OpenAI Function Calling contract defines standard JSON tool declaration and invocation payloads.,SRC-0151|SRC-0043|SRC-0167,high,2026-11-11
+RL-0294,PS-009,implements,CP-103,The Agentic Commerce Protocol implements delegated merchant checkout and payment workflows.,SRC-0182|SRC-0181,high,2026-11-11
+RL-0295,PS-011,implements,CP-010,WebSockets implement full-duplex streaming audio and control transport for voice agents.,SRC-0169|SRC-0228|SRC-0223,high,2026-11-11
+RL-0296,PS-012,implements,CP-057,Server-Sent Events implement unidirectional incremental event streaming over HTTP.,SRC-0230|SRC-0228,high,2026-11-11
+RL-0297,PS-013,implements,CP-079,OpenID Connect implements standardized cryptographic user identity verification over OAuth.,SRC-0231|SRC-0227|SRC-0232,high,2026-11-11
+RL-0298,PS-015,implements,CP-129,ISO/IEC 42001 implements auditable enterprise governance and AI management system controls.,SRC-0234|SRC-0074|SRC-0075,high,2026-11-11
+RL-0299,PS-016,implements,CP-129,NIST AI RMF 1.0 implements structured organizational risk governance processes.,SRC-0074|SRC-0225|SRC-0075,high,2026-11-11
+RL-0300,FW-001,implements,PT-002,LangChain implements composable runnable prompt chains for sequential multi-step workflows.,SRC-0033|SRC-0081|SRC-0163,high,2026-11-11
+RL-0301,FW-001,implements,PT-007,LangChain implements standard model-tool execution loops across Python integrations.,SRC-0033|SRC-0081|SRC-0151,high,2026-11-11
+RL-0302,FW-002,implements,PT-009,LangGraph implements cyclical stateful execution graphs suitable for plan-and-execute workflows.,SRC-0034|SRC-0087|SRC-0024,high,2026-11-11
+RL-0303,FW-002,implements,PT-011,LangGraph implements dynamic interrupt breakpoints for resumable human approval gates.,SRC-0034|SRC-0087|SRC-0163,high,2026-11-11
+RL-0304,FW-002,implements,PT-017,LangGraph implements centralized supervisor routing nodes over specialized subgraphs.,SRC-0034|SRC-0087|SRC-0166,high,2026-11-11
+RL-0305,FW-002,implements,PT-035,LangGraph implements thread-level checkpoint persistence supporting durable resumption.,SRC-0034|SRC-0087|SRC-0186,high,2026-11-11
+RL-0306,FW-002,implements,PS-001,LangGraph integrates MCP client adapters to consume external MCP tool servers.,SRC-0034|SRC-0087|SRC-0001,high,2026-11-11
+RL-0307,FW-002,implements,PS-002,LangGraph supports Agent2Agent protocol interoperability through serving adapters.,SRC-0034|SRC-0087|SRC-0003,high,2026-11-11
+RL-0308,FW-003,implements,PT-014,LlamaIndex implements agentic RAG query engines and router retrievers over indexed corpora.,SRC-0035|SRC-0082|SRC-0015,high,2026-11-11
+RL-0309,FW-003,implements,PT-028,LlamaIndex implements hybrid vector-keyword retrieval combined with neural reranker stages.,SRC-0035|SRC-0082|SRC-0235,high,2026-11-11
+RL-0310,FW-003,implements,PS-001,LlamaIndex implements MCP adapters exposing tools and retrieval queries.,SRC-0035|SRC-0082|SRC-0001,high,2026-11-11
+RL-0311,FW-004,implements,PT-018,AutoGen implements asynchronous conversable actor handoffs across multi-agent teams.,SRC-0036|SRC-0083|SRC-0160,high,2026-11-11
+RL-0312,FW-004,implements,PT-019,AutoGen implements multi-agent critic and code-verification conversation loops.,SRC-0036|SRC-0083|SRC-0160,high,2026-11-11
+RL-0313,FW-004,implements,PS-001,AutoGen supports connecting external tool suites via Model Context Protocol adapters.,SRC-0036|SRC-0083|SRC-0160,high,2026-11-11
+RL-0314,FW-005,implements,PT-005,CrewAI implements hierarchical and sequential role-based crew orchestration.,SRC-0037|SRC-0084|SRC-0163,high,2026-11-11
+RL-0315,FW-005,implements,PT-017,CrewAI implements manager-led task validation and delegation flows.,SRC-0037|SRC-0084|SRC-0034,high,2026-11-11
+RL-0316,FW-005,implements,PS-001,CrewAI supports attaching external MCP tool servers to agent roles.,SRC-0037|SRC-0084|SRC-0001,high,2026-11-11
+RL-0317,FW-006,implements,PT-005,Semantic Kernel implements enterprise multi-agent orchestration across plugin tools.,SRC-0038|SRC-0085|SRC-0163,high,2026-11-11
+RL-0318,FW-006,implements,PS-007,Semantic Kernel implements native OpenTelemetry instrumentation for agent telemetry.,SRC-0038|SRC-0085|SRC-0007,high,2026-11-11
+RL-0319,FW-006,implements,PS-001,Semantic Kernel integrates Model Context Protocol plugin adapters.,SRC-0038|SRC-0085|SRC-0001,high,2026-11-11
+RL-0320,FW-007,implements,PT-014,Haystack implements modular retrieval and adaptive agentic pipeline routing.,SRC-0039|SRC-0086|SRC-0015,high,2026-11-11
+RL-0321,FW-007,implements,PT-028,Haystack implements hybrid document retrieval and cross-encoder reranking components.,SRC-0039|SRC-0086|SRC-0235,high,2026-11-11
+RL-0322,FW-008,implements,PT-006,DSPy implements programmatic metric-driven prompt and weight optimization loops.,SRC-0050|SRC-0088|SRC-0163,high,2026-11-11
+RL-0323,FW-008,implements,CP-011,DSPy implements compiler-style prompt signature optimization against evaluation scores.,SRC-0050|SRC-0088|SRC-0222,high,2026-11-11
+RL-0324,FW-009,implements,PT-022,PydanticAI implements strict Pydantic output schema validation with typed retries.,SRC-0052|SRC-0096|SRC-0051,high,2026-11-11
+RL-0325,FW-009,implements,PS-004,PydanticAI uses JSON Schema compilation from Python type annotations to enforce tool contracts.,SRC-0052|SRC-0096|SRC-0005,high,2026-11-11
+RL-0326,FW-009,implements,PS-007,PydanticAI provides built-in OpenTelemetry trace spans across agent runs.,SRC-0052|SRC-0096|SRC-0007,high,2026-11-11
+RL-0327,FW-010,implements,PT-005,Agno implements fast collaborative multi-agent teams with shared session memory.,SRC-0053|SRC-0097|SRC-0163,high,2026-11-11
+RL-0328,FW-010,implements,PT-016,Agno implements integrated memory extraction and retrieval across runs.,SRC-0053|SRC-0097|SRC-0140,high,2026-11-11
+RL-0329,FW-010,implements,PS-001,Agno implements MCP tool integration for external connectors.,SRC-0053|SRC-0097|SRC-0001,high,2026-11-11
+RL-0330,FW-011,implements,PT-008,smolagents implements code-first ReAct reasoning loops generating Python actions.,SRC-0054|SRC-0098|SRC-0010,high,2026-11-11
+RL-0331,FW-011,implements,CP-025,smolagents centers on executing model-authored Python code snippets inside controlled sandboxes.,SRC-0098|SRC-0054|SRC-0137,high,2026-11-11
+RL-0332,FW-014,implements,CP-127,"Prefect implements Python DAG workflow scheduling, caching, and task retries.",SRC-0184|SRC-0185,high,2026-11-11
+RL-0333,FW-015,implements,PT-035,Temporal implements event-sourced durable workflow execution surviving crashes.,SRC-0186|SRC-0187|SRC-0245,high,2026-11-11
+RL-0334,FW-016,implements,CP-037,Pinecone implements managed serverless vector store indexing and metadata namespaces.,SRC-0056|SRC-0057|SRC-0059,high,2026-11-11
+RL-0335,FW-017,implements,CP-040,Weaviate implements built-in BM25 plus dense vector hybrid search fusion.,SRC-0057|SRC-0235|SRC-0236,high,2026-11-11
+RL-0336,FW-018,implements,CP-037,Chroma implements lightweight local and client-server embedding vector storage.,SRC-0058|SRC-0089|SRC-0056,high,2026-11-11
+RL-0337,FW-019,implements,CP-040,Qdrant implements sparse and dense hybrid vector search with payload filtering.,SRC-0059|SRC-0090|SRC-0235,high,2026-11-11
+RL-0338,FW-020,implements,CP-037,Milvus implements distributed cloud-native vector database indexing at large scale.,SRC-0060|SRC-0091|SRC-0056,high,2026-11-11
+RL-0339,FW-021,implements,CP-037,pgvector implements HNSW and IVFFlat vector similarity indexing inside PostgreSQL.,SRC-0061|SRC-0056|SRC-0057,high,2026-11-11
+RL-0340,FW-022,implements,CP-116,Redis Vector implements sub-millisecond vector lookup enabling semantic prompt caching.,SRC-0062|SRC-0091,high,2026-11-11
+RL-0341,FW-023,implements,CP-040,OpenSearch kNN combines inverted lexical search with vector similarity pipelines.,SRC-0063|SRC-0235|SRC-0236,high,2026-11-11
+RL-0342,FW-024,implements,PS-007,LangSmith implements OpenTelemetry-compatible trace ingestion for LLM workflows.,SRC-0064|SRC-0007|SRC-0070,high,2026-11-11
+RL-0343,FW-025,implements,CP-086,Weights & Biases Forge implements experiment tracking and agent evaluation monitoring.,SRC-0065|SRC-0007|SRC-0064,high,2026-11-11
+RL-0344,FW-026,implements,PS-007,Arize Phoenix implements OpenTelemetry trace collection via OpenInference conventions.,SRC-0066|SRC-0007|SRC-0070,high,2026-11-11
+RL-0345,FW-027,implements,PS-007,Langfuse implements open-source OpenTelemetry trace visualization and dataset evals.,SRC-0072|SRC-0145|SRC-0007,high,2026-11-11
+RL-0346,FW-028,implements,CP-087,AgentOps implements agent session replay and nested tool telemetry.,SRC-0148|SRC-0007|SRC-0243,high,2026-11-11
+RL-0347,FW-029,implements,CP-133,"Helicone implements an HTTP observability proxy capturing latency, cost, and cache hits.",SRC-0071|SRC-0049,high,2026-11-11
+RL-0348,FW-030,implements,CP-082,Braintrust implements dataset-driven regression evaluation and scoring experiments.,SRC-0149|SRC-0224|SRC-0069,high,2026-11-11
+RL-0349,FW-031,implements,EV-027,Ragas provides the open implementation backing the Ragas RAG evaluation suite.,SRC-0067|SRC-0092,high,2026-11-11
+RL-0350,FW-032,implements,EV-029,TruLens implements the TruLens RAG Triad feedback-function evaluation library.,SRC-0068,high,2026-11-11
+RL-0351,FW-033,implements,EV-028,DeepEval implements the Pytest-integrated DeepEval LLM unit testing suite.,SRC-0069,high,2026-11-11
+RL-0352,FW-034,implements,PT-020,Guardrails AI implements modular runtime validator wrappers around model inputs and outputs.,SRC-0093|SRC-0144|SRC-0094,high,2026-11-11
+RL-0353,FW-035,implements,CP-067,NeMo Guardrails implements programmable Colang dialogue rails guiding conversation paths.,SRC-0094|SRC-0143,high,2026-11-11
+RL-0354,FW-036,implements,PT-016,Mem0 implements automated memory extraction and write-back across sessions.,SRC-0140|SRC-0171|SRC-0196,high,2026-11-11
+RL-0355,FW-037,implements,PT-026,Zep implements temporal knowledge-graph and episodic memory retrieval.,SRC-0141|SRC-0140|SRC-0172,high,2026-11-11
+RL-0356,FW-038,implements,CP-029,LangMem implements semantic and episodic memory write-back helpers.,SRC-0142|SRC-0140|SRC-0171,high,2026-11-11
+RL-0357,FW-039,implements,CP-114,"vLLM implements continuous batching, PagedAttention, and speculative decoding inference.",SRC-0048|SRC-0129,high,2026-11-11
+RL-0358,FW-040,implements,CP-117,Ollama implements one-command local inference packaging open-weights models on edge devices.,SRC-0047|SRC-0240,high,2026-11-11
+RL-0359,FW-041,implements,CP-133,LiteLLM implements a unified multi-provider gateway normalizing calls and fallback routes.,SRC-0049|SRC-0071,high,2026-11-11
+RL-0360,FW-047,implements,CP-106,Browser Use implements multimodal DOM-plus-vision browser automation loops.,SRC-0135|SRC-0128|SRC-0200,high,2026-11-11
+RL-0361,FW-048,implements,CP-026,Playwright implements deterministic headless browser automation primitives.,SRC-0136|SRC-0135|SRC-0200,high,2026-11-11
+RL-0362,FW-049,implements,PT-021,E2B implements ephemeral cloud microVMs for sandboxed agent code execution.,SRC-0137|SRC-0232,high,2026-11-11
+RL-0363,FW-050,implements,CP-023,Composio implements managed tool registries with OAuth token handling.,SRC-0138|SRC-0001,high,2026-11-11
+RL-0364,FW-051,implements,PT-022,Instructor implements Pydantic structured output enforcement and automatic retries.,SRC-0051|SRC-0095|SRC-0218,high,2026-11-11
+RL-0365,FW-053,implements,CP-044,Unstructured implements document partitioning and cleaning pipelines for RAG ingestion.,SRC-0193|SRC-0194|SRC-0035,high,2026-11-11
+RL-0366,FW-055,implements,CP-133,BentoML implements containerized inference serving APIs for custom AI deployments.,SRC-0146|SRC-0049|SRC-0071,high,2026-11-11
+RL-0367,CP-018,enables,CP-017,JSON Schema provides the constraint language enabling guaranteed structured model outputs.,SRC-0218|SRC-0005|SRC-0051,high,2026-11-11
+RL-0368,CP-018,enables,CP-132,Formal JSON Schemas enable deterministic schema-first generation of typed client tool wrappers.,SRC-0005|SRC-0218|SRC-0051,high,2026-11-11
+RL-0369,CP-022,enables,PT-007,Native tool calling enables iterative thought-tool execution loops.,SRC-0151|SRC-0152|SRC-0013,high,2026-11-11
+RL-0370,CP-022,enables,CP-025,Structured tool calling enables models to invoke sandboxed code interpreters.,SRC-0013|SRC-0151|SRC-0152,high,2026-11-11
+RL-0371,CP-022,enables,CP-026,Action schemas enable structured browser navigation commands.,SRC-0013|SRC-0151|SRC-0152,high,2026-11-11
+RL-0372,CP-022,enables,CP-027,GUI coordinate and click action schemas enable desktop computer-use loops.,SRC-0013|SRC-0151|SRC-0152,high,2026-11-11
+RL-0373,CP-036,enables,CP-037,Dense text embeddings enable semantic indexing and nearest-neighbor lookup in vector stores.,SRC-0056|SRC-0057|SRC-0012,high,2026-11-11
+RL-0374,CP-037,enables,CP-035,Vector stores enable fast semantic chunk retrieval inside RAG pipelines.,SRC-0056|SRC-0057|SRC-0059,high,2026-11-11
+RL-0375,CP-035,enables,CP-043,Retrieved primary passages enable model responses grounded in verifiable external facts.,SRC-0012|SRC-0035|SRC-0015,high,2026-11-11
+RL-0376,CP-050,enables,CP-078,Persistent execution state enables workflows to pause reliably at human approval gates.,SRC-0034|SRC-0186|SRC-0245,high,2026-11-11
+RL-0377,CP-050,enables,CP-128,Explicit serializable agent state enables crash-resilient durable workflow replay.,SRC-0186|SRC-0034|SRC-0245,high,2026-11-11
+RL-0378,PS-001,enables,CP-023,MCP standardizes capability discovery across modular tool registries.,SRC-0001|SRC-0002|SRC-0238,high,2026-11-11
+RL-0379,PS-001,enables,PT-025,Unified MCP tool metadata enables dynamic runtime tool selection across large tool catalogs.,SRC-0001|SRC-0002|SRC-0238,high,2026-11-11
+RL-0380,PS-002,enables,PT-032,A2A Agent Cards and task APIs enable cross-organization peer agent delegation.,SRC-0003|SRC-0156,high,2026-11-11
+RL-0381,PS-004,enables,CP-075,Declarative JSON Schemas enable pre-execution validation of generated arguments.,SRC-0218|SRC-0005|SRC-0051,high,2026-11-11
+RL-0382,CP-087,enables,CP-119,Structured span traces capture multi-turn action chains needed for trajectory evaluation.,SRC-0007|SRC-0243|SRC-0066,high,2026-11-11
+RL-0383,CP-086,enables,CP-126,Real-time observability enables safe comparison of shadow and canary deployments.,SRC-0007|SRC-0064|SRC-0145,high,2026-11-11
+RL-0384,CP-114,enables,CP-088,Speculative decoding reduces per-token decoding latency on repetitive output patterns.,SRC-0048|SRC-0129|SRC-0131,high,2026-11-11
+RL-0385,CP-115,enables,CP-021,IO-aware attention tiling enables practical scaling to multi-hundred-thousand-token context windows.,SRC-0130|SRC-0048|SRC-0208,high,2026-11-11
+RL-0386,CP-091,enables,CP-089,Prompt prefix caching lowers input token costs across multi-turn agent iterations.,SRC-0214|SRC-0219|SRC-0148,high,2026-11-11
+RL-0387,CP-095,enables,CP-096,Knowledge distillation compresses frontier behavior into fast small language models.,SRC-0205|SRC-0222|SRC-0047,high,2026-11-11
+RL-0388,CP-096,enables,CP-100,Fast small language models enable cost-effective cascade model routing.,SRC-0047|SRC-0240|SRC-0049,high,2026-11-11
+RL-0389,CP-096,enables,CP-117,Compact model footprints enable private local and edge inference execution.,SRC-0047|SRC-0240,high,2026-11-11
+RL-0390,CP-012,enables,CP-027,Visual screen perception enables agents to interpret arbitrary desktop interfaces.,SRC-0164|SRC-0208|SRC-0198,high,2026-11-11
+RL-0391,CP-097,enables,AT-010,Multimodal model backbones enable vision-capable and cross-media agents.,SRC-0116|SRC-0208|SRC-0115,high,2026-11-11
+RL-0392,CP-097,enables,AT-030,Multimodal vision-language grounding enables embodied robotic control policies.,SRC-0116|SRC-0208|SRC-0173,high,2026-11-11
+RL-0393,CP-120,enables,EV-013,Sandboxed user and tool simulators enable reproducible multi-turn interaction evaluation.,SRC-0199|SRC-0017|SRC-0200,high,2026-11-11
+RL-0394,CP-082,enables,CP-085,Stable golden evaluation sets enable automated pre-merge regression testing.,SRC-0224|SRC-0069,high,2026-11-11
+RL-0395,CP-041,enables,PT-026,Temporal knowledge graphs enable structured multi-hop relational memory retrieval.,SRC-0196|SRC-0141|SRC-0140,high,2026-11-11
+RL-0396,CP-010,enables,AT-008,Low-latency speech pipelines enable natural conversational voice agents.,SRC-0169|SRC-0223|SRC-0150,high,2026-11-11
+RL-0397,CP-025,enables,CP-105,Sandboxed shell and filesystem tools form core building blocks for coding agent-computer interfaces.,SRC-0174|SRC-0098|SRC-0137,high,2026-11-11
+RL-0398,CP-009,enables,PT-009,Stateful orchestration graphs enable multi-step plan execution with step tracking.,SRC-0034|SRC-0163|SRC-0024,high,2026-11-11
+RL-0399,CP-059,enables,PT-004,Parallel tool invocation enables fan-out data gathering inside parallel workflow branches.,SRC-0163|SRC-0151|SRC-0166,high,2026-11-11
+RL-0400,FW-040,enables,CP-117,Ollama packaging enables local edge model execution without external network calls.,SRC-0047|SRC-0240,high,2026-11-11
+RL-0401,FW-046,enables,CP-030,Modal ephemeral containers enable serverless sandboxing for dynamically generated code.,SRC-0139|SRC-0137|SRC-0232,high,2026-11-11
+RL-0402,FW-049,enables,CP-025,E2B microVMs provide fast isolated environments enabling safe agent code execution.,SRC-0137|SRC-0098|SRC-0174,high,2026-11-11
+RL-0403,CP-107,enables,CP-022,Ergonomic agent-facing API design raises tool-calling accuracy while lowering token consumption.,SRC-0001|SRC-0004|SRC-0163,high,2026-11-11
+RL-0404,CP-113,enables,CP-004,Extended internal reasoning compute enables deeper multi-step strategic planning.,SRC-0030|SRC-0163|SRC-0020,high,2026-11-11
+RL-0405,CP-045,enables,AT-022,Workflow and runtime orchestration enables coordinated multi-agent collaboration.,SRC-0034|SRC-0163|SRC-0166,high,2026-11-11
+RL-0406,CP-046,enables,PT-034,Multi-agent teams enable collaborative shared-blackboard problem solving.,SRC-0027|SRC-0160|SRC-0212,high,2026-11-11
+RL-0407,CP-080,mitigates,RS-001,Input moderation and instruction-data separation filter direct and indirect prompt injection payloads.,SRC-0094|SRC-0143|SRC-0073,high,2026-11-11
+RL-0408,PT-020,mitigates,RS-001,Runtime guardrail wrappers validate untrusted inputs and model actions against injection attacks.,SRC-0093|SRC-0094|SRC-0168,high,2026-11-11
+RL-0409,PT-020,mitigates,RS-041,Output policy guardrails intercept toxic or disallowed generated content before delivery.,SRC-0093|SRC-0094|SRC-0168,high,2026-11-11
+RL-0410,FW-034,mitigates,RS-030,Guardrails AI validates structured outputs deterministically and retries schema violations.,SRC-0093|SRC-0144|SRC-0218,high,2026-11-11
+RL-0411,FW-035,mitigates,RS-001,NeMo Guardrails enforces programmable Colang boundaries blocking off-policy instruction hijacks.,SRC-0094|SRC-0143|SRC-0073,high,2026-11-11
+RL-0412,CP-043,mitigates,RS-002,Evidence grounding anchors model assertions in verified passages to curb hallucinations.,SRC-0215|SRC-0206|SRC-0015,high,2026-11-11
+RL-0413,CP-042,mitigates,RS-002,Inline source citations expose unsupported fabrications directly to users and automated judges.,SRC-0215|SRC-0015|SRC-0206,high,2026-11-11
+RL-0414,PT-015,mitigates,RS-002,Corrective RAG evaluates retrieved passage quality and triggers fallback search before synthesis.,SRC-0019|SRC-0015|SRC-0206,high,2026-11-11
+RL-0415,PT-027,mitigates,RS-006,Cited evidence synthesis maintains auditable document provenance for regulated domain workflows.,SRC-0215|SRC-0042|SRC-0074,high,2026-11-11
+RL-0416,CP-074,mitigates,RS-003,Secrets management injects credentials outside model prompts so agents cannot leak raw keys.,SRC-0073|SRC-0232|SRC-0225,high,2026-11-11
+RL-0417,CP-117,mitigates,RS-003,Local edge inference eliminates outbound third-party telemetry on confidential customer or patient records.,SRC-0047|SRC-0240|SRC-0073,high,2026-11-11
+RL-0418,CP-080,mitigates,RS-003,Input/output PII redaction sanitizers scrub sensitive identifiers before and after LLM generation.,SRC-0094|SRC-0143|SRC-0073,high,2026-11-11
+RL-0419,CP-016,mitigates,RS-005,Mandatory human-in-the-loop oversight prevents unreviewed automated discrimination in hiring workflows.,SRC-0074|SRC-0244|SRC-0075,high,2026-11-11
+RL-0420,PT-011,mitigates,RS-007,Clinical approval gates require licensed clinician confirmation prior to finalizing health record updates.,SRC-0163|SRC-0244|SRC-0073,high,2026-11-11
+RL-0421,CP-016,mitigates,RS-008,Instructor human-in-the-loop calibration prevents automated grading errors from reaching students unreviewed.,SRC-0074|SRC-0244|SRC-0075,high,2026-11-11
+RL-0422,PT-011,mitigates,RS-009,Safety-critical approval gates require operator verification before changing physical industrial controls.,SRC-0163|SRC-0244|SRC-0074,high,2026-11-11
+RL-0423,CP-043,mitigates,RS-010,Strict retrieval grounding over official statutory sources curbs misleading citizen guidance.,SRC-0015|SRC-0215|SRC-0206,high,2026-11-11
+RL-0424,EV-004,mitigates,RS-004,Stratified multilingual retrieval precision tracking surfaces language-tier quality disparities.,SRC-0067|SRC-0068|SRC-0074,high,2026-11-11
+RL-0425,CP-111,mitigates,RS-011,Isolating untrusted inputs inside scoped worker subagents limits primary goal hijacking.,SRC-0213|SRC-0165|SRC-0232,high,2026-11-11
+RL-0426,PT-031,mitigates,RS-012,Policy enforcement proxies restrict tool arguments and block destructive actions despite model errors.,SRC-0232|SRC-0181|SRC-0182,high,2026-11-11
+RL-0427,CP-071,mitigates,RS-012,Least-privilege tool scopes minimize damage from excessive agency and unintended mutations.,SRC-0073|SRC-0232,high,2026-11-11
+RL-0428,CP-072,mitigates,RS-013,Granular permission scopes enforce per-user authorization instead of broad shared service accounts.,SRC-0008|SRC-0238|SRC-0006,high,2026-11-11
+RL-0429,PS-006,mitigates,RS-013,OAuth 2.1 mandatory PKCE and exact redirect matching prevent authorization code interception abuse.,SRC-0008|SRC-0238|SRC-0232,high,2026-11-11
+RL-0430,PS-010,mitigates,RS-017,Signed short-lived JWT assertions authenticate cross-agent messages against spoofing.,SRC-0227|SRC-0232|SRC-0003,high,2026-11-11
+RL-0431,CP-023,mitigates,RS-014,Curated internal tool registries require provenance review before installing external agent skills.,SRC-0001|SRC-0138|SRC-0232,high,2026-11-11
+RL-0432,CP-030,mitigates,RS-015,OS and microVM sandboxing isolates untrusted code execution away from host filesystems and networks.,SRC-0137|SRC-0232|SRC-0233,high,2026-11-11
+RL-0433,PT-021,mitigates,RS-015,Sandboxed code execution patterns contain dynamic script runs inside ephemeral containers.,SRC-0137|SRC-0232|SRC-0078,high,2026-11-11
+RL-0434,CP-075,mitigates,RS-016,Write-time validation filters prevent adversarial instructions from entering long-term semantic memory.,SRC-0051|SRC-0093|SRC-0218,high,2026-11-11
+RL-0435,PT-019,mitigates,RS-018,Critic validation loops catch flawed intermediate outputs before cascading across downstream agents.,SRC-0210|SRC-0027|SRC-0232,high,2026-11-11
+RL-0436,PT-011,mitigates,RS-019,Calibrated high-risk escalation queues avoid flooding human reviewers with low-signal rubber-stamp approvals.,SRC-0244|SRC-0163|SRC-0232,high,2026-11-11
+RL-0437,CP-093,mitigates,RS-020,Strict step budgets and token rate limits terminate rogue runaway loops promptly.,SRC-0221|SRC-0049|SRC-0232,high,2026-11-11
+RL-0438,CP-091,mitigates,RS-021,Prompt prefix caching lowers token consumption across repetitive system prompts.,SRC-0214|SRC-0219|SRC-0073,high,2026-11-11
+RL-0439,CP-100,mitigates,RS-021,Model routing prevents simple queries from wasting expensive frontier reasoning compute.,SRC-0049|SRC-0202|SRC-0073,high,2026-11-11
+RL-0440,CP-020,mitigates,RS-022,Separating confidential business rules out of prompt text prevents system prompt leakage.,SRC-0216|SRC-0220|SRC-0073,high,2026-11-11
+RL-0441,CP-136,mitigates,RS-023,Corrective retrieval checks detect stale or low-scoring chunks from outdated vector corpora.,SRC-0019|SRC-0015|SRC-0073,high,2026-11-11
+RL-0442,CP-072,mitigates,RS-024,Strict namespace access controls and encryption protect vector stores against embedding inversion.,SRC-0006|SRC-0008|SRC-0238,high,2026-11-11
+RL-0443,CP-085,mitigates,RS-025,Automated regression test suites catch silent quality drops before promoting new model versions.,SRC-0224|SRC-0069|SRC-0199,high,2026-11-11
+RL-0444,CP-126,mitigates,RS-025,Shadow testing compares new model behavior safely against production baselines before traffic cutover.,SRC-0224|SRC-0199|SRC-0159,high,2026-11-11
+RL-0445,CP-128,mitigates,RS-026,Durable execution idempotency keys avoid duplicating side effects across transient step retries.,SRC-0186|SRC-0187|SRC-0221,high,2026-11-11
+RL-0446,CP-109,mitigates,RS-027,Episodic context compaction prunes noisy history to reduce middle-context attention decay.,SRC-0213|SRC-0171,high,2026-11-11
+RL-0447,CP-075,mitigates,RS-028,Outbound URL allowlists and markdown image sanitization block external link data exfiltration.,SRC-0051|SRC-0093|SRC-0218,high,2026-11-11
+RL-0448,EV-014,mitigates,RS-029,Blind human expert calibration detects and re-anchors drifting LLM-as-judge rubrics.,SRC-0032|SRC-0224,high,2026-11-11
+RL-0449,PT-022,mitigates,RS-030,Constrained JSON Schema validation rejects malformed tool arguments prior to dispatch.,SRC-0218|SRC-0051|SRC-0005,high,2026-11-11
+RL-0450,PT-012,mitigates,RS-031,Multi-provider fallback chains maintain uptime during upstream inference provider outages.,SRC-0049|SRC-0221,high,2026-11-11
+RL-0451,FW-041,mitigates,RS-031,LiteLLM cross-provider routing fails over transparently when a primary API rate-limits requests.,SRC-0049|SRC-0221,high,2026-11-11
+RL-0452,CP-082,mitigates,RS-032,Held-out private golden eval sets detect public benchmark contamination and overfitting.,SRC-0224|SRC-0069|SRC-0018,high,2026-11-11
+RL-0453,CP-101,mitigates,RS-033,Independent execution-based verifiability checks limit proxy reward hacking during optimization.,SRC-0018|SRC-0215|SRC-0127,high,2026-11-11
+RL-0454,CP-124,mitigates,RS-034,Constitutional principle critique anchors boundaries against user sycophancy pressure.,SRC-0014|SRC-0199,high,2026-11-11
+RL-0455,CP-123,mitigates,RS-033,Inner-alignment stress testing surfaces specification gaming in autonomous optimization agents.,SRC-0127|SRC-0014|SRC-0018,high,2026-11-11
+RL-0456,CP-042,mitigates,RS-035,Strict grounded attribution and verbatim quote limits minimize unintended memorization leakage.,SRC-0215|SRC-0015|SRC-0075,high,2026-11-11
+RL-0457,CP-086,mitigates,RS-036,Centralized observability captures complete tool traces preventing operational forensics blind spots.,SRC-0007|SRC-0145|SRC-0064,high,2026-11-11
+RL-0458,CP-073,mitigates,RS-036,Immutable audit logs preserve tamper-evident records for incident investigation.,SRC-0145|SRC-0074|SRC-0007,high,2026-11-11
+RL-0459,CP-133,mitigates,RS-037,Unified API gateways bring ungoverned shadow agent traffic under central visibility and policy control.,SRC-0049|SRC-0071|SRC-0074,high,2026-11-11
+RL-0460,PS-015,mitigates,RS-037,ISO/IEC 42001 management system controls establish formal enterprise governance against shadow AI.,SRC-0234|SRC-0074,high,2026-11-11
+RL-0461,PS-016,mitigates,RS-040,NIST AI RMF transparency documentation clarifies automated system disclosures to end users.,SRC-0074|SRC-0225|SRC-0075,high,2026-11-11
+RL-0462,CP-129,mitigates,RS-040,Regulatory compliance workflows ensure legally required AI interaction disclosures remain present.,SRC-0074|SRC-0075|SRC-0234,high,2026-11-11
+RL-0463,CP-069,mitigates,RS-038,Visual-DOM cross-checking and restricted navigation origins defend browser agents against overlay traps.,SRC-0125|SRC-0232|SRC-0164,high,2026-11-11
+RL-0464,FW-047,mitigates,RS-038,Structured DOM-grounded actions reduce vulnerability to pure visual spoofing relative to raw pixels.,SRC-0135|SRC-0164|SRC-0198,high,2026-11-11
+RL-0465,CP-079,mitigates,RS-039,Cryptographic speaker and session verification complements speech pipelines against audio spoofing.,SRC-0227|SRC-0231|SRC-0232,high,2026-11-11
+RL-0466,CP-133,mitigates,RS-042,Gateway abstraction layers decouple application code from breaking upstream vendor API deprecations.,SRC-0049|SRC-0071|SRC-0040,high,2026-11-11
+RL-0467,PS-001,mitigates,RS-042,Standardized MCP interfaces insulate core agent prompts from individual connector churn.,SRC-0001|SRC-0002|SRC-0238,high,2026-11-11
+RL-0468,FW-039,mitigates,RS-031,Self-hosted vLLM serving clusters insulate critical workloads from third-party API downtime.,SRC-0048|SRC-0221|SRC-0049,high,2026-11-11
+RL-0469,FW-048,mitigates,RS-025,Playwright deterministic browser harnesses provide repeatable regression checks for UI changes.,SRC-0136|SRC-0199|SRC-0224,high,2026-11-11
+RL-0470,CP-130,mitigates,RS-014,Supply-chain threat awareness mandates cryptographic pinning and auditing of third-party agent skills.,SRC-0232|SRC-0233,high,2026-11-11
+RL-0471,CP-134,mitigates,RS-016,Memory provenance tagging isolates verified facts from untrusted user turns to mitigate memory poisoning.,SRC-0232|SRC-0140|SRC-0171,high,2026-11-11
+RL-0472,CP-122,mitigates,RS-024,Embedding privacy controls address vector inversion risks through access bounds and dimensionality protections.,SRC-0126,high,2026-11-11
+RL-0473,EV-001,measures,CP-081,Task Completion Rate directly measures evaluation.,SRC-0017|SRC-0197|SRC-0067,high,2026-11-11
+RL-0474,EV-001,measures,AT-003,Task Completion Rate evaluates performance across goal_based_agent implementations.,SRC-0017|SRC-0197|SRC-0162,high,2026-11-11
+RL-0475,EV-001,measures,AT-007,Task Completion Rate evaluates performance across workflow_agent implementations.,SRC-0017|SRC-0197|SRC-0163,high,2026-11-11
+RL-0476,EV-002,measures,CP-125,pass^k Reliability Consistency directly measures non-determinism and execution variance.,SRC-0199|SRC-0224,high,2026-11-11
+RL-0477,EV-002,measures,AT-006,pass^k Reliability Consistency evaluates performance across conversational_agent implementations.,SRC-0199|SRC-0041|SRC-0043,high,2026-11-11
+RL-0478,EV-002,measures,AT-016,pass^k Reliability Consistency evaluates performance across commerce_transaction_agent implementations.,SRC-0199|SRC-0181|SRC-0182,high,2026-11-11
+RL-0479,EV-003,measures,CP-043,Faithfulness and Groundedness directly measures grounding.,SRC-0215|SRC-0067|SRC-0068,high,2026-11-11
+RL-0480,EV-003,measures,AT-009,Faithfulness and Groundedness evaluates performance across knowledge_rag_agent implementations.,SRC-0067|SRC-0068|SRC-0215,high,2026-11-11
+RL-0481,EV-003,measures,AT-011,Faithfulness and Groundedness evaluates performance across research_agent implementations.,SRC-0067|SRC-0068|SRC-0215,high,2026-11-11
+RL-0482,EV-004,measures,CP-035,Context Precision and Recall directly measures RAG.,SRC-0067|SRC-0068|SRC-0012,high,2026-11-11
+RL-0483,EV-004,measures,AT-009,Context Precision and Recall evaluates performance across knowledge_rag_agent implementations.,SRC-0067|SRC-0068|SRC-0012,high,2026-11-11
+RL-0484,EV-004,measures,AT-011,Context Precision and Recall evaluates performance across research_agent implementations.,SRC-0067|SRC-0068|SRC-0010,high,2026-11-11
+RL-0485,EV-005,measures,CP-017,Tool Call Schema and Argument Accuracy directly measures structured output.,SRC-0031|SRC-0239|SRC-0051,high,2026-11-11
+RL-0486,EV-005,measures,AT-007,Tool Call Schema and Argument Accuracy evaluates performance across workflow_agent implementations.,SRC-0031|SRC-0239|SRC-0163,high,2026-11-11
+RL-0487,EV-005,measures,AT-028,Tool Call Schema and Argument Accuracy evaluates performance across tool_using_agent implementations.,SRC-0031|SRC-0239|SRC-0010,high,2026-11-11
+RL-0488,EV-006,measures,CP-089,Trajectory Efficiency and Step Overhead directly measures token cost.,SRC-0199|SRC-0224|SRC-0214,high,2026-11-11
+RL-0489,EV-006,measures,AT-011,Trajectory Efficiency and Step Overhead evaluates performance across research_agent implementations.,SRC-0199|SRC-0224|SRC-0010,high,2026-11-11
+RL-0490,EV-006,measures,AT-012,Trajectory Efficiency and Step Overhead evaluates performance across coding_agent implementations.,SRC-0199|SRC-0224|SRC-0018,high,2026-11-11
+RL-0491,EV-007,measures,CP-042,Citation Attribution Precision directly measures citation.,SRC-0215|SRC-0015,high,2026-11-11
+RL-0492,EV-007,measures,AT-009,Citation Attribution Precision evaluates performance across knowledge_rag_agent implementations.,SRC-0015|SRC-0215|SRC-0012,high,2026-11-11
+RL-0493,EV-007,measures,AT-011,Citation Attribution Precision evaluates performance across research_agent implementations.,SRC-0215|SRC-0015|SRC-0010,high,2026-11-11
+RL-0494,EV-008,measures,CP-068,Adversarial Attack Success Rate directly measures prompt injection.,SRC-0225|SRC-0226|SRC-0073,high,2026-11-11
+RL-0495,EV-008,measures,AT-016,Adversarial Attack Success Rate evaluates performance across commerce_transaction_agent implementations.,SRC-0225|SRC-0226|SRC-0181,high,2026-11-11
+RL-0496,EV-008,measures,AT-017,Adversarial Attack Success Rate evaluates performance across security_monitoring_agent implementations.,SRC-0225|SRC-0226|SRC-0179,high,2026-11-11
+RL-0497,EV-009,measures,CP-087,Response Latency and Time-to-First-Token directly measures tracing.,SRC-0048|SRC-0169|SRC-0007,high,2026-11-11
+RL-0498,EV-009,measures,AT-006,Response Latency and Time-to-First-Token evaluates performance across conversational_agent implementations.,SRC-0048|SRC-0169|SRC-0041,high,2026-11-11
+RL-0499,EV-009,measures,AT-008,Response Latency and Time-to-First-Token evaluates performance across voice_agent implementations.,SRC-0169|SRC-0048|SRC-0150,high,2026-11-11
+RL-0500,EV-010,measures,CP-083,LLM-as-a-Judge Rubric Grading directly measures LLM-as-judge.,SRC-0032|SRC-0224|SRC-0067,high,2026-11-11
+RL-0501,EV-010,measures,AT-006,LLM-as-a-Judge Rubric Grading evaluates performance across conversational_agent implementations.,SRC-0032|SRC-0224|SRC-0041,high,2026-11-11
+RL-0502,EV-010,measures,AT-014,LLM-as-a-Judge Rubric Grading evaluates performance across personal_assistant_agent implementations.,SRC-0032|SRC-0224|SRC-0166,high,2026-11-11
+RL-0503,EV-011,measures,CP-118,RAG Triad Diagnostic Method directly measures RAG Triad evaluation.,SRC-0068|SRC-0067,high,2026-11-11
+RL-0504,EV-011,measures,AT-009,RAG Triad Diagnostic Method evaluates performance across knowledge_rag_agent implementations.,SRC-0068|SRC-0067|SRC-0012,high,2026-11-11
+RL-0505,EV-011,measures,AT-038,RAG Triad Diagnostic Method evaluates performance across knowledge_base_agent implementations.,SRC-0068|SRC-0067|SRC-0012,high,2026-11-11
+RL-0506,EV-012,measures,CP-101,Deterministic State and Unit Verification directly measures verifiability.,SRC-0018|SRC-0224|SRC-0215,high,2026-11-11
+RL-0507,EV-012,measures,AT-012,Deterministic State and Unit Verification evaluates performance across coding_agent implementations.,SRC-0018|SRC-0224|SRC-0165,high,2026-11-11
+RL-0508,EV-012,measures,AT-015,Deterministic State and Unit Verification evaluates performance across data_analysis_agent implementations.,SRC-0018|SRC-0224|SRC-0167,high,2026-11-11
+RL-0509,EV-013,measures,CP-120,Simulated User and Policy Interaction Method directly measures sandboxed environment simulation.,SRC-0199|SRC-0029|SRC-0017,high,2026-11-11
+RL-0510,EV-013,measures,AT-006,Simulated User and Policy Interaction Method evaluates performance across conversational_agent implementations.,SRC-0199|SRC-0029|SRC-0041,high,2026-11-11
+RL-0511,EV-013,measures,AT-008,Simulated User and Policy Interaction Method evaluates performance across voice_agent implementations.,SRC-0199|SRC-0029|SRC-0169,high,2026-11-11
+RL-0512,EV-014,measures,CP-081,Blind Human Expert Calibration directly measures evaluation.,SRC-0224|SRC-0032|SRC-0067,high,2026-11-11
+RL-0513,EV-014,measures,AT-018,Blind Human Expert Calibration evaluates performance across vertical_industry_agent implementations.,SRC-0032|SRC-0224|SRC-0175,high,2026-11-11
+RL-0514,EV-014,measures,AT-025,Blind Human Expert Calibration evaluates performance across evaluator_critic implementations.,SRC-0032|SRC-0224|SRC-0163,high,2026-11-11
+RL-0515,EV-015,measures,CP-014,Long-Term Conversational Memory Recall Evaluation directly measures episodic memory.,SRC-0211|SRC-0196|SRC-0172,high,2026-11-11
+RL-0516,EV-015,measures,AT-002,Long-Term Conversational Memory Recall Evaluation evaluates performance across model_based_reflex_agent implementations.,SRC-0211|SRC-0196|SRC-0162,high,2026-11-11
+RL-0517,EV-015,measures,AT-014,Long-Term Conversational Memory Recall Evaluation evaluates performance across personal_assistant_agent implementations.,SRC-0211|SRC-0196|SRC-0166,high,2026-11-11
+RL-0518,EV-016,measures,CP-081,Holistic Multi-Dimension Evaluation (HELM) directly measures evaluation.,SRC-0201|SRC-0067|SRC-0224,high,2026-11-11
+RL-0519,EV-016,measures,AT-005,Holistic Multi-Dimension Evaluation (HELM) evaluates performance across learning_agent implementations.,SRC-0201|SRC-0162,high,2026-11-11
+RL-0520,EV-016,measures,AT-025,Holistic Multi-Dimension Evaluation (HELM) evaluates performance across evaluator_critic implementations.,SRC-0201|SRC-0163|SRC-0023,high,2026-11-11
+RL-0521,EV-017,measures,CP-025,SWE-bench directly measures code execution by agents.,SRC-0174|SRC-0018|SRC-0098,high,2026-11-11
+RL-0522,EV-017,measures,AT-012,SWE-bench evaluates performance across coding_agent implementations.,SRC-0018|SRC-0174|SRC-0165,high,2026-11-11
+RL-0523,EV-017,measures,AT-039,SWE-bench evaluates performance across code_interpreter_agent implementations.,SRC-0018|SRC-0174|SRC-0137,high,2026-11-11
+RL-0524,EV-018,measures,CP-084,GAIA General AI Assistants Benchmark directly measures benchmark.,SRC-0197|SRC-0017|SRC-0018,high,2026-11-11
+RL-0525,EV-018,measures,AT-011,GAIA General AI Assistants Benchmark evaluates performance across research_agent implementations.,SRC-0197|SRC-0010|SRC-0022,high,2026-11-11
+RL-0526,EV-018,measures,AT-013,GAIA General AI Assistants Benchmark evaluates performance across browser_computer_use_agent implementations.,SRC-0197|SRC-0164|SRC-0135,high,2026-11-11
+RL-0527,EV-019,measures,CP-027,OSWorld directly measures computer use.,SRC-0198|SRC-0164,high,2026-11-11
+RL-0528,EV-019,measures,AT-010,OSWorld evaluates performance across vision_multimodal_agent implementations.,SRC-0198|SRC-0115|SRC-0116,high,2026-11-11
+RL-0529,EV-019,measures,AT-013,OSWorld evaluates performance across browser_computer_use_agent implementations.,SRC-0198|SRC-0164|SRC-0135,high,2026-11-11
+RL-0530,EV-020,measures,CP-084,tau-bench (Tool-Agent-User Benchmark) directly measures benchmark.,SRC-0199|SRC-0017|SRC-0018,high,2026-11-11
+RL-0531,EV-020,measures,AT-006,tau-bench (Tool-Agent-User Benchmark) evaluates performance across conversational_agent implementations.,SRC-0199|SRC-0041|SRC-0043,high,2026-11-11
+RL-0532,EV-020,measures,AT-016,tau-bench (Tool-Agent-User Benchmark) evaluates performance across commerce_transaction_agent implementations.,SRC-0199|SRC-0181|SRC-0182,high,2026-11-11
+RL-0533,EV-021,measures,CP-026,WebArena directly measures browser automation.,SRC-0200|SRC-0135|SRC-0136,high,2026-11-11
+RL-0534,EV-021,measures,AT-013,WebArena evaluates performance across browser_computer_use_agent implementations.,SRC-0200|SRC-0164|SRC-0135,high,2026-11-11
+RL-0535,EV-021,measures,AT-028,WebArena evaluates performance across tool_using_agent implementations.,SRC-0200|SRC-0010|SRC-0013,high,2026-11-11
+RL-0536,EV-022,measures,CP-084,AgentBench directly measures benchmark.,SRC-0017|SRC-0018|SRC-0197,high,2026-11-11
+RL-0537,EV-022,measures,AT-003,AgentBench evaluates performance across goal_based_agent implementations.,SRC-0017|SRC-0162,high,2026-11-11
+RL-0538,EV-022,measures,AT-007,AgentBench evaluates performance across workflow_agent implementations.,SRC-0017|SRC-0163|SRC-0034,high,2026-11-11
+RL-0539,EV-023,measures,CP-022,Berkeley Function Calling Leaderboard (BFCL) directly measures tool calling.,SRC-0239|SRC-0031|SRC-0013,high,2026-11-11
+RL-0540,EV-023,measures,AT-007,Berkeley Function Calling Leaderboard (BFCL) evaluates performance across workflow_agent implementations.,SRC-0239|SRC-0031|SRC-0163,high,2026-11-11
+RL-0541,EV-023,measures,AT-028,Berkeley Function Calling Leaderboard (BFCL) evaluates performance across tool_using_agent implementations.,SRC-0239|SRC-0031|SRC-0010,high,2026-11-11
+RL-0542,EV-024,measures,CP-007,MT-Bench directly measures conversation state and turns.,SRC-0032|SRC-0167|SRC-0169,high,2026-11-11
+RL-0543,EV-024,measures,AT-006,MT-Bench evaluates performance across conversational_agent implementations.,SRC-0032|SRC-0041|SRC-0043,high,2026-11-11
+RL-0544,EV-024,measures,AT-025,MT-Bench evaluates performance across evaluator_critic implementations.,SRC-0032|SRC-0163|SRC-0023,high,2026-11-11
+RL-0545,EV-025,measures,CP-025,HumanEval directly measures code execution by agents.,SRC-0122|SRC-0098|SRC-0137,high,2026-11-11
+RL-0546,EV-025,measures,AT-012,HumanEval evaluates performance across coding_agent implementations.,SRC-0122|SRC-0018|SRC-0165,high,2026-11-11
+RL-0547,EV-025,measures,AT-039,HumanEval evaluates performance across code_interpreter_agent implementations.,SRC-0122|SRC-0137|SRC-0167,high,2026-11-11
+RL-0548,EV-026,measures,CP-003,MMLU and BIG-Bench directly measures LLM.,SRC-0121|SRC-0123|SRC-0009,high,2026-11-11
+RL-0549,EV-026,measures,AT-003,MMLU and BIG-Bench evaluates performance across goal_based_agent implementations.,SRC-0121|SRC-0123|SRC-0162,high,2026-11-11
+RL-0550,EV-026,measures,AT-011,MMLU and BIG-Bench evaluates performance across research_agent implementations.,SRC-0121|SRC-0123|SRC-0010,high,2026-11-11
+RL-0551,EV-027,measures,CP-081,Ragas Evaluation Framework directly measures evaluation.,SRC-0067|SRC-0092|SRC-0224,high,2026-11-11
+RL-0552,EV-027,measures,AT-009,Ragas Evaluation Framework evaluates performance across knowledge_rag_agent implementations.,SRC-0067|SRC-0092|SRC-0012,high,2026-11-11
+RL-0553,EV-027,measures,AT-038,Ragas Evaluation Framework evaluates performance across knowledge_base_agent implementations.,SRC-0067|SRC-0092|SRC-0012,high,2026-11-11
+RL-0554,EV-028,measures,CP-081,DeepEval Unit-Testing Suite directly measures evaluation.,SRC-0069|SRC-0067|SRC-0224,high,2026-11-11
+RL-0555,EV-028,measures,AT-007,DeepEval Unit-Testing Suite evaluates performance across workflow_agent implementations.,SRC-0069|SRC-0163|SRC-0034,high,2026-11-11
+RL-0556,EV-028,measures,AT-009,DeepEval Unit-Testing Suite evaluates performance across knowledge_rag_agent implementations.,SRC-0069|SRC-0012|SRC-0015,high,2026-11-11
+RL-0557,EV-029,measures,CP-086,TruLens Feedback and Trace Evaluation directly measures observability.,SRC-0068|SRC-0007|SRC-0064,high,2026-11-11
+RL-0558,EV-029,measures,AT-009,TruLens Feedback and Trace Evaluation evaluates performance across knowledge_rag_agent implementations.,SRC-0068|SRC-0012|SRC-0015,high,2026-11-11
+RL-0559,EV-029,measures,AT-025,TruLens Feedback and Trace Evaluation evaluates performance across evaluator_critic implementations.,SRC-0068|SRC-0163|SRC-0023,high,2026-11-11
+RL-0560,EV-030,measures,CP-081,OpenAI Evals and Braintrust Scoring Harnesses directly measures evaluation.,SRC-0224|SRC-0149|SRC-0067,high,2026-11-11
+RL-0561,EV-030,measures,AT-006,OpenAI Evals and Braintrust Scoring Harnesses evaluates performance across conversational_agent implementations.,SRC-0224|SRC-0149|SRC-0041,high,2026-11-11
+RL-0562,EV-030,measures,AT-007,OpenAI Evals and Braintrust Scoring Harnesses evaluates performance across workflow_agent implementations.,SRC-0224|SRC-0149|SRC-0163,high,2026-11-11
+RL-0563,EV-031,measures,CP-085,CI Prompt and Model Regression Gating directly measures regression testing.,SRC-0224|SRC-0069|SRC-0159,high,2026-11-11
+RL-0564,EV-031,measures,AT-007,CI Prompt and Model Regression Gating evaluates performance across workflow_agent implementations.,SRC-0224|SRC-0163|SRC-0034,high,2026-11-11
+RL-0565,EV-031,measures,AT-012,CI Prompt and Model Regression Gating evaluates performance across coding_agent implementations.,SRC-0224|SRC-0018|SRC-0165,high,2026-11-11
+RL-0566,EV-032,measures,CP-077,Adversarial Red-Teaming and Canary Auditing directly measures red teaming.,SRC-0225|SRC-0226|SRC-0159,high,2026-11-11
+RL-0567,EV-032,measures,AT-016,Adversarial Red-Teaming and Canary Auditing evaluates performance across commerce_transaction_agent implementations.,SRC-0225|SRC-0226|SRC-0181,high,2026-11-11
+RL-0568,EV-032,measures,AT-017,Adversarial Red-Teaming and Canary Auditing evaluates performance across security_monitoring_agent implementations.,SRC-0225|SRC-0226|SRC-0179,high,2026-11-11
+RL-0569,EV-002,measures,RS-025,pass^k consistency explicitly quantifies stochastic reliability regressions across repeated trials.,SRC-0199|SRC-0224,high,2026-11-11
+RL-0570,EV-003,measures,RS-002,Faithfulness scoring measures confabulation and ungrounded claim rates against retrieved evidence.,SRC-0215|SRC-0067|SRC-0068,high,2026-11-11
+RL-0571,EV-005,measures,RS-030,Tool schema argument accuracy detects parameter malformation and schema validation violations.,SRC-0031|SRC-0239|SRC-0218,high,2026-11-11
+RL-0572,EV-008,measures,RS-001,Adversarial attack success rate quantifies prompt injection and jailbreak vulnerability.,SRC-0225|SRC-0226|SRC-0073,high,2026-11-11
+RL-0573,EV-009,measures,RS-021,Latency and token telemetry expose excessive execution loops driving cost inflation.,SRC-0048|SRC-0169|SRC-0073,high,2026-11-11
+RL-0574,EV-032,measures,RS-011,Adversarial red-teaming actively measures agent goal hijacking resilience under simulated attacks.,SRC-0225|SRC-0226|SRC-0232,high,2026-11-11
+RL-0575,AT-001,uses,CP-001,simple_reflex_agent relies on agent as a core operational mechanism.,SRC-0162|SRC-0163,high,2026-11-11
+RL-0576,AT-001,uses,CP-002,simple_reflex_agent relies on agentic AI as a core operational mechanism.,SRC-0162|SRC-0163|SRC-0166,high,2026-11-11
+RL-0577,AT-001,uses,PT-001,simple_reflex_agent commonly runs the single call pattern.,SRC-0162|SRC-0163|SRC-0218,high,2026-11-11
+RL-0578,AT-002,uses,CP-001,model_based_reflex_agent relies on agent as a core operational mechanism.,SRC-0162|SRC-0163,high,2026-11-11
+RL-0579,AT-002,uses,CP-002,model_based_reflex_agent relies on agentic AI as a core operational mechanism.,SRC-0162|SRC-0163|SRC-0166,high,2026-11-11
+RL-0580,AT-002,uses,PT-001,model_based_reflex_agent commonly runs the single call pattern.,SRC-0162|SRC-0163|SRC-0218,high,2026-11-11
+RL-0581,AT-003,uses,CP-001,goal_based_agent relies on agent as a core operational mechanism.,SRC-0162|SRC-0163,high,2026-11-11
+RL-0582,AT-003,uses,CP-002,goal_based_agent relies on agentic AI as a core operational mechanism.,SRC-0162|SRC-0163|SRC-0166,high,2026-11-11
+RL-0583,AT-003,uses,PT-009,goal_based_agent commonly runs the plan-and-execute pattern.,SRC-0162|SRC-0024|SRC-0034,high,2026-11-11
+RL-0584,AT-004,uses,CP-001,utility_based_agent relies on agent as a core operational mechanism.,SRC-0162|SRC-0163,high,2026-11-11
+RL-0585,AT-004,uses,CP-002,utility_based_agent relies on agentic AI as a core operational mechanism.,SRC-0162|SRC-0163|SRC-0166,high,2026-11-11
+RL-0586,AT-004,uses,PT-009,utility_based_agent commonly runs the plan-and-execute pattern.,SRC-0162|SRC-0024|SRC-0034,high,2026-11-11
+RL-0587,AT-005,uses,CP-001,learning_agent relies on agent as a core operational mechanism.,SRC-0162|SRC-0163,high,2026-11-11
+RL-0588,AT-005,uses,CP-002,learning_agent relies on agentic AI as a core operational mechanism.,SRC-0162|SRC-0163|SRC-0166,high,2026-11-11
+RL-0589,AT-005,uses,PT-006,learning_agent commonly runs the evaluator-optimizer pattern.,SRC-0162|SRC-0163|SRC-0023,high,2026-11-11
+RL-0590,AT-006,uses,CP-001,conversational_agent relies on agent as a core operational mechanism.,SRC-0041|SRC-0043|SRC-0178,high,2026-11-11
+RL-0591,AT-006,uses,CP-007,conversational_agent relies on conversation state and turns as a core operational mechanism.,SRC-0041|SRC-0043|SRC-0178,high,2026-11-11
+RL-0592,AT-006,uses,PT-001,conversational_agent commonly runs the single call pattern.,SRC-0041|SRC-0043|SRC-0178,high,2026-11-11
+RL-0593,AT-007,uses,CP-002,workflow_agent relies on agentic AI as a core operational mechanism.,SRC-0163|SRC-0034|SRC-0177,high,2026-11-11
+RL-0594,AT-007,uses,CP-004,workflow_agent relies on planning as a core operational mechanism.,SRC-0163|SRC-0034|SRC-0177,high,2026-11-11
+RL-0595,AT-007,uses,PT-002,workflow_agent commonly runs the prompt chaining pattern.,SRC-0163|SRC-0034|SRC-0177,high,2026-11-11
+RL-0596,AT-008,uses,CP-001,voice_agent relies on agent as a core operational mechanism.,SRC-0169|SRC-0150|SRC-0162,high,2026-11-11
+RL-0597,AT-008,uses,CP-007,voice_agent relies on conversation state and turns as a core operational mechanism.,SRC-0169|SRC-0150|SRC-0167,high,2026-11-11
+RL-0598,AT-008,uses,PT-001,voice_agent commonly runs the single call pattern.,SRC-0169|SRC-0150|SRC-0163,high,2026-11-11
+RL-0599,AT-009,uses,CP-001,knowledge_rag_agent relies on agent as a core operational mechanism.,SRC-0012|SRC-0015|SRC-0035,high,2026-11-11
+RL-0600,AT-009,uses,CP-035,knowledge_rag_agent relies on RAG as a core operational mechanism.,SRC-0012|SRC-0035|SRC-0015,high,2026-11-11
+RL-0601,AT-009,uses,PT-014,knowledge_rag_agent commonly runs the agentic RAG pattern.,SRC-0015|SRC-0035|SRC-0012,high,2026-11-11
+RL-0602,AT-010,uses,CP-001,vision_multimodal_agent relies on agent as a core operational mechanism.,SRC-0115|SRC-0116|SRC-0150,high,2026-11-11
+RL-0603,AT-010,uses,CP-008,vision_multimodal_agent relies on prompt as a core operational mechanism.,SRC-0115|SRC-0116|SRC-0150,high,2026-11-11
+RL-0604,AT-010,uses,PT-001,vision_multimodal_agent commonly runs the single call pattern.,SRC-0115|SRC-0116|SRC-0150,high,2026-11-11
+RL-0605,AT-011,uses,CP-001,research_agent relies on agent as a core operational mechanism.,SRC-0163|SRC-0010|SRC-0022,high,2026-11-11
+RL-0606,AT-011,uses,CP-004,research_agent relies on planning as a core operational mechanism.,SRC-0010|SRC-0022|SRC-0163,high,2026-11-11
+RL-0607,AT-011,uses,PT-004,research_agent commonly runs the parallelization pattern.,SRC-0163|SRC-0010|SRC-0022,high,2026-11-11
+RL-0608,AT-012,uses,CP-001,coding_agent relies on agent as a core operational mechanism.,SRC-0018|SRC-0165|SRC-0174,high,2026-11-11
+RL-0609,AT-012,uses,CP-004,coding_agent relies on planning as a core operational mechanism.,SRC-0018|SRC-0165|SRC-0174,high,2026-11-11
+RL-0610,AT-012,uses,PT-007,coding_agent commonly runs the tool-calling loop pattern.,SRC-0018|SRC-0165|SRC-0174,high,2026-11-11
+RL-0611,AT-013,uses,CP-001,browser_computer_use_agent relies on agent as a core operational mechanism.,SRC-0164|SRC-0135|SRC-0128,high,2026-11-11
+RL-0612,AT-013,uses,CP-004,browser_computer_use_agent relies on planning as a core operational mechanism.,SRC-0164|SRC-0135|SRC-0128,high,2026-11-11
+RL-0613,AT-013,uses,PT-007,browser_computer_use_agent commonly runs the tool-calling loop pattern.,SRC-0164|SRC-0135|SRC-0128,high,2026-11-11
+RL-0614,AT-014,uses,CP-001,personal_assistant_agent relies on agent as a core operational mechanism.,SRC-0166|SRC-0140|SRC-0162,high,2026-11-11
+RL-0615,AT-014,uses,CP-008,personal_assistant_agent relies on prompt as a core operational mechanism.,SRC-0166|SRC-0140|SRC-0216,high,2026-11-11
+RL-0616,AT-014,uses,PT-016,personal_assistant_agent commonly runs the memory write-back pattern.,SRC-0140|SRC-0166|SRC-0171,high,2026-11-11
+RL-0617,AT-015,uses,CP-001,data_analysis_agent relies on agent as a core operational mechanism.,SRC-0167|SRC-0035|SRC-0162,high,2026-11-11
+RL-0618,AT-015,uses,CP-004,data_analysis_agent relies on planning as a core operational mechanism.,SRC-0167|SRC-0035|SRC-0020,high,2026-11-11
+RL-0619,AT-015,uses,PT-007,data_analysis_agent commonly runs the tool-calling loop pattern.,SRC-0167|SRC-0035|SRC-0151,high,2026-11-11
+RL-0620,AT-016,uses,CP-001,commerce_transaction_agent relies on agent as a core operational mechanism.,SRC-0181|SRC-0182|SRC-0162,high,2026-11-11
+RL-0621,AT-016,uses,CP-015,commerce_transaction_agent relies on policy constraints and action bounds as a core operational mechanism.,SRC-0181|SRC-0182,high,2026-11-11
+RL-0622,AT-016,uses,PT-011,commerce_transaction_agent commonly runs the human approval gate pattern.,SRC-0181|SRC-0182|SRC-0163,high,2026-11-11
+RL-0623,AT-017,uses,CP-001,security_monitoring_agent relies on agent as a core operational mechanism.,SRC-0179|SRC-0180|SRC-0162,high,2026-11-11
+RL-0624,AT-017,uses,CP-016,security_monitoring_agent relies on human-in-the-loop as a core operational mechanism.,SRC-0179|SRC-0180|SRC-0074,high,2026-11-11
+RL-0625,AT-017,uses,PT-020,security_monitoring_agent commonly runs the guardrail wrapper pattern.,SRC-0179|SRC-0180|SRC-0093,high,2026-11-11
+RL-0626,AT-018,uses,CP-001,vertical_industry_agent relies on agent as a core operational mechanism.,SRC-0175|SRC-0177|SRC-0162,high,2026-11-11
+RL-0627,AT-018,uses,CP-008,vertical_industry_agent relies on prompt as a core operational mechanism.,SRC-0175|SRC-0177|SRC-0216,high,2026-11-11
+RL-0628,AT-018,uses,PT-014,vertical_industry_agent commonly runs the agentic RAG pattern.,SRC-0175|SRC-0177|SRC-0015,high,2026-11-11
+RL-0629,AT-019,uses,CP-001,simulation_game_agent relies on agent as a core operational mechanism.,SRC-0026|SRC-0172|SRC-0162,high,2026-11-11
+RL-0630,AT-019,uses,CP-002,simulation_game_agent relies on agentic AI as a core operational mechanism.,SRC-0026|SRC-0172|SRC-0163,high,2026-11-11
+RL-0631,AT-019,uses,PT-010,simulation_game_agent commonly runs the reflection loop pattern.,SRC-0026|SRC-0172|SRC-0023,high,2026-11-11
+RL-0632,AT-020,uses,CP-001,long_horizon_agent relies on agent as a core operational mechanism.,SRC-0022|SRC-0026|SRC-0174,high,2026-11-11
+RL-0633,AT-020,uses,CP-004,long_horizon_agent relies on planning as a core operational mechanism.,SRC-0022|SRC-0026|SRC-0174,high,2026-11-11
+RL-0634,AT-020,uses,PT-009,long_horizon_agent commonly runs the plan-and-execute pattern.,SRC-0022|SRC-0026|SRC-0174,high,2026-11-11
+RL-0635,AT-021,uses,CP-004,hierarchical_agent relies on planning as a core operational mechanism.,SRC-0034|SRC-0160|SRC-0166,high,2026-11-11
+RL-0636,AT-021,uses,CP-009,hierarchical_agent relies on stateful workflow execution as a core operational mechanism.,SRC-0034|SRC-0160|SRC-0166,high,2026-11-11
+RL-0637,AT-021,uses,PT-005,hierarchical_agent commonly runs the orchestrator-workers pattern.,SRC-0034|SRC-0160|SRC-0166,high,2026-11-11
+RL-0638,AT-022,uses,CP-004,multi_agent_system relies on planning as a core operational mechanism.,SRC-0160|SRC-0027|SRC-0003,high,2026-11-11
+RL-0639,AT-022,uses,CP-045,multi_agent_system relies on orchestration as a core operational mechanism.,SRC-0160|SRC-0027|SRC-0003,high,2026-11-11
+RL-0640,AT-022,uses,PT-005,multi_agent_system commonly runs the orchestrator-workers pattern.,SRC-0160|SRC-0027|SRC-0003,high,2026-11-11
+RL-0641,AT-023,uses,CP-004,supervisor_orchestrator relies on planning as a core operational mechanism.,SRC-0034|SRC-0163|SRC-0166,high,2026-11-11
+RL-0642,AT-023,uses,CP-045,supervisor_orchestrator relies on orchestration as a core operational mechanism.,SRC-0034|SRC-0163|SRC-0166,high,2026-11-11
+RL-0643,AT-023,uses,PT-005,supervisor_orchestrator commonly runs the orchestrator-workers pattern.,SRC-0163|SRC-0034|SRC-0166,high,2026-11-11
+RL-0644,AT-024,uses,CP-004,worker_specialist relies on planning as a core operational mechanism.,SRC-0163|SRC-0034|SRC-0037,high,2026-11-11
+RL-0645,AT-024,uses,CP-009,worker_specialist relies on stateful workflow execution as a core operational mechanism.,SRC-0163|SRC-0034|SRC-0037,high,2026-11-11
+RL-0646,AT-024,uses,PT-007,worker_specialist commonly runs the tool-calling loop pattern.,SRC-0163|SRC-0034|SRC-0037,high,2026-11-11
+RL-0647,AT-025,uses,CP-004,evaluator_critic relies on planning as a core operational mechanism.,SRC-0163|SRC-0023|SRC-0032,high,2026-11-11
+RL-0648,AT-025,uses,CP-063,evaluator_critic relies on reflection as a core operational mechanism.,SRC-0023|SRC-0163|SRC-0032,high,2026-11-11
+RL-0649,AT-025,uses,PT-006,evaluator_critic commonly runs the evaluator-optimizer pattern.,SRC-0163|SRC-0023|SRC-0032,high,2026-11-11
+RL-0650,AT-026,uses,CP-004,planner_agent relies on planning as a core operational mechanism.,SRC-0024|SRC-0016|SRC-0030,high,2026-11-11
+RL-0651,AT-026,uses,CP-009,planner_agent relies on stateful workflow execution as a core operational mechanism.,SRC-0016|SRC-0024|SRC-0030,high,2026-11-11
+RL-0652,AT-026,uses,PT-009,planner_agent commonly runs the plan-and-execute pattern.,SRC-0024|SRC-0016|SRC-0030,high,2026-11-11
+RL-0653,AT-027,uses,CP-004,router_agent relies on planning as a core operational mechanism.,SRC-0163|SRC-0034|SRC-0020,high,2026-11-11
+RL-0654,AT-027,uses,CP-009,router_agent relies on stateful workflow execution as a core operational mechanism.,SRC-0163|SRC-0034,high,2026-11-11
+RL-0655,AT-027,uses,PT-003,router_agent commonly runs the routing pattern.,SRC-0163|SRC-0034|SRC-0202,high,2026-11-11
+RL-0656,AT-028,uses,CP-004,tool_using_agent relies on planning as a core operational mechanism.,SRC-0010|SRC-0013|SRC-0151,high,2026-11-11
+RL-0657,AT-028,uses,CP-018,tool_using_agent relies on JSON Schema as a core operational mechanism.,SRC-0010|SRC-0013|SRC-0151,high,2026-11-11
+RL-0658,AT-028,uses,PT-007,tool_using_agent commonly runs the tool-calling loop pattern.,SRC-0151|SRC-0152|SRC-0010,high,2026-11-11
+RL-0659,AT-029,uses,CP-003,memory_augmented_agent relies on LLM as a core operational mechanism.,SRC-0171|SRC-0140|SRC-0141,high,2026-11-11
+RL-0660,AT-029,uses,CP-014,memory_augmented_agent relies on episodic memory as a core operational mechanism.,SRC-0171|SRC-0140|SRC-0141,high,2026-11-11
+RL-0661,AT-029,uses,PT-016,memory_augmented_agent commonly runs the memory write-back pattern.,SRC-0171|SRC-0140|SRC-0141,high,2026-11-11
+RL-0662,AT-030,uses,CP-001,embodied_robotic_agent relies on agent as a core operational mechanism.,SRC-0173|SRC-0026|SRC-0162,high,2026-11-11
+RL-0663,AT-030,uses,CP-002,embodied_robotic_agent relies on agentic AI as a core operational mechanism.,SRC-0173|SRC-0026|SRC-0163,high,2026-11-11
+RL-0664,AT-030,uses,PT-001,embodied_robotic_agent commonly runs the single call pattern.,SRC-0173|SRC-0026|SRC-0163,high,2026-11-11
+RL-0665,AT-031,uses,CP-004,swarm_agent relies on planning as a core operational mechanism.,SRC-0168|SRC-0022|SRC-0020,high,2026-11-11
+RL-0666,AT-031,uses,CP-046,swarm_agent relies on multi-agent system as a core operational mechanism.,SRC-0168|SRC-0022|SRC-0027,high,2026-11-11
+RL-0667,AT-031,uses,PT-004,swarm_agent commonly runs the parallelization pattern.,SRC-0168|SRC-0022|SRC-0163,high,2026-11-11
+RL-0668,AT-032,uses,CP-004,peer_to_peer_agent relies on planning as a core operational mechanism.,SRC-0003|SRC-0027|SRC-0020,high,2026-11-11
+RL-0669,AT-032,uses,CP-046,peer_to_peer_agent relies on multi-agent system as a core operational mechanism.,SRC-0027|SRC-0003|SRC-0160,high,2026-11-11
+RL-0670,AT-032,uses,PT-018,peer_to_peer_agent commonly runs the swarm handoff pattern.,SRC-0003|SRC-0027|SRC-0166,high,2026-11-11
+RL-0671,AT-033,uses,CP-001,reactive_agent relies on agent as a core operational mechanism.,SRC-0162|SRC-0022|SRC-0163,high,2026-11-11
+RL-0672,AT-033,uses,CP-002,reactive_agent relies on agentic AI as a core operational mechanism.,SRC-0162|SRC-0022|SRC-0163,high,2026-11-11
+RL-0673,AT-033,uses,PT-001,reactive_agent commonly runs the single call pattern.,SRC-0162|SRC-0022|SRC-0163,high,2026-11-11
+RL-0674,AT-034,uses,CP-001,deliberative_agent relies on agent as a core operational mechanism.,SRC-0162|SRC-0020|SRC-0163,high,2026-11-11
+RL-0675,AT-034,uses,CP-002,deliberative_agent relies on agentic AI as a core operational mechanism.,SRC-0162|SRC-0020|SRC-0163,high,2026-11-11
+RL-0676,AT-034,uses,PT-009,deliberative_agent commonly runs the plan-and-execute pattern.,SRC-0162|SRC-0020|SRC-0024,high,2026-11-11
+RL-0677,AT-035,uses,CP-001,hybrid_agent relies on agent as a core operational mechanism.,SRC-0162|SRC-0163,high,2026-11-11
+RL-0678,AT-035,uses,CP-002,hybrid_agent relies on agentic AI as a core operational mechanism.,SRC-0163|SRC-0162|SRC-0166,high,2026-11-11
+RL-0679,AT-035,uses,PT-001,hybrid_agent commonly runs the single call pattern.,SRC-0163|SRC-0162|SRC-0218,high,2026-11-11
+RL-0680,AT-036,uses,CP-004,autonomous_long_horizon_agent relies on planning as a core operational mechanism.,SRC-0022|SRC-0026|SRC-0163,high,2026-11-11
+RL-0681,AT-036,uses,CP-014,autonomous_long_horizon_agent relies on episodic memory as a core operational mechanism.,SRC-0022|SRC-0026|SRC-0163,high,2026-11-11
+RL-0682,AT-036,uses,PT-009,autonomous_long_horizon_agent commonly runs the plan-and-execute pattern.,SRC-0022|SRC-0026|SRC-0163,high,2026-11-11
+RL-0683,AT-037,uses,CP-004,human_in_loop_agent relies on planning as a core operational mechanism.,SRC-0034|SRC-0166|SRC-0074,high,2026-11-11
+RL-0684,AT-037,uses,CP-015,human_in_loop_agent relies on policy constraints and action bounds as a core operational mechanism.,SRC-0034|SRC-0166|SRC-0074,high,2026-11-11
+RL-0685,AT-037,uses,PT-011,human_in_loop_agent commonly runs the human approval gate pattern.,SRC-0034|SRC-0166|SRC-0074,high,2026-11-11
+RL-0686,AT-038,uses,CP-003,knowledge_base_agent relies on LLM as a core operational mechanism.,SRC-0012|SRC-0035|SRC-0057,high,2026-11-11
+RL-0687,AT-038,uses,CP-035,knowledge_base_agent relies on RAG as a core operational mechanism.,SRC-0012|SRC-0035|SRC-0057,high,2026-11-11
+RL-0688,AT-038,uses,PT-014,knowledge_base_agent commonly runs the agentic RAG pattern.,SRC-0035|SRC-0012|SRC-0057,high,2026-11-11
+RL-0689,AT-039,uses,CP-004,code_interpreter_agent relies on planning as a core operational mechanism.,SRC-0137|SRC-0167|SRC-0013,high,2026-11-11
+RL-0690,AT-039,uses,CP-009,code_interpreter_agent relies on stateful workflow execution as a core operational mechanism.,SRC-0137|SRC-0167|SRC-0013,high,2026-11-11
+RL-0691,AT-039,uses,PT-007,code_interpreter_agent commonly runs the tool-calling loop pattern.,SRC-0137|SRC-0167|SRC-0013,high,2026-11-11
+RL-0692,AT-040,uses,CP-001,multimodal_reasoning_agent relies on agent as a core operational mechanism.,SRC-0116|SRC-0150|SRC-0115,high,2026-11-11
+RL-0693,AT-040,uses,CP-008,multimodal_reasoning_agent relies on prompt as a core operational mechanism.,SRC-0116|SRC-0150|SRC-0115,high,2026-11-11
+RL-0694,AT-040,uses,PT-001,multimodal_reasoning_agent commonly runs the single call pattern.,SRC-0116|SRC-0150|SRC-0115,high,2026-11-11
+RL-0695,PT-001,uses,CP-003,The single call pattern composes LLM in its execution structure.,SRC-0163|SRC-0218|SRC-0009,high,2026-11-11
+RL-0696,PT-001,uses,CP-008,The single call pattern composes prompt in its execution structure.,SRC-0163|SRC-0218|SRC-0216,high,2026-11-11
+RL-0697,PT-002,uses,CP-019,The prompt chaining pattern composes prompt chaining in its execution structure.,SRC-0163|SRC-0217,high,2026-11-11
+RL-0698,PT-002,uses,CP-009,The prompt chaining pattern composes stateful workflow execution in its execution structure.,SRC-0163|SRC-0217|SRC-0034,high,2026-11-11
+RL-0699,PT-003,uses,CP-013,The routing pattern composes intent classification and routing in its execution structure.,SRC-0163|SRC-0202,high,2026-11-11
+RL-0700,PT-003,uses,CP-100,The routing pattern composes model routing in its execution structure.,SRC-0202|SRC-0163|SRC-0049,high,2026-11-11
+RL-0701,PT-004,uses,CP-059,The parallelization pattern composes parallel tool execution in its execution structure.,SRC-0163|SRC-0166|SRC-0151,high,2026-11-11
+RL-0702,PT-004,uses,CP-045,The parallelization pattern composes orchestration in its execution structure.,SRC-0163|SRC-0166|SRC-0034,high,2026-11-11
+RL-0703,PT-005,uses,CP-047,The orchestrator-workers pattern composes orchestrator and workers in its execution structure.,SRC-0163|SRC-0213,high,2026-11-11
+RL-0704,PT-005,uses,CP-046,The orchestrator-workers pattern composes multi-agent system in its execution structure.,SRC-0163|SRC-0213|SRC-0027,high,2026-11-11
+RL-0705,PT-006,uses,CP-063,The evaluator-optimizer pattern composes reflection in its execution structure.,SRC-0023|SRC-0163|SRC-0015,high,2026-11-11
+RL-0706,PT-006,uses,CP-083,The evaluator-optimizer pattern composes LLM-as-judge in its execution structure.,SRC-0163|SRC-0023|SRC-0032,high,2026-11-11
+RL-0707,PT-007,uses,CP-022,The tool-calling loop pattern composes tool calling in its execution structure.,SRC-0151|SRC-0152|SRC-0163,high,2026-11-11
+RL-0708,PT-007,uses,CP-058,The tool-calling loop pattern composes tool schema contract in its execution structure.,SRC-0151|SRC-0152|SRC-0163,high,2026-11-11
+RL-0709,PT-008,uses,CP-060,The ReAct loop pattern composes ReAct in its execution structure.,SRC-0010,high,2026-11-11
+RL-0710,PT-008,uses,CP-022,The ReAct loop pattern composes tool calling in its execution structure.,SRC-0010|SRC-0013|SRC-0151,high,2026-11-11
+RL-0711,PT-009,uses,CP-004,The plan-and-execute pattern composes planning in its execution structure.,SRC-0024|SRC-0034|SRC-0020,high,2026-11-11
+RL-0712,PT-009,uses,CP-009,The plan-and-execute pattern composes stateful workflow execution in its execution structure.,SRC-0034|SRC-0024|SRC-0163,high,2026-11-11
+RL-0713,PT-010,uses,CP-063,The reflection loop pattern composes reflection in its execution structure.,SRC-0023|SRC-0030|SRC-0015,high,2026-11-11
+RL-0714,PT-010,uses,CP-131,The reflection loop pattern composes episodic reflection and self-correction in its execution structure.,SRC-0023|SRC-0030,high,2026-11-11
+RL-0715,PT-011,uses,CP-078,The human approval gate pattern composes approval gate in its execution structure.,SRC-0163|SRC-0244,high,2026-11-11
+RL-0716,PT-011,uses,CP-016,The human approval gate pattern composes human-in-the-loop in its execution structure.,SRC-0244|SRC-0163|SRC-0074,high,2026-11-11
+RL-0717,PT-012,uses,CP-092,The fallback chain pattern composes fallbacks in its execution structure.,SRC-0049|SRC-0221,high,2026-11-11
+RL-0718,PT-012,uses,CP-093,The fallback chain pattern composes rate limiting in its execution structure.,SRC-0049|SRC-0221,high,2026-11-11
+RL-0719,PT-013,uses,CP-021,The map-reduce summarization pattern composes context window in its execution structure.,SRC-0213|SRC-0163|SRC-0208,high,2026-11-11
+RL-0720,PT-013,uses,CP-038,The map-reduce summarization pattern composes chunking in its execution structure.,SRC-0163|SRC-0213|SRC-0058,high,2026-11-11
+RL-0721,PT-014,uses,CP-035,The agentic RAG pattern composes RAG in its execution structure.,SRC-0035|SRC-0015|SRC-0012,high,2026-11-11
+RL-0722,PT-014,uses,CP-040,The agentic RAG pattern composes hybrid search in its execution structure.,SRC-0015|SRC-0035|SRC-0235,high,2026-11-11
+RL-0723,PT-015,uses,CP-136,The corrective RAG pattern composes corrective retrieval in its execution structure.,SRC-0019|SRC-0015,high,2026-11-11
+RL-0724,PT-015,uses,CP-035,The corrective RAG pattern composes RAG in its execution structure.,SRC-0019|SRC-0015|SRC-0012,high,2026-11-11
+RL-0725,PT-016,uses,CP-029,The memory write-back pattern composes memory write-back in its execution structure.,SRC-0140|SRC-0171|SRC-0196,high,2026-11-11
+RL-0726,PT-016,uses,CP-014,The memory write-back pattern composes episodic memory in its execution structure.,SRC-0196|SRC-0140|SRC-0171,high,2026-11-11
+RL-0727,PT-017,uses,CP-048,The supervisor pattern composes supervisor in its execution structure.,SRC-0034|SRC-0166,high,2026-11-11
+RL-0728,PT-017,uses,CP-046,The supervisor pattern composes multi-agent system in its execution structure.,SRC-0034|SRC-0166|SRC-0027,high,2026-11-11
+RL-0729,PT-018,uses,CP-049,The swarm handoff pattern composes handoff in its execution structure.,SRC-0166|SRC-0168,high,2026-11-11
+RL-0730,PT-018,uses,CP-051,The swarm handoff pattern composes swarm coordination in its execution structure.,SRC-0166|SRC-0168|SRC-0027,high,2026-11-11
+RL-0731,PT-019,uses,CP-121,The debate or critic pattern composes multi-agent debate in its execution structure.,SRC-0210|SRC-0027,high,2026-11-11
+RL-0732,PT-019,uses,CP-063,The debate or critic pattern composes reflection in its execution structure.,SRC-0210|SRC-0027|SRC-0023,high,2026-11-11
+RL-0733,PT-020,uses,CP-066,The guardrail wrapper pattern composes guardrails in its execution structure.,SRC-0093|SRC-0094|SRC-0168,high,2026-11-11
+RL-0734,PT-020,uses,CP-075,The guardrail wrapper pattern composes output validation in its execution structure.,SRC-0093|SRC-0094|SRC-0168,high,2026-11-11
+RL-0735,PT-021,uses,CP-030,The sandboxed code execution pattern composes sandboxing in its execution structure.,SRC-0137|SRC-0232|SRC-0233,high,2026-11-11
+RL-0736,PT-021,uses,CP-025,The sandboxed code execution pattern composes code execution by agents in its execution structure.,SRC-0137|SRC-0232|SRC-0098,high,2026-11-11
+RL-0737,PT-022,uses,CP-017,The structured output enforcement pattern composes structured output in its execution structure.,SRC-0051|SRC-0218,high,2026-11-11
+RL-0738,PT-022,uses,CP-018,The structured output enforcement pattern composes JSON Schema in its execution structure.,SRC-0218|SRC-0051|SRC-0005,high,2026-11-11
+RL-0739,PT-023,uses,CP-109,The episodic context compaction pattern composes context compaction in its execution structure.,SRC-0213|SRC-0171,high,2026-11-11
+RL-0740,PT-023,uses,CP-110,The episodic context compaction pattern composes tool-result clearing in its execution structure.,SRC-0213|SRC-0171,high,2026-11-11
+RL-0741,PT-024,uses,CP-062,The deliberative search and backtracking pattern composes tree search reasoning in its execution structure.,SRC-0020|SRC-0030,high,2026-11-11
+RL-0742,PT-024,uses,CP-004,The deliberative search and backtracking pattern composes planning in its execution structure.,SRC-0020|SRC-0030|SRC-0024,high,2026-11-11
+RL-0743,PT-025,uses,CP-023,The dynamic tool selection pattern composes tool registry in its execution structure.,SRC-0001|SRC-0138|SRC-0213,high,2026-11-11
+RL-0744,PT-025,uses,CP-058,The dynamic tool selection pattern composes tool schema contract in its execution structure.,SRC-0001|SRC-0138|SRC-0213,high,2026-11-11
+RL-0745,PT-026,uses,CP-014,The hybrid memory retrieval pattern composes episodic memory in its execution structure.,SRC-0172|SRC-0196|SRC-0140,high,2026-11-11
+RL-0746,PT-026,uses,CP-032,The hybrid memory retrieval pattern composes long-term memory in its execution structure.,SRC-0196|SRC-0140|SRC-0172,high,2026-11-11
+RL-0747,PT-027,uses,CP-042,The cited evidence synthesis pattern composes citation in its execution structure.,SRC-0215|SRC-0042|SRC-0015,high,2026-11-11
+RL-0748,PT-027,uses,CP-043,The cited evidence synthesis pattern composes grounding in its execution structure.,SRC-0215|SRC-0042|SRC-0015,high,2026-11-11
+RL-0749,PT-028,uses,CP-035,The hybrid search with reranking pattern composes RAG in its execution structure.,SRC-0235|SRC-0236|SRC-0237,high,2026-11-11
+RL-0750,PT-028,uses,CP-039,The hybrid search with reranking pattern composes reranking in its execution structure.,SRC-0237|SRC-0235|SRC-0236,high,2026-11-11
+RL-0751,PT-029,uses,CP-076,The hypothesis generation and critic pattern composes multi-source research synthesis in its execution structure.,SRC-0176|SRC-0210|SRC-0215,high,2026-11-11
+RL-0752,PT-029,uses,CP-063,The hypothesis generation and critic pattern composes reflection in its execution structure.,SRC-0210|SRC-0176|SRC-0023,high,2026-11-11
+RL-0753,PT-030,uses,CP-083,The automated judge verification pattern composes LLM-as-judge in its execution structure.,SRC-0032|SRC-0069|SRC-0224,high,2026-11-11
+RL-0754,PT-030,uses,CP-081,The automated judge verification pattern composes evaluation in its execution structure.,SRC-0224|SRC-0032|SRC-0069,high,2026-11-11
+RL-0755,PT-031,uses,CP-015,The action scope and policy enforcement pattern composes policy constraints and action bounds in its execution structure.,SRC-0181|SRC-0182|SRC-0232,high,2026-11-11
+RL-0756,PT-031,uses,CP-071,The action scope and policy enforcement pattern composes least privilege in its execution structure.,SRC-0232|SRC-0181|SRC-0182,high,2026-11-11
+RL-0757,PT-032,uses,CP-055,The peer discovery and protocol delegation pattern composes A2A in its execution structure.,SRC-0003|SRC-0156,high,2026-11-11
+RL-0758,PT-032,uses,CP-056,The peer discovery and protocol delegation pattern composes agent card in its execution structure.,SRC-0003|SRC-0156,high,2026-11-11
+RL-0759,PT-033,uses,CP-034,The procedural skill reuse pattern composes procedural memory in its execution structure.,SRC-0026|SRC-0196,high,2026-11-11
+RL-0760,PT-033,uses,CP-032,The procedural skill reuse pattern composes long-term memory in its execution structure.,SRC-0196|SRC-0026|SRC-0171,high,2026-11-11
+RL-0761,PT-034,uses,CP-051,The shared blackboard collaboration pattern composes swarm coordination in its execution structure.,SRC-0027|SRC-0160|SRC-0166,high,2026-11-11
+RL-0762,PT-034,uses,CP-046,The shared blackboard collaboration pattern composes multi-agent system in its execution structure.,SRC-0027|SRC-0160|SRC-0212,high,2026-11-11
+RL-0763,PT-035,uses,CP-128,The durable checkpointed execution pattern composes durable execution in its execution structure.,SRC-0186|SRC-0187|SRC-0245,high,2026-11-11
+RL-0764,PT-035,uses,CP-104,The durable checkpointed execution pattern composes long-horizon task in its execution structure.,SRC-0186|SRC-0187|SRC-0245,high,2026-11-11
+RL-0765,FW-001,uses,CP-022,LangChain directly supports workflows built around tool calling.,SRC-0033|SRC-0081|SRC-0013,high,2026-11-11
+RL-0766,FW-001,uses,PS-003,LangChain parses OpenAPI specifications to expose REST APIs as agent tools.,SRC-0033|SRC-0081|SRC-0004,high,2026-11-11
+RL-0767,FW-002,uses,CP-009,LangGraph directly supports workflows built around stateful workflow execution.,SRC-0034|SRC-0087|SRC-0163,high,2026-11-11
+RL-0768,FW-003,uses,CP-035,LlamaIndex directly supports workflows built around RAG.,SRC-0035|SRC-0082|SRC-0012,high,2026-11-11
+RL-0769,FW-003,uses,PS-003,LlamaIndex parses OpenAPI specifications to expose REST APIs as agent tools.,SRC-0035|SRC-0082|SRC-0004,high,2026-11-11
+RL-0770,FW-004,uses,CP-050,AutoGen directly supports workflows built around agent state management.,SRC-0036|SRC-0083|SRC-0160,high,2026-11-11
+RL-0771,FW-005,uses,CP-050,CrewAI directly supports workflows built around agent state management.,SRC-0037|SRC-0084|SRC-0034,high,2026-11-11
+RL-0772,FW-006,uses,CP-022,Semantic Kernel directly supports workflows built around tool calling.,SRC-0038|SRC-0085|SRC-0013,high,2026-11-11
+RL-0773,FW-006,uses,PS-003,Semantic Kernel parses OpenAPI specifications to expose REST APIs as agent tools.,SRC-0038|SRC-0085|SRC-0004,high,2026-11-11
+RL-0774,FW-007,uses,CP-035,Haystack directly supports workflows built around RAG.,SRC-0039|SRC-0086|SRC-0012,high,2026-11-11
+RL-0775,FW-008,uses,CP-008,DSPy directly supports workflows built around prompt.,SRC-0050|SRC-0088|SRC-0216,high,2026-11-11
+RL-0776,FW-009,uses,CP-017,PydanticAI directly supports workflows built around structured output.,SRC-0052|SRC-0096|SRC-0051,high,2026-11-11
+RL-0777,FW-010,uses,CP-022,Agno directly supports workflows built around tool calling.,SRC-0053|SRC-0097|SRC-0013,high,2026-11-11
+RL-0778,FW-011,uses,CP-022,smolagents directly supports workflows built around tool calling.,SRC-0054|SRC-0098|SRC-0013,high,2026-11-11
+RL-0779,FW-012,uses,CP-032,Phidata directly supports workflows built around long-term memory.,SRC-0055|SRC-0053|SRC-0097,high,2026-11-11
+RL-0780,FW-012,uses,CP-035,Phidata applies RAG in its runtime capabilities.,SRC-0055|SRC-0053|SRC-0097,high,2026-11-11
+RL-0781,FW-013,uses,CP-022,OpenAI Assistants API directly supports workflows built around tool calling.,SRC-0040|SRC-0158|SRC-0170,high,2026-11-11
+RL-0782,FW-013,uses,CP-031,OpenAI Assistants API applies short-term memory in its runtime capabilities.,SRC-0040|SRC-0158|SRC-0170,high,2026-11-11
+RL-0783,FW-014,uses,CP-045,Prefect directly supports workflows built around orchestration.,SRC-0184|SRC-0185|SRC-0034,high,2026-11-11
+RL-0784,FW-015,uses,CP-108,Temporal directly supports workflows built around retries.,SRC-0186|SRC-0187|SRC-0221,high,2026-11-11
+RL-0785,FW-016,uses,CP-036,Pinecone directly supports workflows built around embeddings.,SRC-0056|SRC-0012|SRC-0057,high,2026-11-11
+RL-0786,FW-017,uses,CP-036,Weaviate directly supports workflows built around embeddings.,SRC-0057|SRC-0012|SRC-0056,high,2026-11-11
+RL-0787,FW-018,uses,CP-036,Chroma directly supports workflows built around embeddings.,SRC-0058|SRC-0089|SRC-0012,high,2026-11-11
+RL-0788,FW-019,uses,CP-036,Qdrant directly supports workflows built around embeddings.,SRC-0059|SRC-0090|SRC-0012,high,2026-11-11
+RL-0789,FW-020,uses,CP-036,Milvus directly supports workflows built around embeddings.,SRC-0060|SRC-0091|SRC-0012,high,2026-11-11
+RL-0790,FW-021,uses,CP-036,pgvector directly supports workflows built around embeddings.,SRC-0061|SRC-0012|SRC-0056,high,2026-11-11
+RL-0791,FW-022,uses,CP-036,Redis Vector directly supports workflows built around embeddings.,SRC-0062|SRC-0012|SRC-0056,high,2026-11-11
+RL-0792,FW-023,uses,CP-036,OpenSearch kNN directly supports workflows built around embeddings.,SRC-0063|SRC-0012|SRC-0056,high,2026-11-11
+RL-0793,FW-024,uses,CP-086,LangSmith directly supports workflows built around observability.,SRC-0064|SRC-0007|SRC-0145,high,2026-11-11
+RL-0794,FW-025,uses,CP-086,Weights & Biases directly supports workflows built around observability.,SRC-0065|SRC-0007|SRC-0064,high,2026-11-11
+RL-0795,FW-026,uses,CP-086,Arize Phoenix directly supports workflows built around observability.,SRC-0066|SRC-0007|SRC-0064,high,2026-11-11
+RL-0796,FW-027,uses,CP-086,Langfuse directly supports workflows built around observability.,SRC-0145|SRC-0072|SRC-0007,high,2026-11-11
+RL-0797,FW-028,uses,CP-086,AgentOps directly supports workflows built around observability.,SRC-0148|SRC-0007|SRC-0064,high,2026-11-11
+RL-0798,FW-029,uses,CP-086,Helicone directly supports workflows built around observability.,SRC-0071|SRC-0007|SRC-0064,high,2026-11-11
+RL-0799,FW-030,uses,CP-086,Braintrust directly supports workflows built around observability.,SRC-0149|SRC-0007|SRC-0064,high,2026-11-11
+RL-0800,FW-031,uses,CP-083,Ragas directly supports workflows built around LLM-as-judge.,SRC-0067|SRC-0092|SRC-0032,high,2026-11-11
+RL-0801,FW-032,uses,CP-083,TruLens directly supports workflows built around LLM-as-judge.,SRC-0068|SRC-0032|SRC-0067,high,2026-11-11
+RL-0802,FW-033,uses,CP-083,DeepEval directly supports workflows built around LLM-as-judge.,SRC-0069|SRC-0032|SRC-0067,high,2026-11-11
+RL-0803,FW-034,uses,CP-066,Guardrails AI directly supports workflows built around guardrails.,SRC-0093|SRC-0144|SRC-0094,high,2026-11-11
+RL-0804,FW-035,uses,CP-066,NeMo Guardrails directly supports workflows built around guardrails.,SRC-0094|SRC-0143|SRC-0093,high,2026-11-11
+RL-0805,FW-036,uses,CP-032,Mem0 directly supports workflows built around long-term memory.,SRC-0140|SRC-0171|SRC-0196,high,2026-11-11
+RL-0806,FW-037,uses,CP-031,Zep directly supports workflows built around short-term memory.,SRC-0141|SRC-0171|SRC-0196,high,2026-11-11
+RL-0807,FW-038,uses,CP-032,LangMem directly supports workflows built around long-term memory.,SRC-0142|SRC-0171|SRC-0196,high,2026-11-11
+RL-0808,FW-039,uses,CP-003,vLLM directly supports workflows built around LLM.,SRC-0048|SRC-0009|SRC-0025,high,2026-11-11
+RL-0809,FW-040,uses,CP-003,Ollama directly supports workflows built around LLM.,SRC-0047|SRC-0009|SRC-0025,high,2026-11-11
+RL-0810,FW-041,uses,CP-003,LiteLLM directly supports workflows built around LLM.,SRC-0049|SRC-0009|SRC-0025,high,2026-11-11
+RL-0811,FW-042,uses,CP-003,Groq directly supports workflows built around LLM.,SRC-0131|SRC-0009|SRC-0025,high,2026-11-11
+RL-0812,FW-042,uses,CP-088,Groq applies latency in its runtime capabilities.,SRC-0131|SRC-0048|SRC-0169,high,2026-11-11
+RL-0813,FW-043,uses,CP-003,Together AI directly supports workflows built around LLM.,SRC-0132|SRC-0009|SRC-0025,high,2026-11-11
+RL-0814,FW-043,uses,CP-094,Together AI applies fine-tuning in its runtime capabilities.,SRC-0132|SRC-0203|SRC-0222,high,2026-11-11
+RL-0815,FW-044,uses,CP-003,Fireworks AI directly supports workflows built around LLM.,SRC-0133|SRC-0009|SRC-0025,high,2026-11-11
+RL-0816,FW-044,uses,CP-022,Fireworks AI applies tool calling in its runtime capabilities.,SRC-0133|SRC-0013|SRC-0151,high,2026-11-11
+RL-0817,FW-045,uses,CP-003,Replicate directly supports workflows built around LLM.,SRC-0134|SRC-0009|SRC-0025,high,2026-11-11
+RL-0818,FW-045,uses,CP-097,Replicate applies multimodal in its runtime capabilities.,SRC-0134|SRC-0116|SRC-0208,high,2026-11-11
+RL-0819,FW-046,uses,CP-025,Modal directly supports workflows built around code execution by agents.,SRC-0139|SRC-0098|SRC-0137,high,2026-11-11
+RL-0820,FW-047,uses,CP-026,Browser Use directly supports workflows built around browser automation.,SRC-0135|SRC-0136|SRC-0200,high,2026-11-11
+RL-0821,FW-048,uses,CP-026,Playwright directly supports workflows built around browser automation.,SRC-0136|SRC-0135|SRC-0200,high,2026-11-11
+RL-0822,FW-049,uses,CP-025,E2B directly supports workflows built around code execution by agents.,SRC-0137|SRC-0098|SRC-0174,high,2026-11-11
+RL-0823,FW-050,uses,CP-022,Composio directly supports workflows built around tool calling.,SRC-0138|SRC-0013|SRC-0151,high,2026-11-11
+RL-0824,FW-051,uses,CP-017,Instructor directly supports workflows built around structured output.,SRC-0051|SRC-0095|SRC-0218,high,2026-11-11
+RL-0825,FW-052,uses,CP-008,LangChain Hub directly supports workflows built around prompt.,SRC-0064|SRC-0192|SRC-0216,high,2026-11-11
+RL-0826,FW-052,uses,CP-020,LangChain Hub applies system prompt in its runtime capabilities.,SRC-0064|SRC-0192|SRC-0216,high,2026-11-11
+RL-0827,FW-053,uses,CP-035,Unstructured directly supports workflows built around RAG.,SRC-0193|SRC-0194|SRC-0012,high,2026-11-11
+RL-0828,FW-054,uses,CP-035,LlamaHub directly supports workflows built around RAG.,SRC-0035|SRC-0082|SRC-0195,high,2026-11-11
+RL-0829,FW-054,uses,CP-044,LlamaHub applies document parsing and ingestion in its runtime capabilities.,SRC-0035|SRC-0082|SRC-0195,high,2026-11-11
+RL-0830,FW-054,uses,PS-003,LlamaHub parses OpenAPI specifications to expose REST APIs as agent tools.,SRC-0035|SRC-0082|SRC-0195,high,2026-11-11
+RL-0831,FW-055,uses,CP-003,BentoML directly supports workflows built around LLM.,SRC-0146|SRC-0009|SRC-0025,high,2026-11-11
+RL-0832,PS-001,uses,PS-012,Remote MCP servers use Server-Sent Events to push asynchronous notifications and stream progress.,SRC-0001|SRC-0002|SRC-0238,high,2026-11-11
+RL-0833,PS-001,uses,PS-014,MCP remote HTTP authentication uses RFC 9728 metadata for dynamic authorization server discovery.,SRC-0238|SRC-0001|SRC-0002,high,2026-11-11
+RL-0834,FW-042,uses,PS-008,Groq inference endpoints expose an OpenAI-compatible function calling and chat contract.,SRC-0131|SRC-0151|SRC-0043,high,2026-11-11
+RL-0835,FW-043,uses,PS-008,Together AI exposes OpenAI-compatible function calling and chat APIs for open-weights models.,SRC-0132|SRC-0151|SRC-0043,high,2026-11-11
+RL-0836,FW-044,uses,PS-004,Fireworks AI enforces JSON Schema grammars during fast structured generation.,SRC-0133|SRC-0005|SRC-0218,high,2026-11-11
+RL-0837,FW-045,uses,PS-003,Replicate describes versioned hosted model APIs using OpenAPI schema definitions.,SRC-0134|SRC-0004,high,2026-11-11
+RL-0838,CP-105,uses,CP-058,"Agent-computer interfaces rely on structured tool schemas for editor, search, and shell actions.",SRC-0174|SRC-0165|SRC-0001,high,2026-11-11
+RL-0839,CP-027,uses,CP-012,Computer-use loops rely on visual perception of rendered GUI screenshots.,SRC-0164|SRC-0198|SRC-0208,high,2026-11-11
+RL-0840,CP-135,uses,CP-128,Asynchronous background agents use durable execution checkpoints across long unattended runs.,SRC-0186|SRC-0189|SRC-0190,high,2026-11-11
+RL-0841,CP-076,uses,CP-035,Multi-source research synthesis combines retrieval pipelines with recursive subquery verification.,SRC-0176|SRC-0215|SRC-0012,high,2026-11-11
+RL-0842,CP-065,uses,CP-008,Zero-shot and few-shot prompting configure task conditioning inside model prompts.,SRC-0209|SRC-0217|SRC-0216,high,2026-11-11
+RL-0843,CP-005,uses,CP-006,Adaptive agent learning uses utility and reward optimization signals to refine behavior.,SRC-0162|SRC-0030|SRC-0023,high,2026-11-11
+RL-0844,CP-102,uses,CP-015,Autonomy levels balance capability freedom against explicit policy constraints and human bounds.,SRC-0075|SRC-0207|SRC-0181,high,2026-11-11
+RL-0845,CP-094,uses,CP-082,Fine-tuning relies on curated golden evaluation sets to verify behavior shifts after training.,SRC-0203|SRC-0222|SRC-0242,high,2026-11-11
+RL-0846,CP-077,uses,CP-120,Red-teaming harnesses use sandboxed simulations to test adversarial attacks safely.,SRC-0225|SRC-0226|SRC-0017,high,2026-11-11
+RL-0847,CP-052,uses,CP-017,Document information extraction outputs typed records via structured JSON generation.,SRC-0218|SRC-0175|SRC-0051,high,2026-11-11
+RL-0848,AT-001,contrasts_with,AT-034,Simple reflex agents act on immediate state rules whereas deliberative agents search explicit internal plans.,SRC-0162|SRC-0020,high,2026-11-11
+RL-0849,AT-021,contrasts_with,AT-032,Hierarchical agents coordinate top-down delegation whereas peer-to-peer agents negotiate horizontally.,SRC-0034|SRC-0160|SRC-0166,high,2026-11-11
+RL-0850,AT-006,contrasts_with,AT-020,Conversational agents focus on interactive turn sessions while long-horizon agents manage multi-step asynchronous plans.,SRC-0041|SRC-0043|SRC-0178,high,2026-11-11
+RL-0851,PT-002,contrasts_with,PT-008,Prompt chaining fixes deterministic sequences whereas ReAct loops dynamically adjust next actions from observations.,SRC-0163|SRC-0217|SRC-0010,high,2026-11-11
+RL-0852,PT-005,contrasts_with,PT-018,Orchestrator-workers retain centralized planning control whereas swarm handoffs pass execution peer-to-peer.,SRC-0163|SRC-0213|SRC-0166,high,2026-11-11
+RL-0853,PT-001,contrasts_with,PT-024,Single-call generation answers in one forward pass whereas deliberative tree search explores branching alternatives.,SRC-0163|SRC-0218|SRC-0020,high,2026-11-11
+RL-0854,CP-035,contrasts_with,CP-094,RAG injects dynamic external facts at query time whereas fine-tuning updates model weights to internalize style or domain patterns.,SRC-0012|SRC-0035|SRC-0203,high,2026-11-11
+RL-0855,CP-031,contrasts_with,CP-032,Short-term memory holds transient session context while long-term memory persists facts across independent threads.,SRC-0171|SRC-0196|SRC-0245,high,2026-11-11
+RL-0856,CP-033,contrasts_with,CP-014,Semantic memory stores timeless conceptual knowledge whereas episodic memory captures time-stamped event logs.,SRC-0196|SRC-0245|SRC-0172,high,2026-11-11
+RL-0857,CP-040,contrasts_with,CP-039,Hybrid search fuses parallel first-stage retrievers whereas reranking scores a retrieved shortlist with deeper attention.,SRC-0235|SRC-0236|SRC-0237,high,2026-11-11
+RL-0858,CP-024,contrasts_with,CP-008,Context engineering curates full dynamic context state including history and tools beyond static prompt wording.,SRC-0213|SRC-0216|SRC-0220,high,2026-11-11
+RL-0859,CP-095,contrasts_with,CP-112,Distillation trains smaller standalone student models whereas LoRA adapts an existing model via low-rank weight updates.,SRC-0205|SRC-0222|SRC-0203,high,2026-11-11
+RL-0860,CP-113,contrasts_with,CP-096,Reasoning models invest extra test-time tokens for hard logic whereas small language models optimize fast compact inference.,SRC-0030|SRC-0163|SRC-0047,high,2026-11-11
+RL-0861,CP-060,contrasts_with,CP-062,ReAct interleaves linear single-path reasoning and acting whereas tree search evaluates multiple candidate branches.,SRC-0010|SRC-0020|SRC-0030,high,2026-11-11
+RL-0862,CP-091,contrasts_with,CP-116,Prompt caching reuses exact token prefixes whereas semantic caching matches near-duplicate meanings via embeddings.,SRC-0214|SRC-0219|SRC-0062,high,2026-11-11
+RL-0863,CP-135,contrasts_with,CP-053,Asynchronous background agents execute unblocked tasks offline while guided multi-turn workflows co-drive with live users.,SRC-0186|SRC-0189|SRC-0190,high,2026-11-11
+RL-0864,CP-001,contrasts_with,CP-002,Agent names the autonomous software entity whereas agentic AI characterizes broader goal-directed adaptive system design.,SRC-0163|SRC-0162|SRC-0166,high,2026-11-11
+RL-0865,CP-054,contrasts_with,CP-055,MCP standardizes vertical model-to-tool connections while A2A standardizes horizontal peer agent-to-agent coordination.,SRC-0001|SRC-0002|SRC-0238,high,2026-11-11
+RL-0866,PS-001,contrasts_with,PS-002,MCP specifies client-server tool integration while A2A governs cross-vendor agent task handoffs and capability cards.,SRC-0001|SRC-0002|SRC-0238,high,2026-11-11
+RL-0867,PS-012,contrasts_with,PS-011,Server-Sent Events stream one-way HTTP updates whereas WebSockets maintain bidirectional full-duplex sockets.,SRC-0230|SRC-0228|SRC-0169,high,2026-11-11
+RL-0868,PS-005,contrasts_with,PS-006,OAuth 2.0 permits legacy implicit flows whereas OAuth 2.1 requires PKCE and tightens redirect validation.,SRC-0006|SRC-0008|SRC-0238,high,2026-11-11
+RL-0869,FW-002,contrasts_with,FW-013,LangGraph templates superseded archived OpenGPTs as flexible open-source alternatives to the retired OpenAI Assistants API.,SRC-0034|SRC-0147|SRC-0170|SRC-0087,high,2026-11-11
+RL-0870,FW-010,contrasts_with,FW-012,Agno is the actively maintained Apache-2.0 successor replacing the rebranded legacy Phidata framework.,SRC-0053|SRC-0097|SRC-0055,high,2026-11-11
+RL-0871,FW-015,contrasts_with,FW-014,Temporal enforces deterministic event-sourced replay for durable workflows while Prefect focuses on dynamic Python DAG task orchestration.,SRC-0186|SRC-0187|SRC-0184,high,2026-11-11
+RL-0872,FW-018,contrasts_with,FW-020,Chroma optimizes lightweight embedded local prototyping whereas Milvus targets distributed multi-node vector clusters.,SRC-0058|SRC-0089|SRC-0060,high,2026-11-11
+RL-0873,FW-039,contrasts_with,FW-040,vLLM focuses on high-throughput multi-tenant GPU serving whereas Ollama emphasizes simple local desktop and edge runtime UX.,SRC-0048|SRC-0047,high,2026-11-11
+RL-0874,EV-010,contrasts_with,EV-012,LLM-as-judge uses flexible model rubrics whereas deterministic verification checks exact state assertions and unit tests.,SRC-0224|SRC-0032|SRC-0018,high,2026-11-11
+RL-0875,CP-121,contrasts_with,CP-064,Multi-agent debate critiques reasoning across diverse agent perspectives whereas self-consistency votes over single-model samples.,SRC-0210|SRC-0027|SRC-0021,high,2026-11-11
+RL-0876,CP-068,contrasts_with,CP-069,Direct prompt injection originates in user turns while indirect injection arrives embedded inside retrieved third-party data.,SRC-0232|SRC-0073|SRC-0161,high,2026-11-11
+RL-0877,AT-033,contrasts_with,AT-035,Pure reactive agents bypass deliberative world models while hybrid agents combine fast reactive guards with slow planning loops.,SRC-0162|SRC-0022|SRC-0163,high,2026-11-11
+RL-0878,EV-017,example_of,CP-084,SWE-bench serves as a primary real-repository benchmark for autonomous coding evaluation.,SRC-0018|SRC-0174|SRC-0017,high,2026-11-11
+RL-0879,EV-018,example_of,CP-084,"GAIA exemplifies a generalist assistant benchmark spanning web search, files, and reasoning.",SRC-0197|SRC-0017|SRC-0018,high,2026-11-11
+RL-0880,EV-019,example_of,CP-084,OSWorld exemplifies an execution-grounded desktop computer-use benchmark.,SRC-0198|SRC-0017|SRC-0018,high,2026-11-11
+RL-0881,EV-020,example_of,CP-084,tau-bench exemplifies a stochastic multi-turn tool-policy consistency benchmark.,SRC-0199|SRC-0017|SRC-0018,high,2026-11-11
+RL-0882,EV-021,example_of,CP-084,WebArena exemplifies a realistic self-hosted browser agent benchmark.,SRC-0200|SRC-0017|SRC-0018,high,2026-11-11
+RL-0883,EV-022,example_of,CP-084,"AgentBench exemplifies a multi-environment benchmark spanning shell, SQL, and web tasks.",SRC-0017|SRC-0018|SRC-0197,high,2026-11-11
+RL-0884,EV-023,example_of,CP-084,Berkeley Function Calling Leaderboard exemplifies an AST schema accuracy benchmark for tool calling.,SRC-0239|SRC-0031|SRC-0017,high,2026-11-11
+RL-0885,EV-024,example_of,CP-084,MT-Bench exemplifies multi-turn conversational grading via pairwise LLM-as-judge benchmarks.,SRC-0032|SRC-0017|SRC-0018,high,2026-11-11
+RL-0886,EV-025,example_of,CP-084,HumanEval exemplifies unit-test-backed functional code synthesis benchmarking.,SRC-0122|SRC-0017|SRC-0018,high,2026-11-11
+RL-0887,EV-026,example_of,CP-084,MMLU and BIG-Bench exemplify broad knowledge and reasoning capability benchmarks.,SRC-0121|SRC-0123|SRC-0017,high,2026-11-11
+RL-0888,EV-031,example_of,CP-085,CI prompt and model regression gating exemplifies automated regression testing in agent release pipelines.,SRC-0224|SRC-0069|SRC-0159,high,2026-11-11
+RL-0889,EV-015,example_of,CP-014,LoCoMo conversational memory evaluation exemplifies empirical testing of long-term episodic recall.,SRC-0211|SRC-0196|SRC-0172,high,2026-11-11
+RL-0890,EV-016,example_of,CP-081,"HELM exemplifies holistic multi-metric evaluation combining accuracy, calibration, and robustness.",SRC-0201|SRC-0067|SRC-0224,high,2026-11-11
+RL-0891,FW-013,example_of,AT-020,The retired OpenAI Assistants API exemplified early hosted thread-managed stateful assistant runtimes.,SRC-0040|SRC-0158|SRC-0170,high,2026-11-11
+RL-0892,FW-011,example_of,AT-039,smolagents exemplifies a minimal code-interpreter agent generation loop.,SRC-0054|SRC-0098|SRC-0137,high,2026-11-11
+RL-0893,FW-047,example_of,AT-013,Browser Use exemplifies a web automation agent combining DOM inspection and vision cues.,SRC-0135|SRC-0164|SRC-0128,high,2026-11-11
+RL-0894,UC-001,example_of,AT-009,Automated first-line FAQ support exemplifies a grounded knowledge RAG customer agent.,SRC-0175|SRC-0177|SRC-0012,high,2026-11-11
+RL-0895,UC-016,example_of,AT-018,Contract clause review exemplifies a domain-specific legal vertical industry agent.,SRC-0175|SRC-0183|SRC-0177,high,2026-11-11
+RL-0896,UC-021,example_of,AT-018,Clinical documentation support exemplifies a regulated healthcare administration agent.,SRC-0175|SRC-0177,high,2026-11-11
+RL-0897,UC-027,example_of,AT-027,Fraud alert triage exemplifies high-throughput router and anomaly classification agents.,SRC-0175|SRC-0177|SRC-0163,high,2026-11-11
+RL-0898,UC-041,example_of,AT-012,Automated pull-request code review exemplifies software engineering coding agent assistance.,SRC-0165|SRC-0191|SRC-0018,high,2026-11-11
+RL-0899,UC-051,example_of,AT-017,SOC alert triage exemplifies security monitoring agents supporting human analysts.,SRC-0179|SRC-0180,high,2026-11-11
+RL-0900,UC-066,example_of,AT-011,Literature synthesis exemplifies multi-source academic research agents with inline citations.,SRC-0175|SRC-0183|SRC-0010,high,2026-11-11
+RL-0901,UC-077,example_of,AT-016,Travel itinerary booking assistance exemplifies policy-constrained transaction agents.,SRC-0175|SRC-0178|SRC-0181,high,2026-11-11
+RL-0902,UC-082,example_of,AT-008,Multilingual voice property support exemplifies audio-enabled conversational domain agents.,SRC-0175|SRC-0178|SRC-0169,high,2026-11-11
+RL-0903,CP-121,example_of,AT-025,Multi-agent debate pairs generator reasoning with adversarial evaluator-critic roles.,SRC-0210|SRC-0027|SRC-0163,high,2026-11-11
+RL-0904,CP-131,example_of,AT-005,Episodic verbal reflection exemplifies non-parametric experiential learning in agents.,SRC-0023|SRC-0030|SRC-0162,high,2026-11-11
+RL-0905,AT-019,example_of,CP-005,Simulation and game agents optimize cumulative environment reward trajectories.,SRC-0026|SRC-0172|SRC-0162,high,2026-11-11
+RL-0906,AT-014,example_of,CP-031,Personal assistant agents rely on conversation working buffers alongside cross-session preferences.,SRC-0166|SRC-0140|SRC-0171,high,2026-11-11
+RL-0907,AT-003,example_of,CP-004,Goal-based agents select action sequences dynamically via explicit forward planning.,SRC-0162|SRC-0020|SRC-0024,high,2026-11-11
+RL-0908,AT-004,example_of,CP-005,Utility-based agents rank competing feasible plans using quantitative preference functions.,SRC-0162|SRC-0030,high,2026-11-11
+RL-0909,AT-037,example_of,CP-078,Human-in-the-loop agents integrate explicit approval gates before high-impact tool calls.,SRC-0034|SRC-0166|SRC-0074,high,2026-11-11
+RL-0910,AT-038,example_of,CP-041,Knowledge-base agents combine structured knowledge graphs with hybrid retrieval pipelines.,SRC-0012|SRC-0035|SRC-0057,high,2026-11-11
+RL-0911,AT-040,example_of,AT-010,Multimodal reasoning agents extend vision perception across coordinated cross-modal tools.,SRC-0116|SRC-0150|SRC-0115,high,2026-11-11
+RL-0912,CP-104,example_of,AT-020,Long-horizon agents manage multi-hour tasks across checkpoints and external waits.,SRC-0165|SRC-0186|SRC-0197,high,2026-11-11
+RL-0913,CP-125,example_of,EV-002,Non-determinism variance motivates repeated-trial consistency metrics like pass^k.,SRC-0199|SRC-0224,high,2026-11-11
+RL-0914,CP-006,example_of,AT-005,Learning agents adapt future strategies from environment outcomes and critique feedback.,SRC-0162|SRC-0023|SRC-0026,high,2026-11-11
+RL-0915,CP-132,example_of,PS-003,Schema-first tool generation parses OpenAPI specifications directly into typed model tool calls.,SRC-0051|SRC-0052|SRC-0004,high,2026-11-11
+RL-0916,PT-033,example_of,CP-034,Procedural skill reuse stores verified executable workflows as reusable procedural memory.,SRC-0026|SRC-0196,high,2026-11-11
+RL-0917,PT-030,example_of,CP-083,Automated judge verification applies LLM-as-judge rubrics at scale over agent trajectories.,SRC-0032|SRC-0069|SRC-0224,high,2026-11-11
+RL-0918,PT-029,example_of,CP-076,Hypothesis generation and critic patterns support structured multi-source research synthesis.,SRC-0176|SRC-0210|SRC-0215,high,2026-11-11
+RL-0919,PT-023,example_of,CP-109,Episodic context compaction applies token-budget summarization within long trajectories.,SRC-0213|SRC-0171,high,2026-11-11
+RL-0920,PT-010,example_of,CP-063,Reflection loops apply self-critique iterations before returning final deliverables.,SRC-0023|SRC-0030|SRC-0015,high,2026-11-11
+RL-0921,PT-013,example_of,CP-038,Map-reduce summarization processes oversized corpora chunk-by-chunk across document partitions.,SRC-0163|SRC-0213|SRC-0058,high,2026-11-11
+RL-0922,PT-024,example_of,CP-062,Deliberative backtracking operationalizes tree search reasoning across state transitions.,SRC-0020|SRC-0030,high,2026-11-11
