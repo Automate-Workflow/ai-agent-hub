@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img">
+  <title>AI Agent Hub Logo</title>
+  <desc>Geometric hexagonal hub-and-node emblem in crimson red on a light card background.</desc>
+  <rect x="8" y="8" width="224" height="224" rx="48" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="4"/>
+  <circle cx="120" cy="120" r="82" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="2.5"/>
+  <g stroke="#B91C1C" stroke-width="4" stroke-linecap="round">
+    <line x1="120" y1="120" x2="120" y2="52"/>
+    <line x1="120" y1="120" x2="179" y2="86"/>
+    <line x1="120" y1="120" x2="179" y2="154"/>
+    <line x1="120" y1="120" x2="120" y2="188"/>
+    <line x1="120" y1="120" x2="61" y2="154"/>
+    <line x1="120" y1="120" x2="61" y2="86"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#DC2626" stroke-width="3.5">
+    <circle cx="120" cy="52" r="11"/>
+    <circle cx="179" cy="86" r="11"/>
+    <circle cx="179" cy="154" r="11"/>
+    <circle cx="120" cy="188" r="11"/>
+    <circle cx="61" cy="154" r="11"/>
+    <circle cx="61" cy="86" r="11"/>
+  </g>
+  <polygon points="120,86 150,103 150,137 120,154 90,137 90,103" fill="#B91C1C" stroke="#7F1D1D" stroke-width="3"/>
+  <circle cx="120" cy="120" r="12" fill="#FFFFFF"/>
+</svg>

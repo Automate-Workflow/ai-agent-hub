@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+  <title>Tools and Actions Icon</title>
+  <desc>Connected plug and gear bracket icon representing external tool execution.</desc>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="2"/>
+  <rect x="15" y="16" width="16" height="14" rx="4" fill="#FEE2E2" stroke="#B91C1C" stroke-width="2.5"/>
+  <path d="M31,23 H42 L48,29 V45 H22 V35" fill="none" stroke="#7F1D1D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="35" cy="40" r="4" fill="#B91C1C"/>
+</svg>

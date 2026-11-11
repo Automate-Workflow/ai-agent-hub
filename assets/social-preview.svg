@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img">
+  <title>AI Agent Hub Social Preview</title>
+  <desc>Social preview card summarizing AI Agent Hub architecture, datasets, and licensing.</desc>
+  <rect x="0" y="0" width="1280" height="640" rx="20" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <rect x="0" y="0" width="1280" height="14" fill="#B91C1C"/>
+  <rect x="64" y="62" width="232" height="34" rx="17" fill="#FEE2E2"/>
+  <text x="180" y="84" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#7F1D1D">AUTOMATE-WORKFLOW / AI-AGENT-HUB</text>
+  <text x="64" y="172" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="64" font-weight="800" fill="#111827">AI Agent Hub</text>
+  <text x="64" y="220" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#6B7280">The standalone, sourced, visual knowledge base for AI agents.</text>
+  <text x="64" y="254" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="20" fill="#6B7280">Architectures · Protocols · Design Patterns · Risks · Evals · Learning Paths</text>
+  <rect x="64" y="310" width="222" height="106" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="84" y="356" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#B91C1C">136</text>
+  <text x="84" y="382" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Core Concepts</text>
+  <text x="84" y="402" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">CP-001 to CP-136</text>
+  <rect x="304" y="310" width="222" height="106" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="324" y="356" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#B91C1C">40</text>
+  <text x="324" y="382" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Agent Types</text>
+  <text x="324" y="402" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">3 Taxonomic Views</text>
+  <rect x="544" y="310" width="222" height="106" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="564" y="356" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#B91C1C">35</text>
+  <text x="564" y="382" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Design Patterns</text>
+  <text x="564" y="402" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">Workflow to Safety</text>
+  <rect x="64" y="436" width="222" height="106" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="84" y="482" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#B91C1C">922</text>
+  <text x="84" y="508" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Knowledge Edges</text>
+  <text x="84" y="528" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">10 Typed Predicates</text>
+  <rect x="304" y="436" width="222" height="106" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="324" y="482" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#B91C1C">272</text>
+  <text x="324" y="508" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Verified Sources</text>
+  <text x="324" y="528" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">Primary &amp; Secondary</text>
+  <rect x="544" y="436" width="222" height="106" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="564" y="482" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#B91C1C">267</text>
+  <text x="564" y="508" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Curated Resources</text>
+  <text x="564" y="528" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">5 Learning Tracks</text>
+  <rect x="810" y="68" width="406" height="500" rx="18" fill="#7F1D1D"/>
+  <text x="1013" y="114" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">AGENT KNOWLEDGE STACK</text>
+  <rect x="842" y="140" width="342" height="52" rx="10" fill="#FFFFFF"/>
+  <rect x="842" y="140" width="8" height="52" rx="4" fill="#DC2626"/>
+  <text x="866" y="163" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Safety &amp; Governance</text>
+  <text x="866" y="182" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">OWASP · NIST RMF · Guardrails</text>
+  <rect x="842" y="206" width="342" height="52" rx="10" fill="#FFFFFF"/>
+  <rect x="842" y="206" width="8" height="52" rx="4" fill="#DC2626"/>
+  <text x="866" y="229" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Multi-Agent Mesh</text>
+  <text x="866" y="248" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">A2A · Supervisors · Swarms</text>
+  <rect x="842" y="272" width="342" height="52" rx="10" fill="#FFFFFF"/>
+  <rect x="842" y="272" width="8" height="52" rx="4" fill="#DC2626"/>
+  <text x="866" y="295" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Tools &amp; Protocols</text>
+  <text x="866" y="314" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">MCP · OpenAPI · JSON Schema</text>
+  <rect x="842" y="338" width="342" height="52" rx="10" fill="#FFFFFF"/>
+  <rect x="842" y="338" width="8" height="52" rx="4" fill="#DC2626"/>
+  <text x="866" y="361" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Memory &amp; Retrieval</text>
+  <text x="866" y="380" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">Hybrid RAG · Episodic · KG</text>
+  <rect x="842" y="404" width="342" height="52" rx="10" fill="#FFFFFF"/>
+  <rect x="842" y="404" width="8" height="52" rx="4" fill="#DC2626"/>
+  <text x="866" y="427" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Reasoning &amp; Control</text>
+  <text x="866" y="446" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">ReAct · CoT · Planning Loops</text>
+  <rect x="842" y="470" width="342" height="52" rx="10" fill="#FFFFFF"/>
+  <rect x="842" y="470" width="8" height="52" rx="4" fill="#DC2626"/>
+  <text x="866" y="493" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Evaluation &amp; Telemetry</text>
+  <text x="866" y="512" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6B7280">OTel · Golden Evals · pass^k</text>
+  <text x="64" y="594" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#6B7280">MIT License (Code) · CC BY 4.0 (Data &amp; Documentation) · Verified 2026-11-11</text>
+</svg>

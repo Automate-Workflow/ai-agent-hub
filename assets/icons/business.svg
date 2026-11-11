@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+  <title>Business Icon</title>
+  <desc>Value growth staircase chart icon representing enterprise adoption and commerce.</desc>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="2"/>
+  <rect x="16" y="34" width="8" height="14" rx="2" fill="#FEE2E2" stroke="#B91C1C" stroke-width="2.5"/>
+  <rect x="28" y="26" width="8" height="22" rx="2" fill="#DC2626" stroke="#B91C1C" stroke-width="2.5"/>
+  <rect x="40" y="18" width="8" height="30" rx="2" fill="#B91C1C" stroke="#7F1D1D" stroke-width="2.5"/>
+  <path d="M16,24 L29,17 L44,12" fill="none" stroke="#7F1D1D" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

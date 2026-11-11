@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 24" width="126" height="24" role="img">
+  <title>NEEDS REVIEW Badge</title>
+  <desc>Status badge for entries due for verification.</desc>
+  <rect x="0.75" y="0.75" width="124.5" height="22.5" rx="11.25" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
+  <circle cx="14" cy="12" r="4" fill="#DC2626"/>
+  <text x="24" y="16" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#7F1D1D">NEEDS REVIEW</text>
+</svg>

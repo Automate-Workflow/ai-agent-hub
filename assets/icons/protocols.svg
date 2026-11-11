@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+  <title>Protocols Icon</title>
+  <desc>Bidirectional exchange arrows representing MCP and A2A wire contracts.</desc>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="2"/>
+  <path d="M16,25 H46 L39,18" fill="none" stroke="#B91C1C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M48,39 H18 L25,46" fill="none" stroke="#7F1D1D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="16" cy="25" r="3" fill="#DC2626"/>
+  <circle cx="48" cy="39" r="3" fill="#7F1D1D"/>
+</svg>
