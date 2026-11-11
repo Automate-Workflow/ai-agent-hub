@@ -1,0 +1,51 @@
+name: Build Artifacts Check
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "docs/**"
+      - "diagrams/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Charts, Docs, and Explorer Data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate data and integrity
+        run: |
+          python scripts/validate_data.py
+          python scripts/check_integrity.py
+
+      - name: Build SVG charts and risk heatmap
+        run: |
+          python scripts/build_charts.py --output-dir "${RUNNER_TEMP}/charts" --with-risk-heatmap
+          git diff --exit-code diagrams/risk-heatmap.svg charts/
+
+      - name: Build generated markdown docs and site bundle
+        run: |
+          python scripts/build_docs.py
+          git diff --exit-code README.md docs/
+          python scripts/build_site_data.py --output-dir "${RUNNER_TEMP}/site_data"
+
+      - name: Upload built site data artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: ai-agent-hub-site-data
+          path: ${{ runner.temp }}/site_data
+          retention-days: 7

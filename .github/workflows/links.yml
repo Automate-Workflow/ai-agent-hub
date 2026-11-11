@@ -1,0 +1,36 @@
+name: Weekly Link Check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-links:
+    name: Check Referenced URLs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+
+      - name: Run link verification across sources, resources, protocols, and frameworks
+        run: |
+          python scripts/check_links.py --workers 8 --report-md "${RUNNER_TEMP}/link_report.md" --report-json "${RUNNER_TEMP}/link_report.json"
+
+      - name: Upload link check report artifact
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: link-check-report
+          path: |
+            ${{ runner.temp }}/link_report.md
+            ${{ runner.temp }}/link_report.json
+          retention-days: 14

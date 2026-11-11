@@ -293,6 +293,11 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Only print rows past their next_review_date and exit 0 if none.",
     )
+    parser.add_argument(
+        "--fail-on-warnings",
+        action="store_true",
+        help="Treat validation warnings as a failing exit code.",
+    )
     args = parser.parse_args(argv)
     ref_date = parse_iso_date(args.today)
     if not ref_date:
@@ -314,7 +319,9 @@ def main(argv: list[str] | None = None) -> int:
     print(
         f"Validation finished against {ref_date}: {len(errors)} error(s), {len(warnings)} warning(s), {len(stale)} stale."
     )
-    return 1 if errors else 0
+    if errors or (args.fail_on_warnings and warnings):
+        return 1
+    return 0
 
 
 if __name__ == "__main__":

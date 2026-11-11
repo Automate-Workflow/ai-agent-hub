@@ -3,38 +3,32 @@
 This roadmap reflects goals as of 2026-11-11. It is aspirational and subject to change based on
 community feedback, maintainer capacity, and the pace of change in the AI agent ecosystem.
 
-## Q4 2026 — Initial Launch
+## Q4 2026 — v1.0.0 Launch (Delivered)
 
-- Launch with 150+ verified sources, 120+ concepts, 35+ agent types
-- Complete all CSV datasets with relationships graph (600+ edges)
-- 13 hand-written SVG diagrams covering key landscape views
-- Generated SVG charts from CSV data
-- Interactive static explorer with search, filters, force graph, and learning path tracker
-- Full CI pipeline: validation, link checking, build, and GitHub Pages deploy
-- Policy files, dual licensing, and CITATION.cff in place
+- Launch with 272 verified sources, 136 core concepts, and 40 agent types across 3 taxonomy lenses
+- Complete all 13 relational CSV datasets (`2,065` total rows) and knowledge graph (`922` edges)
+- Author 12 master SVG architecture diagrams plus data-driven `risk-heatmap.svg`
+- Generate 8 data-driven SVG charts and 21 red-theme brand icons, badges, banner, and logo assets
+- Deliver offline zero-CDN interactive explorer with search, filters, canvas graph, and learning tracker
+- Deploy full SHA-pinned CI pipeline: validation, weekly link checking, artifact checks, and GitHub Pages
+- Establish dual licensing (`MIT` + `CC BY 4.0`), governance policies, and `CITATION.cff` (`1.0.0`)
 
 ## Q1 2027 — Community and Quality
 
-- Grow relationships graph to 500+ additional edges (1,100+ total)
-- Community contribution workflow fully operational with issue templates and reviewer rotation
-- 200+ learning resources curated across five learning paths
-- 70+ use cases covering 18+ industry sectors
-- Automated freshness review notifications for rows past `next_review_date`
-- Structured contributor recognition in CHANGELOG and README
+- Grow relationships graph toward `1,200+` typed edges connecting newly added industry patterns and benchmarks
+- Operationalize community PR workflows with automated contributor attribution in releases
+- Expand curated learning resources past `320` items including newly verified deep research tutorials
+- Enforce automated quarterly freshness alerts across `needs-review` and `90`-day tooling rows
 
-## Q2 2027 — Expanded Coverage
+## Q2 2027 — Expanded Coverage (`v1.5`)
 
-- v1.5: expanded industries and verticals in use cases dataset
-- Advanced evaluation dataset with benchmark comparisons
-- Multi-language glossary aliases (Spanish, French, Mandarin, Japanese)
-- Read-only JSON API endpoint for the full dataset, hosted on GitHub Pages
-- Peer review partnership with academic and industry contributors
+- Add sector depth across energy, telecommunications, biotech R&D, and public infrastructure use cases
+- Add comparative quantitative evaluation protocol sheets backed directly by primary peer-reviewed benchmarks
+- Introduce multi-language glossary aliases (Spanish, French, Mandarin, Japanese, Hindi)
+- Publish static paginated JSON snapshots hosted cleanly on GitHub Pages
 
-## Q3 2027 — Version 2.0
+## Q3 2027 — Version `2.0`
 
-- v2.0: major expansion with new agent categories emerging from the field
-- Advanced interactive graph with community-driven clustering and filtering
-- Integration with academic citation systems (DOI, OpenAlex, Semantic Scholar)
-- Formal contributor recognition program with attribution tiers
-- Structured external review process for high-confidence data quality
-
+- Expand emerging autonomous multi-agent settlement, formal verification, and world-model agent taxonomies
+- Add persisted custom subgraph export (SVG/JSON) inside the offline interactive explorer
+- Integrate open bibliographic DOIs and OpenAlex metadata verification into `scripts/check_links.py`

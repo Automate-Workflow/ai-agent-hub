@@ -3,9 +3,10 @@ message: "If you use this knowledge base in your research or work, please cite i
 type: dataset
 title: "AI Agent Hub"
 abstract: >
-  A structured, sourced open knowledge base about AI agent types, frameworks and tools,
-  industry use cases, and primary references. Currently in pre-release development toward
-  full dataset, diagram, and validation tooling coverage. Maintained by Automate Workflow.
+  A structured, primary-sourced, standalone open knowledge base covering AI agent types,
+  concepts, design patterns, open protocols, frameworks and tools, industry use cases,
+  safety risks, evaluations, relationship graphs, and guided learning paths.
+  Maintained by Automate Workflow.
 authors:
   - alias: "ayushcmd"
     email: "ayush_24a12res897@iitp.ac.in"
@@ -15,14 +16,17 @@ repository-code: "https://github.com/Automate-Workflow/ai-agent-hub"
 url: "https://github.com/Automate-Workflow/ai-agent-hub"
 license: MIT
 date-released: "2026-11-11"
-version: "0.1.0-dev"
+version: "1.0.0"
 keywords:
   - ai-agents
   - agentic-ai
   - knowledge-base
   - llm
+  - mcp
+  - a2a
+  - rag
   - dataset
   - open-data
   - agent-types
   - agent-frameworks
-  - ai-use-cases
+  - ai-safety
