@@ -7,14 +7,14 @@ body:
     id: file
     attributes:
       label: File
-      description: "Which file contains the broken link, e.g. data/resources.csv"
+      description: "Which file contains the broken link, e.g. data/sources.csv"
     validations:
       required: true
   - type: input
     id: row_id
     attributes:
       label: Row ID
-      description: "The ID of the row with the broken link, e.g. RL-0042"
+      description: "The ID of the row with the broken link, e.g. SRC-0042 or RES-042"
     validations:
       required: true
   - type: input
@@ -40,4 +40,3 @@ body:
       description: When did you notice the link was broken? Any relevant details about the failure.
     validations:
       required: false
-
