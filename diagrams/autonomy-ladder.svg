@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" role="img">
+  <title>The Agent Autonomy &amp; Oversight Ladder</title>
+  <desc>Staircase progression model showing autonomy levels from passive text assistance up to durable long-horizon autonomous workflows.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6B7280"/>
+    </marker>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#7F1D1D"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="640" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <rect x="0" y="0" width="1200" height="7" rx="3.5" fill="#B91C1C"/>
+  <text x="36" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827">The Agent Autonomy &amp; Oversight Ladder</text>
+  <text x="36" y="70" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#6B7280">Five progressive capability and delegation tiers balancing autonomous agency against blast radius and control gates</text>
+  <line x1="36" y1="86" x2="1164" y2="86" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="36" y="622" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280">AI Agent Hub · Verified 2026-11-11 · CC BY 4.0</text>
+  <rect x="36" y="500" width="1128" height="82" rx="10" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="56" y="530" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#7F1D1D">LEVEL 1 · SUGGEST &amp; ASSIST</text>
+  <text x="56" y="554" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#111827">Agent drafts text or code; human runs every action.</text>
+  <rect x="694" y="516" width="210" height="50" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="799" y="536" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280">TYPICAL PATTERN</text>
+  <text x="799" y="554" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#B91C1C">PT-001 · Single Call</text>
+  <rect x="918" y="516" width="226" height="50" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="1031" y="536" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280">MANDATORY SAFEGUARD</text>
+  <text x="1031" y="554" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Human copies output manually</text>
+  <rect x="72" y="404" width="1092" height="82" rx="10" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="92" y="434" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#7F1D1D">LEVEL 2 · APPROVAL-GATED ACTION</text>
+  <text x="92" y="458" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#111827">Agent prepares structured tool call; awaits signoff.</text>
+  <rect x="694" y="420" width="210" height="50" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="799" y="440" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280">TYPICAL PATTERN</text>
+  <text x="799" y="458" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#B91C1C">PT-011 · Approval Gate</text>
+  <rect x="918" y="420" width="226" height="50" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="1031" y="440" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280">MANDATORY SAFEGUARD</text>
+  <text x="1031" y="458" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Explicit write/send interrupts</text>
+  <rect x="108" y="308" width="1056" height="82" rx="10" fill="#DC2626" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="128" y="338" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#FFFFFF">LEVEL 3 · BOUNDED TOOL LOOP</text>
+  <text x="128" y="362" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#FFFFFF">Iterates read/sandboxed tools under fixed step bounds.</text>
+  <rect x="694" y="324" width="210" height="50" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="799" y="344" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280">TYPICAL PATTERN</text>
+  <text x="799" y="362" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#B91C1C">PT-008 · ReAct + Sandboxes</text>
+  <rect x="918" y="324" width="226" height="50" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="1031" y="344" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280">MANDATORY SAFEGUARD</text>
+  <text x="1031" y="362" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">OAuth scopes &amp; step budgets</text>
+  <rect x="144" y="212" width="1020" height="82" rx="10" fill="#B91C1C" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="164" y="242" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#FFFFFF">LEVEL 4 · SUPERVISED MULTI-AGENT</text>
+  <text x="164" y="266" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#FFFFFF">Supervisor orchestrates scoped workers and critics.</text>
+  <rect x="694" y="228" width="210" height="50" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="799" y="248" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280">TYPICAL PATTERN</text>
+  <text x="799" y="266" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#B91C1C">PT-017 · Supervisor Team</text>
+  <rect x="918" y="228" width="226" height="50" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="1031" y="248" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280">MANDATORY SAFEGUARD</text>
+  <text x="1031" y="266" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Isolated context &amp; audit traces</text>
+  <rect x="180" y="116" width="984" height="82" rx="10" fill="#7F1D1D" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="200" y="146" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#FFFFFF">LEVEL 5 · DURABLE LONG-HORIZON</text>
+  <text x="200" y="170" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#FFFFFF">Async event-sourced workflows with monitor controls.</text>
+  <rect x="694" y="132" width="210" height="50" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="799" y="152" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280">TYPICAL PATTERN</text>
+  <text x="799" y="170" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#B91C1C">PT-035 · Durable Execution</text>
+  <rect x="918" y="132" width="226" height="50" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="1031" y="152" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280">MANDATORY SAFEGUARD</text>
+  <text x="1031" y="170" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Circuit breakers &amp; SOC kill-switch</text>
+</svg>

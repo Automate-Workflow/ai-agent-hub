@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" role="img">
+  <title>Anatomy of a Production AI Agent</title>
+  <desc>Architectural diagram showing user ingress, prompt/memory context assembly, LLM brain, validation/approval rails, tools/MCP/sandbox execution, and telemetry spine.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6B7280"/>
+    </marker>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#7F1D1D"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="680" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <rect x="0" y="0" width="1200" height="7" rx="3.5" fill="#B91C1C"/>
+  <text x="36" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827">Anatomy of a Production AI Agent</text>
+  <text x="36" y="70" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#6B7280">End-to-end runtime architecture unifying context engineering, reasoning core, safety gates, tools, memory, and telemetry</text>
+  <line x1="36" y1="86" x2="1164" y2="86" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="36" y="662" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280">AI Agent Hub · Verified 2026-11-11 · CC BY 4.0</text>
+  <rect x="36" y="112" width="200" height="128" rx="10" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="136" y="138" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#7F1D1D">1. TRIGGERS &amp; INGRESS</text>
+  <text x="136" y="164" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">User Chat / Voice UI</text>
+  <text x="136" y="184" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Webhook / Cron Event</text>
+  <text x="136" y="204" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">A2A Peer Task (PS-002)</text>
+  <rect x="36" y="278" width="200" height="128" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+  <text x="136" y="304" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">2. INPUT GUARDRAILS</text>
+  <text x="136" y="330" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">Injection Screening</text>
+  <text x="136" y="350" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">PII Scrubbing (CP-080)</text>
+  <text x="136" y="370" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">AuthN / OIDC Claims</text>
+  <line x1="136" y1="240" x2="136" y2="274" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="276" y="112" width="316" height="408" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="434" y="138" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#7F1D1D">3. CONTEXT ASSEMBLY &amp; MEMORY</text>
+  <rect x="294" y="154" width="280" height="56" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="308" y="178" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#111827">System Instructions &amp; Policies</text>
+  <text x="308" y="198" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">CP-020 · Roles, boundaries &amp; formatting</text>
+  <rect x="294" y="224" width="280" height="56" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="308" y="248" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#111827">Working Context &amp; Compaction</text>
+  <text x="308" y="268" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">CP-031 / CP-109 · Recent turns &amp; pruned tools</text>
+  <rect x="294" y="294" width="280" height="56" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="308" y="318" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#111827">Retrieval Grounding (RAG / KG)</text>
+  <text x="308" y="338" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">CP-035 / CP-040 · Hybrid chunks + ACLs</text>
+  <rect x="294" y="364" width="280" height="56" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="308" y="388" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#111827">Episodic &amp; Semantic Stores</text>
+  <text x="308" y="408" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">CP-014 / CP-033 · Cross-session recall</text>
+  <rect x="294" y="434" width="280" height="56" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="308" y="458" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#111827">Tool Registry &amp; MCP Manifests</text>
+  <text x="308" y="478" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">CP-023 / PS-001 · Filtered typed schemas</text>
+  <line x1="236" y1="342" x2="272" y2="342" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="632" y="112" width="250" height="186" rx="12" fill="#B91C1C" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="757" y="144" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="800" fill="#FFFFFF">4. REASONING CORE</text>
+  <text x="757" y="174" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#FEE2E2">Foundation / Reasoning LLM</text>
+  <text x="757" y="198" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF">Planning (CoT / Tree Search)</text>
+  <text x="757" y="218" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF">Structured JSON Tool Calls</text>
+  <text x="757" y="238" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#FFFFFF">Model Routing &amp; Fallbacks</text>
+  <text x="757" y="272" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FEE2E2">CP-003 · CP-113 · CP-060</text>
+  <rect x="632" y="334" width="250" height="186" rx="12" fill="#FFFFFF" stroke="#B91C1C" stroke-width="2"/>
+  <text x="757" y="364" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#7F1D1D">5. VALIDATION &amp; APPROVAL</text>
+  <text x="757" y="394" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#111827">JSON Schema Contract Check</text>
+  <text x="757" y="418" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Least-Privilege Scope Guard</text>
+  <text x="757" y="442" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Human Approval Interrupt (PT-011)</text>
+  <text x="757" y="466" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Output Guardrails &amp; Citations</text>
+  <text x="757" y="496" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#B91C1C">PT-020 · PT-022 · PT-031</text>
+  <line x1="592" y1="210" x2="628" y2="210" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="757" y1="298" x2="757" y2="330" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="922" y="112" width="242" height="408" rx="12" fill="#FEF2F2" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="1043" y="138" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#7F1D1D">6. ACTION SUBSTRATES</text>
+  <rect x="938" y="154" width="210" height="56" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="950" y="178" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#111827">MCP Tool Servers</text>
+  <text x="950" y="198" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">PS-001 · Typed capabilities</text>
+  <rect x="938" y="224" width="210" height="56" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="950" y="248" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#111827">Enterprise REST / SQL</text>
+  <text x="950" y="268" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">PS-003 · OAuth 2.1 delegated</text>
+  <rect x="938" y="294" width="210" height="56" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="950" y="318" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#111827">MicroVM Code Sandbox</text>
+  <text x="950" y="338" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">CP-030 · Isolated compute</text>
+  <rect x="938" y="364" width="210" height="56" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="950" y="388" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#111827">Browser / GUI Driver</text>
+  <text x="950" y="408" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">CP-026 · DOM &amp; screen loops</text>
+  <rect x="938" y="434" width="210" height="56" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="950" y="458" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#111827">Peer Agent Handoff</text>
+  <text x="950" y="478" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">PS-002 · A2A task protocol</text>
+  <line x1="882" y1="422" x2="918" y2="422" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M 1043 112 L 1043 96 L 434 96 L 434 110" fill="none" stroke="#7F1D1D" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow-dark)"/>
+  <text x="738" y="92" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7F1D1D">OBSERVATION &amp; MEMORY WRITE-BACK FEEDBACK LOOP</text>
+  <rect x="36" y="548" width="1128" height="90" rx="12" fill="#7F1D1D" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="60" y="578" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">7. CONTINUOUS OBSERVABILITY, SECURITY &amp; EVAL SPINE</text>
+  <rect x="60" y="592" width="240" height="32" rx="7" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="180" y="612" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">OpenTelemetry Traces (CP-087)</text>
+  <rect x="318" y="592" width="232" height="32" rx="7" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="434" y="612" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Immutable Audit Log (CP-073)</text>
+  <rect x="568" y="592" width="224" height="32" rx="7" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="680" y="612" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Rate &amp; Cost Budgets (CP-089)</text>
+  <rect x="810" y="592" width="224" height="32" rx="7" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="922" y="612" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Durable Checkpoints (CP-128)</text>
+  <rect x="1052" y="592" width="92" height="32" rx="7" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="1098" y="612" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Eval CI (CP-085)</text>
+</svg>

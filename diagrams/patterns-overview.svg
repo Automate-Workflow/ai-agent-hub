@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" role="img">
+  <title>AI Agent Design Patterns Atlas (35 Patterns across 8 Categories)</title>
+  <desc>Eight-card overview grid displaying every curated pattern in data/patterns.csv grouped by category.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6B7280"/>
+    </marker>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#7F1D1D"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="1200" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <rect x="0" y="0" width="1200" height="7" rx="3.5" fill="#B91C1C"/>
+  <text x="36" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827">AI Agent Design Patterns Atlas (35 Patterns across 8 Categories)</text>
+  <text x="36" y="70" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#6B7280">Catalog organized by runtime role from single calls and RAG retrieval to safety gates and multi-agent coordination</text>
+  <line x1="36" y1="86" x2="1164" y2="86" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="36" y="1182" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280">AI Agent Hub · Verified 2026-11-11 · CC BY 4.0</text>
+  <rect x="36" y="104" width="554" height="396" rx="10" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="52" y="130" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#7F1D1D">Multi-Agent Orchestration (8)</text>
+  <rect x="50" y="142" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="158" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-005 · orchestrator-workers</text>
+  <text x="60" y="173" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Delegate dynamically determined subtasks from a central orchestrator model...</text>
+  <rect x="50" y="186" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="202" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-009 · plan-and-execute</text>
+  <text x="60" y="217" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Generate an explicit ordered multi-step plan first, then dispatch step exec...</text>
+  <rect x="50" y="230" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="246" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-017 · supervisor</text>
+  <text x="60" y="261" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Route turns repeatedly through a central supervisor agent that selects whic...</text>
+  <rect x="50" y="274" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="290" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-018 · swarm handoff</text>
+  <text x="60" y="305" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Let specialized peer agents transfer active user control and session contex...</text>
+  <rect x="50" y="318" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="334" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-024 · deliberative search and backtracking</text>
+  <text x="60" y="349" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Explore multiple lookahead action branches over trees or graphs, evaluating...</text>
+  <rect x="50" y="362" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="378" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-032 · peer discovery and protocol delegation</text>
+  <text x="60" y="393" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Discover external specialized agents via standardized Agent Cards or regist...</text>
+  <rect x="50" y="406" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="422" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-034 · shared blackboard collaboration</text>
+  <text x="60" y="437" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Coordinate multiple peer agents asynchronously through a shared structured...</text>
+  <rect x="50" y="450" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="466" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-035 · durable checkpointed execution</text>
+  <text x="60" y="481" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Run long-horizon agent workflows atop durable engines that persist step out...</text>
+  <rect x="36" y="512" width="554" height="352" rx="10" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="52" y="538" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#7F1D1D">Quality &amp; Self-Correction (7)</text>
+  <rect x="50" y="550" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="566" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-006 · evaluator-optimizer</text>
+  <text x="60" y="581" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Pair a generator call with a separate evaluator critic loop that scores dra...</text>
+  <rect x="50" y="594" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="610" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-010 · reflection loop</text>
+  <text x="60" y="625" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Capture execution failures, test traces, or critic verdicts and generate re...</text>
+  <rect x="50" y="638" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="654" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-012 · fallback chain</text>
+  <text x="60" y="669" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Configure ordered recovery paths across secondary models, simplified prompt...</text>
+  <rect x="50" y="682" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="698" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-019 · debate or critic</text>
+  <text x="60" y="713" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Run structured peer critique across independent candidate solvers or opposi...</text>
+  <rect x="50" y="726" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="742" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-022 · structured output enforcement</text>
+  <text x="60" y="757" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Bind model generations to explicit typed JSON Schemas using constrained dec...</text>
+  <rect x="50" y="770" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="786" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-029 · hypothesis generation and critic</text>
+  <text x="60" y="801" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Iteratively propose testable hypotheses from retrieved scientific or analyt...</text>
+  <rect x="50" y="814" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="830" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-030 · automated judge verification</text>
+  <text x="60" y="845" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Embed calibrated rubric-based model judges inside workflows or CI pipelines...</text>
+  <rect x="36" y="876" width="554" height="132" rx="10" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="52" y="902" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#7F1D1D">Tool Loops (2)</text>
+  <rect x="50" y="914" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="930" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-007 · tool-calling loop</text>
+  <text x="60" y="945" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Allow a model to invoke external registered tools iteratively, observe retu...</text>
+  <rect x="50" y="958" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="974" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-008 · ReAct loop</text>
+  <text x="60" y="989" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Alternate explicit reasoning thoughts, environment tool actions, and result...</text>
+  <rect x="610" y="104" width="554" height="220" rx="10" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="626" y="130" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#7F1D1D">Workflow Execution (4)</text>
+  <rect x="624" y="142" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="158" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-001 · single call</text>
+  <text x="634" y="173" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Execute one direct language model inference without branching loops or exte...</text>
+  <rect x="624" y="186" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="202" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-002 · prompt chaining</text>
+  <text x="634" y="217" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Decompose a complex transformation into a fixed linear sequence of focused...</text>
+  <rect x="624" y="230" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="246" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-004 · parallelization</text>
+  <text x="634" y="261" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Run independent subtask calls or guardrail checks concurrently and aggregat...</text>
+  <rect x="624" y="274" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="290" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-013 · map-reduce summarization</text>
+  <text x="634" y="305" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Partition oversized documents into bounded chunks, summarize or extract ins...</text>
+  <rect x="610" y="336" width="554" height="220" rx="10" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="626" y="362" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#7F1D1D">Retrieval &amp; Grounding (4)</text>
+  <rect x="624" y="374" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="390" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-014 · agentic RAG</text>
+  <text x="634" y="405" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Embed retrieval inside an active agent loop so the model dynamically decide...</text>
+  <rect x="624" y="418" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="434" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-015 · corrective RAG</text>
+  <text x="634" y="449" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Score retrieved document relevance dynamically prior to generation, filteri...</text>
+  <rect x="624" y="462" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="478" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-027 · cited evidence synthesis</text>
+  <text x="634" y="493" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Aggregate retrieved evidence across multiple documents while attaching exac...</text>
+  <rect x="624" y="506" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="522" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-028 · hybrid search with reranking</text>
+  <text x="634" y="537" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Fuse exact keyword matching with dense embedding retrieval, then apply a cr...</text>
+  <rect x="610" y="568" width="554" height="220" rx="10" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="626" y="594" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#7F1D1D">Memory Architecture (4)</text>
+  <rect x="624" y="606" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="622" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-016 · memory write-back</text>
+  <text x="634" y="637" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Distill salient facts, resolved preferences, and session outcomes asynchron...</text>
+  <rect x="624" y="650" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="666" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-023 · episodic context compaction</text>
+  <text x="634" y="681" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Compress completed dialogue segments and resolved tool observations into de...</text>
+  <rect x="624" y="694" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="710" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-026 · hybrid memory retrieval</text>
+  <text x="634" y="725" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Combine working session context, recent episodic logs, semantic vector fact...</text>
+  <rect x="624" y="738" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="754" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-033 · procedural skill reuse</text>
+  <text x="634" y="769" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Index verified successful execution trajectories and reusable workflow scri...</text>
+  <rect x="610" y="800" width="554" height="220" rx="10" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="626" y="826" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#7F1D1D">Safety &amp; Containment (4)</text>
+  <rect x="624" y="838" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="854" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-011 · human approval gate</text>
+  <text x="634" y="869" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Pause execution immediately before high-impact external side effects, check...</text>
+  <rect x="624" y="882" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="898" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-020 · guardrail wrapper</text>
+  <text x="634" y="913" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Enclose model inferences and tool invocations inside pre-check and post-che...</text>
+  <rect x="624" y="926" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="942" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-021 · sandboxed code execution</text>
+  <text x="634" y="957" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Execute agent-generated code inside isolated microVMs or hardened ephemeral...</text>
+  <rect x="624" y="970" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="986" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-031 · action scope and policy enforcement</text>
+  <text x="634" y="1001" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Enforce deterministic authorization scopes, parameter bounds, spending caps...</text>
+  <rect x="610" y="1032" width="554" height="132" rx="10" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="626" y="1058" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#7F1D1D">Dynamic Routing (2)</text>
+  <rect x="624" y="1070" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="1086" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-003 · routing</text>
+  <text x="634" y="1101" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Classify each incoming query or intermediate signal and dispatch execution...</text>
+  <rect x="624" y="1114" width="526" height="38" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="634" y="1130" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#B91C1C">PT-025 · dynamic tool selection</text>
+  <text x="634" y="1145" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Retrieve and bind only the relevant subset of tools from large catalogs per...</text>
+</svg>

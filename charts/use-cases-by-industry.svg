@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 732" width="920" height="732" role="img">
+  <title>Use Cases by Industry</title>
+  <desc>Use case counts per industry sector.</desc>
+  <rect width="920" height="732" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="0" y="0" width="920" height="6" rx="3" fill="#B91C1C"/>
+  <text x="28" y="38" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Use Cases by Industry</text>
+  <text x="28" y="60" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#6B7280">Coverage across vertical sectors in data/use_cases.csv</text>
+  <text x="198" y="102" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">customer_support</text>
+  <rect x="210" y="88" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="88" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="102" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="136" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">cybersecurity</text>
+  <rect x="210" y="122" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="122" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="136" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="170" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">education</text>
+  <rect x="210" y="156" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="156" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="170" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="204" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">finance</text>
+  <rect x="210" y="190" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="190" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="204" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="238" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">government</text>
+  <rect x="210" y="224" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="224" width="255.2" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="238" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">2</text>
+  <text x="198" y="272" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">healthcare_administration</text>
+  <rect x="210" y="258" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="258" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="272" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="306" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">hospitality</text>
+  <rect x="210" y="292" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="292" width="510.4" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="306" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">4</text>
+  <text x="198" y="340" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">hr</text>
+  <rect x="210" y="326" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="326" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="340" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="374" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">it_operations</text>
+  <rect x="210" y="360" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="360" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="374" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="408" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">legal</text>
+  <rect x="210" y="394" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="394" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="408" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="442" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">logistics</text>
+  <rect x="210" y="428" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="428" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="442" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="476" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">manufacturing</text>
+  <rect x="210" y="462" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="462" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="476" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="510" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">media_content</text>
+  <rect x="210" y="496" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="496" width="382.8" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="510" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">3</text>
+  <text x="198" y="544" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">real_estate</text>
+  <rect x="210" y="530" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="530" width="510.4" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="544" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">4</text>
+  <text x="198" y="578" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">research</text>
+  <rect x="210" y="564" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="564" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="578" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="612" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">retail_ecommerce</text>
+  <rect x="210" y="598" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="598" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="612" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="646" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">sales</text>
+  <rect x="210" y="632" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="632" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="646" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="680" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">software_engineering</text>
+  <rect x="210" y="666" width="638" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210" y="666" width="638.0" height="20" rx="4" fill="#B91C1C"/>
+  <text x="856" y="680" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+</svg>

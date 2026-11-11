@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img">
+  <title>AI Agent Risk Likelihood vs Impact Matrix</title>
+  <desc>Data-driven risk matrix summarizing entries from data/risks_security.csv.</desc>
+  <rect width="1200" height="620" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="0" y="0" width="1200" height="6" rx="3" fill="#B91C1C"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">AI Agent Risk Heatmap (Likelihood vs Impact)</text>
+  <text x="40" y="70" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#6B7280">Counts computed directly from 42 verified entries in data/risks_security.csv</text>
+  <text x="297" y="112" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Impact: Critical</text>
+  <text x="532" y="112" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Impact: High</text>
+  <text x="767" y="112" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Impact: Medium</text>
+  <text x="1002" y="112" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">Impact: Low</text>
+  <text x="162" y="200" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827">Likelihood: High</text>
+  <rect x="184" y="134" width="227" height="122" rx="8" fill="#7F1D1D" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="297" y="186" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="297" y="218" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF">RS-001, RS-011, RS-012</text>
+  <rect x="419" y="134" width="227" height="122" rx="8" fill="#B91C1C" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="532" y="186" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">4</text>
+  <text x="532" y="218" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF">RS-002, RS-018, RS-019, RS-020</text>
+  <rect x="654" y="134" width="227" height="122" rx="8" fill="#DC2626" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="767" y="186" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">6</text>
+  <text x="767" y="218" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF">RS-022, RS-023, RS-025, RS-027...</text>
+  <rect x="889" y="134" width="227" height="122" rx="8" fill="#FCA5A5" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="1002" y="186" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">0</text>
+  <text x="1002" y="218" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">None</text>
+  <text x="162" y="330" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827">Likelihood: Medium</text>
+  <rect x="184" y="264" width="227" height="122" rx="8" fill="#B91C1C" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="297" y="316" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">5</text>
+  <text x="297" y="348" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF">RS-003, RS-007, RS-013, RS-014...</text>
+  <rect x="419" y="264" width="227" height="122" rx="8" fill="#DC2626" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="532" y="316" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">15</text>
+  <text x="532" y="348" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF">RS-005, RS-006, RS-010, RS-016...</text>
+  <rect x="654" y="264" width="227" height="122" rx="8" fill="#FCA5A5" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="767" y="316" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">5</text>
+  <text x="767" y="348" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">RS-004, RS-008, RS-029, RS-032...</text>
+  <rect x="889" y="264" width="227" height="122" rx="8" fill="#FEE2E2" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="1002" y="316" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">0</text>
+  <text x="1002" y="348" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">None</text>
+  <text x="162" y="460" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827">Likelihood: Low</text>
+  <rect x="184" y="394" width="227" height="122" rx="8" fill="#DC2626" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="297" y="446" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="297" y="478" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#FFFFFF">RS-009</text>
+  <rect x="419" y="394" width="227" height="122" rx="8" fill="#FCA5A5" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="532" y="446" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">2</text>
+  <text x="532" y="478" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">RS-024, RS-039</text>
+  <rect x="654" y="394" width="227" height="122" rx="8" fill="#FEE2E2" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="767" y="446" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">1</text>
+  <text x="767" y="478" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">RS-035</text>
+  <rect x="889" y="394" width="227" height="122" rx="8" fill="#FEF2F2" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="1002" y="446" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">0</text>
+  <text x="1002" y="478" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">None</text>
+  <text x="40" y="575" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6B7280">Generated deterministically by scripts/build_charts.py from data/risks_security.csv</text>
+</svg>

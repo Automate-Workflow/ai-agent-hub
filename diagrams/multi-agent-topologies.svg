@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img">
+  <title>Canonical Workflow &amp; Multi-Agent Topologies</title>
+  <desc>Six-panel grid displaying visual node-link topologies for Prompt Chaining, Routing, Orchestrator-Workers, Supervisor, Swarm, and Debate.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6B7280"/>
+    </marker>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#7F1D1D"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="720" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <rect x="0" y="0" width="1200" height="7" rx="3.5" fill="#B91C1C"/>
+  <text x="36" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827">Canonical Workflow &amp; Multi-Agent Topologies</text>
+  <text x="36" y="70" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#6B7280">Six architectural patterns comparing control predictability, inter-agent communication structure, and ideal workload fit</text>
+  <line x1="36" y1="86" x2="1164" y2="86" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="36" y="702" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280">AI Agent Hub · Verified 2026-11-11 · CC BY 4.0</text>
+  <rect x="36" y="108" width="352" height="266" rx="12" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="36" y="108" width="352" height="52" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="36" y="144" width="352" height="16" fill="#FEF2F2"/>
+  <text x="52" y="133" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#7F1D1D">1. PROMPT CHAINING (PT-002)</text>
+  <text x="52" y="152" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Fixed sequential stages + gates</text>
+  <text x="212" y="358" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#B91C1C">Best for predictable multi-step transforms.</text>
+  <rect x="84" y="232" width="68" height="44" rx="8" fill="#FEE2E2" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="118" y="259" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#7F1D1D">Step 1</text>
+  <line x1="152" y1="254" x2="182" y2="254" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="186" y="232" width="68" height="44" rx="8" fill="#B91C1C" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="220" y="259" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Step 2</text>
+  <line x1="254" y1="254" x2="284" y2="254" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="288" y="232" width="68" height="44" rx="8" fill="#FEE2E2" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="322" y="259" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#7F1D1D">Step 3</text>
+  <rect x="424" y="108" width="352" height="266" rx="12" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="424" y="108" width="352" height="52" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="424" y="144" width="352" height="16" fill="#FEF2F2"/>
+  <text x="440" y="133" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#7F1D1D">2. ROUTING (PT-003)</text>
+  <text x="440" y="152" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Classifier dispatches to specialist</text>
+  <text x="600" y="358" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#B91C1C">Best when distinct intents need different prompts/SLMs.</text>
+  <rect x="458" y="232" width="84" height="44" rx="8" fill="#B91C1C" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="500" y="259" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Router</text>
+  <rect x="630" y="192" width="112" height="34" rx="8" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="686" y="213" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">SQL Expert</text>
+  <line x1="542" y1="254" x2="626" y2="209" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="630" y="240" width="112" height="34" rx="8" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="686" y="261" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Billing</text>
+  <line x1="542" y1="254" x2="626" y2="257" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="630" y="288" width="112" height="34" rx="8" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="686" y="309" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Support</text>
+  <line x1="542" y1="254" x2="626" y2="305" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="812" y="108" width="352" height="266" rx="12" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="812" y="108" width="352" height="52" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="812" y="144" width="352" height="16" fill="#FEF2F2"/>
+  <text x="828" y="133" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#7F1D1D">3. ORCHESTRATOR-WORKERS (PT-005)</text>
+  <text x="828" y="152" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Dynamic subtask split &amp; synthesis</text>
+  <text x="988" y="358" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#B91C1C">Best when subtask count is unknown upfront.</text>
+  <rect x="924" y="180" width="128" height="32" rx="8" fill="#B91C1C" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="988" y="200" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Orchestrator</text>
+  <rect x="864" y="236" width="64" height="34" rx="8" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="896" y="257" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#7F1D1D">W1</text>
+  <line x1="988" y1="212" x2="896" y2="232" stroke="#B91C1C" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="896" y1="270" x2="988" y2="292" stroke="#B91C1C" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <rect x="956" y="236" width="64" height="34" rx="8" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="988" y="257" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#7F1D1D">W2</text>
+  <line x1="988" y1="212" x2="988" y2="232" stroke="#B91C1C" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="988" y1="270" x2="988" y2="292" stroke="#B91C1C" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <rect x="1048" y="236" width="64" height="34" rx="8" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="1080" y="257" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#7F1D1D">W3</text>
+  <line x1="988" y1="212" x2="1080" y2="232" stroke="#B91C1C" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="1080" y1="270" x2="988" y2="292" stroke="#B91C1C" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <rect x="924" y="296" width="128" height="32" rx="8" fill="#7F1D1D" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="988" y="316" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Synthesizer</text>
+  <rect x="36" y="396" width="352" height="266" rx="12" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="36" y="396" width="352" height="52" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="36" y="432" width="352" height="16" fill="#FEF2F2"/>
+  <text x="52" y="421" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#7F1D1D">4. SUPERVISOR LOOP (PT-017)</text>
+  <text x="52" y="440" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Central stateful coordinator cycles</text>
+  <text x="212" y="646" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#B91C1C">Best for managed specialist delegation &amp; HIL.</text>
+  <rect x="146" y="470" width="132" height="36" rx="8" fill="#B91C1C" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="212" y="493" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Supervisor + State</text>
+  <rect x="72" y="562" width="86" height="40" rx="8" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="115" y="586" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Coder</text>
+  <line x1="212" y1="506" x2="115" y2="558" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <rect x="168" y="562" width="86" height="40" rx="8" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="211" y="586" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Research</text>
+  <line x1="212" y1="506" x2="211" y2="558" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <rect x="264" y="562" width="86" height="40" rx="8" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="307" y="586" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Reviewer</text>
+  <line x1="212" y1="506" x2="307" y2="558" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <rect x="424" y="396" width="352" height="266" rx="12" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="424" y="396" width="352" height="52" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="424" y="432" width="352" height="16" fill="#FEF2F2"/>
+  <text x="440" y="421" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#7F1D1D">5. SWARM HANDOFFS (PT-018)</text>
+  <text x="440" y="440" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Peer-to-peer context transfer</text>
+  <text x="600" y="646" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#B91C1C">Best for front-desk triage handing off live sessions.</text>
+  <line x1="600" y1="480" x2="502" y2="586" stroke="#DC2626" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="502" y1="586" x2="698" y2="586" stroke="#DC2626" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="698" y1="586" x2="600" y2="480" stroke="#DC2626" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="548" y="462" width="104" height="36" rx="18" fill="#B91C1C" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="600" y="484" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">Triage</text>
+  <rect x="450" y="568" width="104" height="36" rx="18" fill="#FEE2E2" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="502" y="590" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Tech Agent</text>
+  <rect x="646" y="568" width="104" height="36" rx="18" fill="#FEE2E2" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="698" y="590" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7F1D1D">Refund Agent</text>
+  <rect x="812" y="396" width="352" height="266" rx="12" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="812" y="396" width="352" height="52" rx="12" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1.5"/>
+  <rect x="812" y="432" width="352" height="16" fill="#FEF2F2"/>
+  <text x="828" y="421" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#7F1D1D">6. DEBATE &amp; CRITIC (PT-019)</text>
+  <text x="828" y="440" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Adversarial proposals + judge</text>
+  <text x="988" y="646" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#B91C1C">Best for catching reasoning errors &amp; bias checks.</text>
+  <rect x="850" y="474" width="116" height="40" rx="8" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="908" y="498" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#7F1D1D">Solver A</text>
+  <rect x="1010" y="474" width="116" height="40" rx="8" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="1068" y="498" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#7F1D1D">Critic B</text>
+  <line x1="966" y1="494" x2="1006" y2="494" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <rect x="918" y="570" width="140" height="38" rx="8" fill="#7F1D1D" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="988" y="594" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Judge &amp; Consensus</text>
+  <line x1="908" y1="514" x2="968" y2="566" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1068" y1="514" x2="1008" y2="566" stroke="#B91C1C" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

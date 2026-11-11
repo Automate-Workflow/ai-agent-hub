@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 514" width="920" height="514" role="img">
+  <title>Frameworks and Tools by Category and License Model</title>
+  <desc>Frameworks stacked by category and open-source classification.</desc>
+  <rect width="920" height="514" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="0" y="0" width="920" height="6" rx="3" fill="#B91C1C"/>
+  <text x="28" y="38" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Frameworks and Tools by Category and License Model</text>
+  <text x="28" y="58" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#6B7280">Stacked by OSI open_source=yes, partial (open-core/SDK), and no (proprietary/source-available)</text>
+  <rect x="28" y="72" width="12" height="12" rx="2" fill="#B91C1C"/>
+  <text x="46" y="82" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#111827">yes</text>
+  <rect x="96" y="72" width="12" height="12" rx="2" fill="#DC2626"/>
+  <text x="114" y="82" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#111827">partial</text>
+  <rect x="196" y="72" width="12" height="12" rx="2" fill="#6B7280"/>
+  <text x="214" y="82" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#111827">no</text>
+  <text x="198" y="122" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">agent_framework</text>
+  <rect x="210" y="108" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="108" width="646.0" height="20" fill="#B91C1C"/>
+  <text x="864" y="122" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">10</text>
+  <text x="198" y="156" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">browser_or_computer_use</text>
+  <rect x="210" y="142" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="142" width="193.8" height="20" fill="#B91C1C"/>
+  <text x="864" y="156" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">3</text>
+  <text x="198" y="190" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">coding_agent_tool</text>
+  <rect x="210" y="176" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="176" width="64.6" height="20" fill="#B91C1C"/>
+  <rect x="274.6" y="176" width="64.6" height="20" fill="#DC2626"/>
+  <rect x="339.2" y="176" width="64.6" height="20" fill="#6B7280"/>
+  <text x="864" y="190" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">3</text>
+  <text x="198" y="224" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">data_loader</text>
+  <rect x="210" y="210" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="210" width="129.2" height="20" fill="#B91C1C"/>
+  <text x="864" y="224" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">2</text>
+  <text x="198" y="258" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">evaluation</text>
+  <rect x="210" y="244" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="244" width="193.8" height="20" fill="#B91C1C"/>
+  <text x="864" y="258" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">3</text>
+  <text x="198" y="292" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">guardrails</text>
+  <rect x="210" y="278" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="278" width="129.2" height="20" fill="#B91C1C"/>
+  <text x="864" y="292" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">2</text>
+  <text x="198" y="326" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">inference</text>
+  <rect x="210" y="312" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="312" width="193.8" height="20" fill="#B91C1C"/>
+  <rect x="403.8" y="312" width="129.2" height="20" fill="#DC2626"/>
+  <rect x="533.0" y="312" width="258.4" height="20" fill="#6B7280"/>
+  <text x="864" y="326" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">9</text>
+  <text x="198" y="360" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">memory</text>
+  <rect x="210" y="346" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="346" width="129.2" height="20" fill="#B91C1C"/>
+  <rect x="339.2" y="346" width="64.6" height="20" fill="#DC2626"/>
+  <text x="864" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">3</text>
+  <text x="198" y="394" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">observability</text>
+  <rect x="210" y="380" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="380" width="129.2" height="20" fill="#B91C1C"/>
+  <rect x="339.2" y="380" width="193.8" height="20" fill="#DC2626"/>
+  <rect x="533.0" y="380" width="129.2" height="20" fill="#6B7280"/>
+  <text x="864" y="394" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">7</text>
+  <text x="198" y="428" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">orchestration</text>
+  <rect x="210" y="414" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="414" width="258.4" height="20" fill="#B91C1C"/>
+  <rect x="468.4" y="414" width="64.6" height="20" fill="#6B7280"/>
+  <text x="864" y="428" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">5</text>
+  <text x="198" y="462" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">vector_store</text>
+  <rect x="210" y="448" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="448" width="323.0" height="20" fill="#B91C1C"/>
+  <rect x="533.0" y="448" width="129.2" height="20" fill="#DC2626"/>
+  <rect x="662.2" y="448" width="64.6" height="20" fill="#6B7280"/>
+  <text x="864" y="462" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">8</text>
+</svg>

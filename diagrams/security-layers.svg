@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img">
+  <title>Defense-in-Depth Security Architecture for AI Agents</title>
+  <desc>Five-column defense-in-depth matrix mapping security threats to concrete architectural controls and auditing mechanisms.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6B7280"/>
+    </marker>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#7F1D1D"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="700" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <rect x="0" y="0" width="1200" height="7" rx="3.5" fill="#B91C1C"/>
+  <text x="36" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827">Defense-in-Depth Security Architecture for AI Agents</text>
+  <text x="36" y="70" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#6B7280">Five-zone control model mitigating OWASP LLM &amp; Agentic Top 10 threats across inputs, identity, actions, memory, and runtime forensics</text>
+  <line x1="36" y1="86" x2="1164" y2="86" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="36" y="682" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280">AI Agent Hub · Verified 2026-11-11 · CC BY 4.0</text>
+  <rect x="36" y="108" width="214" height="496" rx="12" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <rect x="36" y="108" width="214" height="54" rx="12" fill="#B91C1C" stroke="#B91C1C" stroke-width="1.5"/>
+  <rect x="36" y="146" width="214" height="16" fill="#B91C1C"/>
+  <text x="143" y="131" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">ZONE 1 · INPUT</text>
+  <text x="143" y="150" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#FEE2E2">Perimeter Screening</text>
+  <rect x="48" y="178" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="58" y="202" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#7F1D1D">Direct &amp; Indirect PI</text>
+  <text x="58" y="222" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">RS-001 · Untrusted web &amp;</text>
+  <text x="58" y="238" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">email payloads</text>
+  <rect x="48" y="282" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="58" y="306" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Input Moderation</text>
+  <text x="58" y="326" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">CP-080 · Classifier &amp;</text>
+  <text x="58" y="342" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">topical Colang rails</text>
+  <rect x="48" y="386" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="58" y="410" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Context Taint Tags</text>
+  <text x="58" y="430" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">Separate developer from</text>
+  <text x="58" y="446" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">policy external chunks</text>
+  <rect x="48" y="490" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="58" y="514" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">PII Redaction</text>
+  <text x="58" y="534" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">Scrub confidential</text>
+  <text x="58" y="550" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">fields pre-inference</text>
+  <line x1="250" y1="356" x2="262" y2="356" stroke="#7F1D1D" stroke-width="2.5" marker-end="url(#arrow-dark)"/>
+  <rect x="264" y="108" width="214" height="496" rx="12" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="264" y="108" width="214" height="54" rx="12" fill="#DC2626" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="264" y="146" width="214" height="16" fill="#DC2626"/>
+  <text x="371" y="131" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">ZONE 2 · IDENTITY</text>
+  <text x="371" y="150" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#FEE2E2">Delegated Access</text>
+  <rect x="276" y="178" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="286" y="202" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#7F1D1D">Identity &amp; Privilege Abuse</text>
+  <text x="286" y="222" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">RS-013 · Shared admin</text>
+  <text x="286" y="238" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">token risks</text>
+  <rect x="276" y="282" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="286" y="306" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">OAuth 2.1 + PKCE</text>
+  <text x="286" y="326" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">PS-006 / RFC 9728 ·</text>
+  <text x="286" y="342" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">User-scoped consent</text>
+  <rect x="276" y="386" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="286" y="410" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Short-Lived JWTs</text>
+  <text x="286" y="430" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">PS-010 · Audience &amp;</text>
+  <text x="286" y="446" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">expiration enforcement</text>
+  <rect x="276" y="490" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="286" y="514" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Least Privilege</text>
+  <text x="286" y="534" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">CP-071 / 072 · Minimal</text>
+  <text x="286" y="550" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">read/write scopes</text>
+  <line x1="478" y1="356" x2="490" y2="356" stroke="#7F1D1D" stroke-width="2.5" marker-end="url(#arrow-dark)"/>
+  <rect x="492" y="108" width="214" height="496" rx="12" fill="#FEE2E2" stroke="#7F1D1D" stroke-width="1.5"/>
+  <rect x="492" y="108" width="214" height="54" rx="12" fill="#7F1D1D" stroke="#7F1D1D" stroke-width="1.5"/>
+  <rect x="492" y="146" width="214" height="16" fill="#7F1D1D"/>
+  <text x="599" y="131" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">ZONE 3 · VALIDATION</text>
+  <text x="599" y="150" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#FEE2E2">Action &amp; Output Gates</text>
+  <rect x="504" y="178" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="514" y="202" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#7F1D1D">Goal Hijack &amp; Misuse</text>
+  <text x="514" y="222" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">RS-011 / RS-012 · tool</text>
+  <text x="514" y="238" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Unintended calls</text>
+  <rect x="504" y="282" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="514" y="306" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">JSON Schema Guard</text>
+  <text x="514" y="326" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">PT-022 · Typed bounds</text>
+  <text x="514" y="342" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">before execution</text>
+  <rect x="504" y="386" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="514" y="410" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Approval Interrupts</text>
+  <text x="514" y="430" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">PT-011 · Human gate on</text>
+  <text x="514" y="446" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">destructive steps</text>
+  <rect x="504" y="490" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="514" y="514" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Outbound Allowlists</text>
+  <text x="514" y="534" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">Prevent markdown link</text>
+  <text x="514" y="550" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">exfiltration (RS-028)</text>
+  <line x1="706" y1="356" x2="718" y2="356" stroke="#7F1D1D" stroke-width="2.5" marker-end="url(#arrow-dark)"/>
+  <rect x="720" y="108" width="214" height="496" rx="12" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.5"/>
+  <rect x="720" y="108" width="214" height="54" rx="12" fill="#B91C1C" stroke="#B91C1C" stroke-width="1.5"/>
+  <rect x="720" y="146" width="214" height="16" fill="#B91C1C"/>
+  <text x="827" y="131" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">ZONE 4 · SANDBOX</text>
+  <text x="827" y="150" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#FEE2E2">Execution &amp; Memory</text>
+  <rect x="732" y="178" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="742" y="202" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#7F1D1D">Code / Memory Poison</text>
+  <text x="742" y="222" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">RS-015 / RS-016 · Shell</text>
+  <text x="742" y="238" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">&amp; memory risks</text>
+  <rect x="732" y="282" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="742" y="306" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Ephemeral MicroVMs</text>
+  <text x="742" y="326" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">PT-021 · Isolate dynamic</text>
+  <text x="742" y="342" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">code &amp; bash</text>
+  <rect x="732" y="386" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="742" y="410" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Vector Store ACLs</text>
+  <text x="742" y="430" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">Filter corpus chunks per</text>
+  <text x="742" y="446" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">caller permissions</text>
+  <rect x="732" y="490" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="742" y="514" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Provenance Tagging</text>
+  <text x="742" y="534" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">Prevent unverified to</text>
+  <text x="742" y="550" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">writes long memory</text>
+  <line x1="934" y1="356" x2="946" y2="356" stroke="#7F1D1D" stroke-width="2.5" marker-end="url(#arrow-dark)"/>
+  <rect x="948" y="108" width="214" height="496" rx="12" fill="#FEF2F2" stroke="#7F1D1D" stroke-width="1.5"/>
+  <rect x="948" y="108" width="214" height="54" rx="12" fill="#7F1D1D" stroke="#7F1D1D" stroke-width="1.5"/>
+  <rect x="948" y="146" width="214" height="16" fill="#7F1D1D"/>
+  <text x="1055" y="131" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">ZONE 5 · ASSURANCE</text>
+  <text x="1055" y="150" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#FEE2E2">Telemetry &amp; Response</text>
+  <rect x="960" y="178" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="970" y="202" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#7F1D1D">Blind Spots &amp; Loops</text>
+  <text x="970" y="222" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">RS-036 / RS-020 · ops</text>
+  <text x="970" y="238" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280">Unlogged runaway</text>
+  <rect x="960" y="282" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="970" y="306" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">OTel Audit Trail</text>
+  <text x="970" y="326" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">CP-073 / 087 · Full tool</text>
+  <text x="970" y="342" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">&amp; prompt forensics</text>
+  <rect x="960" y="386" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="970" y="410" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Supply-Chain Vetting</text>
+  <text x="970" y="430" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">Pin MCP skills &amp;</text>
+  <text x="970" y="446" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">dependencies (RS-014)</text>
+  <rect x="960" y="490" width="190" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="970" y="514" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#B91C1C">Red-Team &amp; Kill Switch</text>
+  <text x="970" y="534" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">EV-032 · Automated +</text>
+  <text x="970" y="550" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#111827">probes instant halt</text>
+  <rect x="36" y="618" width="1128" height="42" rx="8" fill="#7F1D1D" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="600" y="644" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">GOVERNANCE BASELINE: Map controls to OWASP Agentic Top 10 (ASI01-ASI10), NIST AI RMF 600-1, EU AI Act &amp; ISO/IEC 42001</text>
+</svg>

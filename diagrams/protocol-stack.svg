@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" role="img">
+  <title>AI Agent Open Protocol &amp; Standards Stack</title>
+  <desc>Five-layer horizontal protocol architecture flanked by observability and AI risk governance standards.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6B7280"/>
+    </marker>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#7F1D1D"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="680" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <rect x="0" y="0" width="1200" height="7" rx="3.5" fill="#B91C1C"/>
+  <text x="36" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827">AI Agent Open Protocol &amp; Standards Stack</text>
+  <text x="36" y="70" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#6B7280">Layered interoperability mapping all 16 protocols and standards (PS-001..PS-016) across transport, auth, tools, agents, and governance</text>
+  <line x1="36" y1="86" x2="1164" y2="86" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="36" y="662" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280">AI Agent Hub · Verified 2026-11-11 · CC BY 4.0</text>
+  <rect x="36" y="108" width="868" height="92" rx="10" fill="#7F1D1D" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="54" y="130" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#FEE2E2">LAYER 5 · PEER AGENT MESH</text>
+  <rect x="54" y="140" width="832" height="48" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="66" y="160" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">Agent2Agent (A2A · PS-002)</text>
+  <text x="66" y="178" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Cross-vendor task lifecycle, capability Agent Cards &amp; peer delegation</text>
+  <rect x="36" y="216" width="868" height="92" rx="10" fill="#B91C1C" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="54" y="238" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#FEE2E2">LAYER 4 · AGENT TOOL &amp; COMMERCE</text>
+  <rect x="54" y="248" width="269" height="48" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="66" y="268" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">Model Context Protocol (MCP · PS-001)</text>
+  <text x="66" y="286" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Client-server tools, resources &amp; prompts</text>
+  <rect x="335" y="248" width="269" height="48" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="347" y="268" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">OpenAI Tool Contract (PS-008)</text>
+  <text x="347" y="286" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Function calling &amp; Responses payload</text>
+  <rect x="616" y="248" width="269" height="48" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="628" y="268" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">Agentic Commerce (ACP · PS-009)</text>
+  <text x="628" y="286" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Delegated checkout &amp; payment intents</text>
+  <rect x="36" y="324" width="868" height="92" rx="10" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="54" y="346" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#7F1D1D">LAYER 3 · DATA &amp; API SCHEMAS</text>
+  <rect x="54" y="356" width="410" height="48" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="66" y="376" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">OpenAPI 3.1.0 (PS-003)</text>
+  <text x="66" y="394" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">REST endpoint contracts &amp; metadata</text>
+  <rect x="476" y="356" width="410" height="48" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="488" y="376" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">JSON Schema 2020-12 (PS-004)</text>
+  <text x="488" y="394" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Typed parameter &amp; output validation</text>
+  <rect x="36" y="432" width="868" height="92" rx="10" fill="#FEF2F2" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="54" y="454" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#7F1D1D">LAYER 2 · DELEGATED IDENTITY &amp; AUTH</text>
+  <rect x="54" y="464" width="269" height="48" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="66" y="484" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">OAuth 2.0 / 2.1 (PS-005/006)</text>
+  <text x="66" y="502" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Scoped consent &amp; PKCE tokens</text>
+  <rect x="335" y="464" width="269" height="48" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="347" y="484" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">RFC 9728 Metadata (PS-014)</text>
+  <text x="347" y="502" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Dynamic MCP auth discovery</text>
+  <rect x="616" y="464" width="269" height="48" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="628" y="484" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">OIDC &amp; JWT (PS-013/010)</text>
+  <text x="628" y="502" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Signed identity &amp; workload claims</text>
+  <rect x="36" y="540" width="868" height="92" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="54" y="562" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#111827">LAYER 1 · STREAMING WIRE TRANSPORT</text>
+  <rect x="54" y="572" width="269" height="48" rx="8" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="66" y="592" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">HTTP/TLS &amp; stdio</text>
+  <text x="66" y="610" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Request/response &amp; local pipes</text>
+  <rect x="335" y="572" width="269" height="48" rx="8" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="347" y="592" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">Server-Sent Events (PS-012)</text>
+  <text x="347" y="610" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Unidirectional token &amp; progress streams</text>
+  <rect x="616" y="572" width="269" height="48" rx="8" fill="#FEF2F2" stroke="#FEE2E2" stroke-width="1"/>
+  <text x="628" y="592" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#7F1D1D">WebSocket (PS-011)</text>
+  <text x="628" y="610" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.8" font-weight="400" fill="#6B7280">Full-duplex realtime audio channels</text>
+  <rect x="924" y="108" width="240" height="524" rx="12" fill="#FEF2F2" stroke="#7F1D1D" stroke-width="2"/>
+  <rect x="924" y="108" width="240" height="48" rx="12" fill="#7F1D1D" stroke="#7F1D1D" stroke-width="1.5"/>
+  <rect x="924" y="140" width="240" height="16" fill="#7F1D1D"/>
+  <text x="1044" y="137" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">CROSS-CUTTING SPINE</text>
+  <rect x="940" y="176" width="208" height="130" rx="10" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="954" y="204" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#B91C1C">OpenTelemetry (PS-007)</text>
+  <text x="954" y="228" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">Nested trace spans, OTLP</text>
+  <text x="954" y="246" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">export &amp; GenAI semantic</text>
+  <text x="954" y="264" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">attributes across every</text>
+  <text x="954" y="282" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">protocol hop.</text>
+  <rect x="940" y="324" width="208" height="130" rx="10" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="954" y="352" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#B91C1C">NIST AI RMF 1.0 (PS-016)</text>
+  <text x="954" y="376" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">Govern, Map, Measure &amp;</text>
+  <text x="954" y="394" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">Manage risk profiling for</text>
+  <text x="954" y="412" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">generative &amp; agentic</text>
+  <text x="954" y="430" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">systems.</text>
+  <rect x="940" y="472" width="208" height="130" rx="10" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="954" y="500" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#B91C1C">ISO/IEC 42001 (PS-015)</text>
+  <text x="954" y="524" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">Certifiable AI Management</text>
+  <text x="954" y="542" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">System governance, risk</text>
+  <text x="954" y="560" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">register &amp; audit controls.</text>
+</svg>

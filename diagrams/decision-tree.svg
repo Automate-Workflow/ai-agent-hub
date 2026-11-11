@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img">
+  <title>Engineering Decision Tree: Do You Need an AI Agent?</title>
+  <desc>Vertical decision tree guiding engineers from plain deterministic code through single LLM calls, RAG, workflows, ReAct agents, and multi-agent systems.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6B7280"/>
+    </marker>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#7F1D1D"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="700" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <rect x="0" y="0" width="1200" height="7" rx="3.5" fill="#B91C1C"/>
+  <text x="36" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827">Engineering Decision Tree: Do You Need an AI Agent?</text>
+  <text x="36" y="70" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#6B7280">Choose the simplest architecture that satisfies accuracy, latency, safety, and determinism requirements</text>
+  <line x1="36" y1="86" x2="1164" y2="86" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="36" y="682" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280">AI Agent Hub · Verified 2026-11-11 · CC BY 4.0</text>
+  <rect x="48" y="114" width="340" height="68" rx="10" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.8"/>
+  <text x="218" y="154" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#111827">Q1. Deterministic rules suffice?</text>
+  <line x1="388" y1="148" x2="466" y2="148" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="426" y="140" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="800" fill="#B91C1C">YES</text>
+  <rect x="470" y="114" width="356" height="68" rx="10" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="648" y="142" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="800" fill="#7F1D1D">Standard Software Code</text>
+  <text x="648" y="164" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Zero LLM latency or nondeterminism risk</text>
+  <line x1="218" y1="182" x2="218" y2="210" stroke="#7F1D1D" stroke-width="2" marker-end="url(#arrow-dark)"/>
+  <text x="234" y="201" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7F1D1D">NO</text>
+  <rect x="48" y="214" width="340" height="68" rx="10" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.8"/>
+  <text x="218" y="254" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#111827">Q2. Single turn + schema fits?</text>
+  <line x1="388" y1="248" x2="466" y2="248" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="426" y="240" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="800" fill="#B91C1C">YES</text>
+  <rect x="470" y="214" width="356" height="68" rx="10" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="648" y="242" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="800" fill="#7F1D1D">Single Call + JSON Schema (PT-001/022)</text>
+  <text x="648" y="264" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Minimal token spend &amp; straightforward evals</text>
+  <line x1="218" y1="282" x2="218" y2="310" stroke="#7F1D1D" stroke-width="2" marker-end="url(#arrow-dark)"/>
+  <text x="234" y="301" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7F1D1D">NO</text>
+  <rect x="48" y="314" width="340" height="68" rx="10" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.8"/>
+  <text x="218" y="354" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#111827">Q3. Dynamic external facts needed?</text>
+  <line x1="388" y1="348" x2="466" y2="348" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="426" y="340" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="800" fill="#B91C1C">YES</text>
+  <rect x="470" y="314" width="356" height="68" rx="10" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="648" y="342" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="800" fill="#7F1D1D">Hybrid / Corrective RAG (PT-014/015)</text>
+  <text x="648" y="364" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Grounded answers + inline source citations</text>
+  <line x1="218" y1="382" x2="218" y2="410" stroke="#7F1D1D" stroke-width="2" marker-end="url(#arrow-dark)"/>
+  <text x="234" y="401" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7F1D1D">NO</text>
+  <rect x="48" y="414" width="340" height="68" rx="10" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.8"/>
+  <text x="218" y="454" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#111827">Q4. Known fixed workflow steps?</text>
+  <line x1="388" y1="448" x2="466" y2="448" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="426" y="440" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="800" fill="#B91C1C">YES</text>
+  <rect x="470" y="414" width="356" height="68" rx="10" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="648" y="442" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="800" fill="#7F1D1D">Prompt Chain / Router (PT-002/003)</text>
+  <text x="648" y="464" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Predictable branching, retries &amp; low variance</text>
+  <line x1="218" y1="482" x2="218" y2="510" stroke="#7F1D1D" stroke-width="2" marker-end="url(#arrow-dark)"/>
+  <text x="234" y="501" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7F1D1D">NO</text>
+  <rect x="48" y="514" width="340" height="68" rx="10" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.8"/>
+  <text x="218" y="554" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#111827">Q5. Dynamic multi-step tools?</text>
+  <line x1="388" y1="548" x2="466" y2="548" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="426" y="540" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="800" fill="#B91C1C">YES</text>
+  <rect x="470" y="514" width="356" height="68" rx="10" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="648" y="542" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="800" fill="#7F1D1D">ReAct Loop + Guardrails (PT-008/020)</text>
+  <text x="648" y="564" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">Iterative tool calling within step &amp; scope bounds</text>
+  <line x1="218" y1="582" x2="218" y2="604" stroke="#7F1D1D" stroke-width="2" marker-end="url(#arrow-dark)"/>
+  <text x="234" y="598" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7F1D1D">NEEDS SCALE / SPECIALISTS</text>
+  <rect x="48" y="606" width="778" height="52" rx="10" fill="#7F1D1D" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="437" y="637" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Q6. Subagent Isolation / Multi-Team Scale?  -&gt;  Supervisor / Orchestrator-Workers / A2A (PT-017 / PT-032 / PT-035)</text>
+  <rect x="856" y="114" width="308" height="544" rx="12" fill="#FEF2F2" stroke="#7F1D1D" stroke-width="1.5"/>
+  <rect x="856" y="114" width="308" height="48" rx="12" fill="#B91C1C" stroke="#7F1D1D" stroke-width="1.5"/>
+  <rect x="856" y="146" width="308" height="16" fill="#B91C1C"/>
+  <text x="1010" y="143" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="800" fill="#FFFFFF">MANDATORY BUILD CHECKLIST</text>
+  <rect x="872" y="180" width="276" height="78" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="886" y="204" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="800" fill="#B91C1C">External Side Effects?</text>
+  <text x="886" y="225" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">Add Human Approval Gate (PT-011)</text>
+  <text x="886" y="243" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">before irreversible writes.</text>
+  <rect x="872" y="272" width="276" height="78" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="886" y="296" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="800" fill="#B91C1C">Untrusted Data Inputs?</text>
+  <text x="886" y="317" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">Isolate instructions vs external text</text>
+  <text x="886" y="335" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">(CP-069 / CP-080).</text>
+  <rect x="872" y="364" width="276" height="78" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="886" y="388" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="800" fill="#B91C1C">Non-Deterministic Loop?</text>
+  <text x="886" y="409" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">Cap steps &amp; token spend; gate</text>
+  <text x="886" y="427" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">changes via eval sets (EV-002).</text>
+  <rect x="872" y="456" width="276" height="78" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="886" y="480" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="800" fill="#B91C1C">Multi-Hour Duration?</text>
+  <text x="886" y="501" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">Use durable checkpointed state (Temporal</text>
+  <text x="886" y="519" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">/ LangGraph CP-128).</text>
+  <rect x="872" y="548" width="276" height="78" rx="8" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1.5"/>
+  <text x="886" y="572" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="800" fill="#B91C1C">Multi-Vendor Tooling?</text>
+  <text x="886" y="593" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#111827">Wrap connectors behind MCP servers</text>
+  <text x="886" y="611" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7280">&amp; OAuth 2.1 (PS-001/006).</text>
+</svg>

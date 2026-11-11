@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 378" width="920" height="378" role="img">
+  <title>Risks by Category and Impact Severity</title>
+  <desc>Stacked bar chart of risks by category and impact level.</desc>
+  <rect width="920" height="378" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="0" y="0" width="920" height="6" rx="3" fill="#B91C1C"/>
+  <text x="28" y="38" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Risks by Category and Impact Severity</text>
+  <text x="28" y="58" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#6B7280">Distribution across security, privacy, reliability, cost, legal, ethics, and operational domains</text>
+  <rect x="28" y="72" width="12" height="12" rx="2" fill="#7F1D1D"/>
+  <text x="46" y="82" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#111827">critical</text>
+  <rect x="136" y="72" width="12" height="12" rx="2" fill="#B91C1C"/>
+  <text x="154" y="82" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#111827">high</text>
+  <rect x="212" y="72" width="12" height="12" rx="2" fill="#DC2626"/>
+  <text x="230" y="82" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#111827">medium</text>
+  <rect x="304" y="72" width="12" height="12" rx="2" fill="#FCA5A5"/>
+  <text x="322" y="82" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#111827">low</text>
+  <text x="198" y="122" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">cost</text>
+  <rect x="210" y="108" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="108" width="107.7" height="20" fill="#B91C1C"/>
+  <text x="864" y="122" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">2</text>
+  <text x="198" y="156" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">ethics</text>
+  <rect x="210" y="142" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="142" width="107.7" height="20" fill="#B91C1C"/>
+  <rect x="317.7" y="142" width="107.7" height="20" fill="#DC2626"/>
+  <text x="864" y="156" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">4</text>
+  <text x="198" y="190" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">legal</text>
+  <rect x="210" y="176" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="176" width="161.5" height="20" fill="#B91C1C"/>
+  <rect x="371.5" y="176" width="53.8" height="20" fill="#DC2626"/>
+  <text x="864" y="190" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">4</text>
+  <text x="198" y="224" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">operational</text>
+  <rect x="210" y="210" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="210" width="53.8" height="20" fill="#7F1D1D"/>
+  <rect x="263.8" y="210" width="269.2" height="20" fill="#B91C1C"/>
+  <rect x="533.0" y="210" width="53.8" height="20" fill="#DC2626"/>
+  <text x="864" y="224" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">7</text>
+  <text x="198" y="258" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">privacy</text>
+  <rect x="210" y="244" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="244" width="107.7" height="20" fill="#7F1D1D"/>
+  <rect x="317.7" y="244" width="53.8" height="20" fill="#B91C1C"/>
+  <rect x="371.5" y="244" width="53.8" height="20" fill="#DC2626"/>
+  <text x="864" y="258" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">4</text>
+  <text x="198" y="292" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">reliability</text>
+  <rect x="210" y="278" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="278" width="107.7" height="20" fill="#B91C1C"/>
+  <rect x="317.7" y="278" width="376.8" height="20" fill="#DC2626"/>
+  <text x="864" y="292" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">9</text>
+  <text x="198" y="326" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#111827">security</text>
+  <rect x="210" y="312" width="646" height="20" rx="4" fill="#FEF2F2"/>
+  <rect x="210.0" y="312" width="323.0" height="20" fill="#7F1D1D"/>
+  <rect x="533.0" y="312" width="323.0" height="20" fill="#B91C1C"/>
+  <text x="864" y="326" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827">12</text>
+</svg>
