@@ -1,49 +1,32 @@
-# Documentation
+# Documentation Index
 
-The AI Agent Hub is a structured, sourced knowledge base about AI agent types, concepts, patterns,
-protocols, frameworks, use cases, risks, and evaluation methods. These documentation pages explain
-how the hub works, how the data is maintained, and how to contribute.
+![AI Agent Hub Banner](../assets/banner.svg)
 
----
+Welcome to the curated reference guides of **AI Agent Hub**. Every table, count, and item page below is deterministically built from the relational CSV catalog in [`data/`](../data/README.md) and verified against 272 cataloged sources.
 
-## Documentation Pages
+## Core Architecture & Knowledge Guides
 
-| Page | Description |
-|------|-------------|
-| [How to Read This Hub](how-to-read-this-hub.md) | Orientation for new visitors: what the hub is, how to navigate it, and when to verify data yourself |
-| [Methodology](methodology.md) | Research protocol, confidence and status assignment rules, verification date policy, and how rows are retired |
-| [Maintenance Guide](maintenance.md) | How to run scripts locally, CI pipeline overview, freshness review process, and how to handle broken links |
-| [Contributing Guide](../CONTRIBUTING.md) | Full guide for submitting corrections, new data rows, and new resources |
-| [Governance](../GOVERNANCE.md) | Roles, decision process, deprecation lifecycle, and conflict resolution |
-| [Security Policy](../SECURITY.md) | How to report security concerns and the response timeline |
-| [Support](../SUPPORT.md) | Where to get help and what kinds of support are in scope |
-| [Roadmap](../ROADMAP.md) | Planned milestones and aspirational goals through Q3 2027 |
-| [Changelog](../CHANGELOG.md) | Record of all notable changes by version |
+| Guide | Focus | Key Visuals |
+|---|---|---|
+| [Architecture of an Agent](architecture-of-an-agent.md) | Runtime anatomy, ReAct execution loops, autonomy tiers, and RAG grounding | `agent-anatomy.svg`, `agent-loop.svg`, Mermaid sequences |
+| [Agent Types](agent-types.md) | Taxonomy of 40 agent types across Decision Logic, Job Roles, and System Architectures | `agent-landscape.svg`, `agent-types-breakdown.svg` |
+| [Core Concepts](concepts.md) | Deep glossary and dependency map spanning 136 concepts across 11 pillars | `concept-map.svg`, `concepts-by-category.svg`, 11 icons |
+| [Design Patterns](patterns.md) | 35 reusable execution, retrieval, memory, quality, safety, and orchestration patterns | `patterns-overview.svg`, `multi-agent-topologies.svg`, `decision-tree.svg` |
+| [Open Protocols & Standards](protocols.md) | 16 transport, schema, auth, tool (MCP), agent (A2A), commerce, and governance specs | `protocol-stack.svg`, MCP/A2A Mermaid sequence |
+| [Frameworks & Tooling](frameworks.md) | 55 orchestration SDKs, vector stores, observability tracers, eval suites, and sandboxes | `frameworks-by-category-oss.svg` |
+| [Industry Use Cases](use-cases.md) | 83 sector workloads mapping patterns, risks, and human oversight levels | `use-cases-by-industry.svg` |
+| [Safety, Security & Governance](security.md) | 42 risks (OWASP LLM/Agentic Top 10, MITRE ATLAS, NIST, EU AI Act) and controls | `security-layers.svg`, `risk-heatmap.svg` |
+| [Evaluation & Operations](evaluation.md) | 32 metrics, benchmarks (`SWE-bench`, `GAIA`, `tau-bench`), graders, and CI checks | `freshness-status.svg`, `source-reliability-confidence.svg` |
+| [Learning Paths & Resources](learning-paths.md) | 105 guided curriculum steps across 5 role tracks plus 267 vetted resources | `learning-roadmap.svg` |
 
----
+![Divider](../assets/divider.svg)
 
-## Five Learning Paths
+## Methodology, Operations & Governance
 
-The knowledge base organizes its entries into five structured learning paths defined in
-`data/learning_paths.csv`. Each path has ordered steps with difficulty levels and estimated
-reading time.
-
-| Path | Audience | Focus |
-|------|----------|-------|
-| **Foundations** | Anyone new to AI agents | Core concepts, terminology, reasoning patterns, and mental models |
-| **Builder** | Developers building agentic systems | Frameworks, tools, function calling, RAG, memory, and patterns |
-| **Architect** | System designers and tech leads | Protocols, multi-agent topologies, orchestration, integration, and system design |
-| **Security and Governance** | Security engineers and compliance leads | Risks, mitigations, OWASP LLM Top 10, NIST AI RMF, evaluation, and audit |
-| **Team Lead** | Engineering and product leaders | Use cases, ROI frameworks, adoption strategies, evaluation metrics, and organizational readiness |
-
-Start with the path that matches your current role and goals. Each path is designed to build on
-the previous steps, but you can enter at any point based on your existing knowledge.
-
----
-
-## Quick Links
-
-- [Interactive Explorer](https://automate-workflow.github.io/ai-agent-hub) — search, filter, and explore the knowledge base visually
-- [GitHub Repository](https://github.com/Automate-Workflow/ai-agent-hub) — source data and issue tracker
-- [GitHub Discussions](https://github.com/Automate-Workflow/ai-agent-hub/discussions) — questions and community conversation
-
+| Document | Purpose |
+|---|---|
+| [How to Read This Hub](how-to-read-this-hub.md) | Practical orientation for reading schemas, confidence tiers, and badges |
+| [Evidence Methodology](methodology.md) | Primary-source rules, citation calibration, and qualitative prose standards |
+| [Maintenance & Freshness](maintenance.md) | Review windows (`90`/`180`/`365` days), link checking, and lifecycle policies |
+| [Architecture Decisions](decisions.md) | Key technical decisions (`DEC-001` through `DEC-006`) recorded during development |
+| [Data Dictionary](../data/README.md) | Column definitions and JSON Schema constraints across all 13 CSV tables |

@@ -75,9 +75,16 @@ def _render_overview_table(dataset_name: str) -> str:
         )
     if dataset_name == "patterns":
         return _table(
-            ["ID", "Pattern", "Category", "Intent", "Confidence"],
+            ["ID", "Pattern", "Category", "Intent", "Diagram", "Confidence"],
             [
-                [r["id"], r["name"], r["category"], r["intent"], r["confidence"]]
+                [
+                    r["id"],
+                    r["name"],
+                    r["category"],
+                    r["intent"],
+                    f"[SVG](../{r['diagram_file']})" if r.get("diagram_file") else "-",
+                    r["confidence"],
+                ]
                 for r in sorted(rows, key=lambda x: x["id"])
             ],
         )
@@ -163,15 +170,26 @@ def _build_detail_pages(
                 out.append(f"- `{s}`")
         return out or ["- None recorded"]
 
+    def fmt_ref(target_id: str, from_dir: str) -> str:
+        lbl = label_map.get(target_id, target_id)
+        if target_id.startswith("CP-"):
+            href = f"{target_id}.md" if from_dir == "concepts" else f"../concepts/{target_id}.md"
+            return f"[`{target_id}`]({href}) ({lbl})"
+        if target_id.startswith("AT-"):
+            href = f"{target_id}.md" if from_dir == "types" else f"../types/{target_id}.md"
+            return f"[`{target_id}`]({href}) ({lbl})"
+        return f"`{target_id}` ({lbl})"
+
     # Concepts subpages (only if concepts.csv AND docs/concepts.md overview exist, or explicitly populated)
     concepts = sorted(present.get("concepts", []), key=lambda r: r["id"])
     if concepts and (DOCS_DIR / "concepts.md").exists():
         cdir = DOCS_DIR / "concepts"
         for i, r in enumerate(concepts):
             cid = r["id"]
-            prereqs = [f"- `{p}` ({label_map.get(p, p)})" for p in split_pipe(r.get("prerequisite_ids", ""))]
+            cat_slug = r["category"].replace("_", "-")
+            prereqs = [f"- {fmt_ref(p, 'concepts')}" for p in split_pipe(r.get("prerequisite_ids", ""))]
             rel_edges = [
-                f"- {d}: `{pred}` -> `{other}` ({label_map.get(other, other)})"
+                f"- {d}: `{pred}` -> {fmt_ref(other, 'concepts')}"
                 for d, pred, other in sorted(edges_by_node.get(cid, []))[:20]
             ]
             nav = []
@@ -181,8 +199,15 @@ def _build_detail_pages(
             if i + 1 < len(concepts):
                 nav.append(f"[Next: {concepts[i+1]['id']}]({concepts[i+1]['id']}.md)")
 
+            badges_line = (
+                f"![{r['category']}](../../assets/icons/{cat_slug}.svg) "
+                f"![{r['difficulty']}](../../assets/badges/{r['difficulty']}.svg) "
+                f"![{r['status']}](../../assets/badges/{r['status']}.svg)"
+            )
             lines = [
                 f"# {cid}: {r['term']}",
+                "",
+                badges_line,
                 "",
                 f"**Category:** `{r['category']}` | **Difficulty:** `{r['difficulty']}` | **Confidence:** `{r['confidence']}` | **Status:** `{r['status']}` | **Verified:** `{r['verified_date']}`",
                 "",
@@ -234,7 +259,7 @@ def _build_detail_pages(
         for i, r in enumerate(types):
             aid = r["id"]
             rel_edges = [
-                f"- {d}: `{pred}` -> `{other}` ({label_map.get(other, other)})"
+                f"- {d}: `{pred}` -> {fmt_ref(other, 'types')}"
                 for d, pred, other in sorted(edges_by_node.get(aid, []))[:20]
             ]
             nav = []
@@ -244,8 +269,14 @@ def _build_detail_pages(
             if i + 1 < len(types):
                 nav.append(f"[Next: {types[i+1]['id']}]({types[i+1]['id']}.md)")
 
+            badges_line = (
+                f"![{r['difficulty']}](../../assets/badges/{r['difficulty']}.svg) "
+                f"![{r['status']}](../../assets/badges/{r['status']}.svg)"
+            )
             lines = [
                 f"# {aid}: {r['name']}",
+                "",
+                badges_line,
                 "",
                 f"**Lens:** `{r['view']}` | **Maturity:** `{r['maturity']}` | **Difficulty:** `{r['difficulty']}` | **Confidence:** `{r['confidence']}` | **Status:** `{r['status']}` | **Verified:** `{r['verified_date']}`",
                 "",
@@ -343,3 +374,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
