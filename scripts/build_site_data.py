@@ -17,13 +17,15 @@ from stats import compute_stats
 
 
 def build_site_data(output_dir: pathlib.Path) -> None:
-    """Export per-dataset JSON files, search index, graph.json, and summary.json."""
+    """Export per-dataset JSON files, search index, graph.json, summary.json, and offline bundle.js."""
     output_dir.mkdir(parents=True, exist_ok=True)
     search_items: list[dict[str, object]] = []
+    all_datasets: dict[str, list[dict[str, str]]] = {}
 
     for name in DATASET_ORDER:
         spec = DATASETS[name]
         _, rows = read_csv_rows(name)
+        all_datasets[name] = rows
         write_text_lf(output_dir / f"{name}.json", json.dumps(rows, indent=2) + "\n")
         if name in ("sources", "relationships", "glossary_aliases"):
             continue
@@ -72,6 +74,17 @@ def build_site_data(output_dir: pathlib.Path) -> None:
     stats_payload = compute_stats()
     write_text_lf(output_dir / "summary.json", json.dumps(stats_payload, indent=2) + "\n")
 
+    bundle = {
+        "summary": stats_payload,
+        "index": search_items,
+        "graph": graph_payload,
+        "datasets": all_datasets,
+    }
+    write_text_lf(
+        output_dir / "bundle.js",
+        "window.AI_AGENT_HUB_DATA = " + json.dumps(bundle, separators=(",", ":")) + ";\n",
+    )
+
 
 def main(argv: list[str] | None = None) -> int:
     configure_stdio()
@@ -90,3 +103,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

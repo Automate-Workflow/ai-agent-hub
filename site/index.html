@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Agent Hub — Offline Interactive Knowledge Explorer</title>
+  <meta name="description" content="Explore AI agent types, concepts, design patterns, protocols, tooling, risks, evaluations, and learning paths offline." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="top-stripe" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <svg class="brand-logo" viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="AI Agent Hub emblem">
+          <title>AI Agent Hub Emblem</title>
+          <rect x="2" y="2" width="60" height="60" rx="14" fill="#FFFFFF" stroke="#FEE2E2" stroke-width="2"/>
+          <g stroke="#B91C1C" stroke-width="2.5" stroke-linecap="round">
+            <line x1="32" y1="32" x2="32" y2="12"/>
+            <line x1="32" y1="32" x2="49" y2="22"/>
+            <line x1="32" y1="32" x2="49" y2="42"/>
+            <line x1="32" y1="32" x2="32" y2="52"/>
+            <line x1="32" y1="32" x2="15" y2="42"/>
+            <line x1="32" y1="32" x2="15" y2="22"/>
+          </g>
+          <g fill="#FFFFFF" stroke="#DC2626" stroke-width="2">
+            <circle cx="32" cy="12" r="3.5"/>
+            <circle cx="49" cy="22" r="3.5"/>
+            <circle cx="49" cy="42" r="3.5"/>
+            <circle cx="32" cy="52" r="3.5"/>
+            <circle cx="15" cy="42" r="3.5"/>
+            <circle cx="15" cy="22" r="3.5"/>
+          </g>
+          <circle cx="32" cy="32" r="9" fill="#B91C1C" stroke="#7F1D1D" stroke-width="2"/>
+          <circle cx="32" cy="32" r="3" fill="#FFFFFF"/>
+        </svg>
+        <div>
+          <h1>AI Agent Hub</h1>
+          <p class="tagline">Structured · Primary-Sourced · Offline Explorer</p>
+        </div>
+      </div>
+
+      <div class="header-controls">
+        <div class="global-search-wrap">
+          <input id="global-search" type="search" placeholder="Search concepts, types, patterns, risks... (Press /)" aria-label="Search knowledge base" autocomplete="off" />
+        </div>
+        <button id="theme-toggle" class="btn btn-outline" type="button" aria-label="Toggle dark mode">Dark Mode</button>
+      </div>
+    </div>
+
+    <nav class="nav-tabs" role="tablist" aria-label="Explorer sections">
+      <button class="tab-btn active" role="tab" aria-selected="true" data-tab="overview">Overview</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="catalog">Catalog Explorer</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="graph">Knowledge Graph</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="learning">Learning Paths</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="sources">Verified Sources</button>
+    </nav>
+  </header>
+
+  <div class="workspace">
+    <main id="main-content" class="main-pane">
+      <!-- OVERVIEW TAB -->
+      <section id="tab-overview" class="tab-panel active" role="tabpanel">
+        <div class="hero-card">
+          <div>
+            <span class="pill pill-red">Automate Workflow · Standalone Release Baseline</span>
+            <h2>Explore Every Layer of Agentic AI</h2>
+            <p>Browse verified agent definitions, open protocol stacks, architecture tradeoffs, OWASP/NIST threat mitigations, evaluation benchmarks, and role-based learning curricula directly in your browser without network dependencies.</p>
+          </div>
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="button" data-jump-tab="catalog">Search Catalog</button>
+            <button class="btn btn-outline" type="button" data-jump-tab="graph">Open Graph</button>
+            <button class="btn btn-outline" type="button" data-jump-tab="learning">Track Learning</button>
+          </div>
+        </div>
+
+        <div id="overview-kpis" class="kpi-grid"></div>
+
+        <div class="section-grid">
+          <div class="panel-card">
+            <h3>Dataset Coverage &amp; Targets</h3>
+            <div id="dataset-bars" class="bars-list"></div>
+          </div>
+          <div class="panel-card">
+            <h3>Quick Entry Points</h3>
+            <div class="quick-links">
+              <button class="quick-chip" data-inspect="CP-001">CP-001: Agent</button>
+              <button class="quick-chip" data-inspect="CP-054">CP-054: MCP</button>
+              <button class="quick-chip" data-inspect="CP-055">CP-055: A2A</button>
+              <button class="quick-chip" data-inspect="PT-008">PT-008: ReAct loop</button>
+              <button class="quick-chip" data-inspect="PT-014">PT-014: Agentic RAG</button>
+              <button class="quick-chip" data-inspect="PT-017">PT-017: Supervisor</button>
+              <button class="quick-chip" data-inspect="PS-001">PS-001: MCP Spec</button>
+              <button class="quick-chip" data-inspect="FW-002">FW-002: LangGraph</button>
+              <button class="quick-chip" data-inspect="RS-001">RS-001: Prompt Injection</button>
+              <button class="quick-chip" data-inspect="RS-012">RS-012: Tool Misuse</button>
+              <button class="quick-chip" data-inspect="EV-002">EV-002: pass^k Reliability</button>
+              <button class="quick-chip" data-inspect="EV-017">EV-017: SWE-bench</button>
+            </div>
+            <div class="callout-soft">
+              <strong>Dual Licensing:</strong> Explorer code is MIT licensed; all structured CSV data, definitions, and diagrams are CC BY 4.0. Verified <code>2026-11-11</code>.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATALOG TAB -->
+      <section id="tab-catalog" class="tab-panel" role="tabpanel" hidden>
+        <div class="filter-bar">
+          <select id="filter-dataset" aria-label="Filter by dataset">
+            <option value="all">All Datasets</option>
+          </select>
+          <select id="filter-category" aria-label="Filter by category">
+            <option value="all">All Categories</option>
+          </select>
+          <select id="filter-difficulty" aria-label="Filter by difficulty">
+            <option value="all">All Levels</option>
+            <option value="beginner">beginner</option>
+            <option value="intermediate">intermediate</option>
+            <option value="advanced">advanced</option>
+          </select>
+          <select id="filter-confidence" aria-label="Filter by confidence">
+            <option value="all">All Confidence</option>
+            <option value="high">high</option>
+            <option value="medium">medium</option>
+            <option value="low">low</option>
+          </select>
+          <select id="filter-status" aria-label="Filter by status">
+            <option value="all">All Status</option>
+            <option value="active">active</option>
+            <option value="needs-review">needs-review</option>
+            <option value="deprecated">deprecated</option>
+          </select>
+          <span id="catalog-count" class="count-label"></span>
+        </div>
+
+        <div id="alias-banner" class="alias-banner" hidden></div>
+        <div id="catalog-grid" class="card-grid"></div>
+      </section>
+
+      <!-- GRAPH TAB -->
+      <section id="tab-graph" class="tab-panel" role="tabpanel" hidden>
+        <div class="filter-bar graph-controls">
+          <label class="ctrl-group">
+            <span>Focus Node</span>
+            <input id="graph-focus" type="text" value="CP-001" placeholder="e.g. CP-054, RS-001" aria-label="Graph focus node ID" />
+          </label>
+          <label class="ctrl-group">
+            <span>Depth</span>
+            <select id="graph-depth" aria-label="Graph neighborhood depth">
+              <option value="1" selected>1-hop Neighborhood</option>
+              <option value="2">2-hop Subgraph</option>
+              <option value="hubs">Top Hubs Overview</option>
+            </select>
+          </label>
+          <label class="ctrl-group">
+            <span>Relation</span>
+            <select id="graph-relation" aria-label="Filter by relation verb">
+              <option value="all">All Relations (10)</option>
+              <option value="requires">requires</option>
+              <option value="part_of">part_of</option>
+              <option value="implements">implements</option>
+              <option value="enables">enables</option>
+              <option value="mitigates">mitigates</option>
+              <option value="measures">measures</option>
+              <option value="uses">uses</option>
+              <option value="contrasts_with">contrasts_with</option>
+              <option value="specializes">specializes</option>
+              <option value="example_of">example_of</option>
+            </select>
+          </label>
+          <button id="graph-apply" class="btn btn-primary" type="button">Render</button>
+          <button id="graph-reset-zoom" class="btn btn-outline" type="button">Reset View</button>
+          <span id="graph-stats" class="count-label"></span>
+        </div>
+
+        <div class="graph-stage-wrap">
+          <canvas id="graph-canvas" aria-label="Interactive AI Agent Hub relationship graph"></canvas>
+          <div id="graph-legend" class="graph-legend"></div>
+          <div id="graph-tooltip" class="graph-tooltip" hidden></div>
+        </div>
+      </section>
+
+      <!-- LEARNING PATHS TAB -->
+      <section id="tab-learning" class="tab-panel" role="tabpanel" hidden>
+        <div class="learning-header">
+          <div id="track-pills" class="track-pills" role="tablist" aria-label="Learning tracks"></div>
+          <div class="progress-card">
+            <div class="progress-meta">
+              <span id="progress-label">Progress: 0 / 21 steps</span>
+              <button id="reset-progress" class="btn-link" type="button">Reset Track Progress</button>
+            </div>
+            <div class="progress-bar-bg"><div id="progress-bar-fill" class="progress-bar-fill"></div></div>
+          </div>
+        </div>
+        <div id="learning-steps" class="steps-list"></div>
+      </section>
+
+      <!-- SOURCES TAB -->
+      <section id="tab-sources" class="tab-panel" role="tabpanel" hidden>
+        <div class="filter-bar">
+          <select id="source-type-filter" aria-label="Filter by source type">
+            <option value="all">All Source Types</option>
+          </select>
+          <select id="source-rel-filter" aria-label="Filter by source reliability">
+            <option value="all">All Reliability Tiers</option>
+            <option value="primary">primary</option>
+            <option value="secondary">secondary</option>
+            <option value="tertiary">tertiary</option>
+          </select>
+          <span id="sources-count" class="count-label"></span>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title &amp; Publisher</th>
+                <th>Type</th>
+                <th>Tier</th>
+                <th>Published</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody id="sources-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- DETAIL DRAWER -->
+    <aside id="detail-drawer" class="detail-drawer" aria-label="Entity inspector" hidden>
+      <div class="drawer-head">
+        <div>
+          <span id="drawer-id" class="pill pill-red"></span>
+          <span id="drawer-dataset" class="pill pill-soft"></span>
+        </div>
+        <button id="drawer-close" class="btn-close" type="button" aria-label="Close detail panel">&times;</button>
+      </div>
+      <h2 id="drawer-title"></h2>
+      <div id="drawer-badges" class="drawer-badges"></div>
+      <div class="drawer-actions">
+        <button id="drawer-graph-btn" class="btn btn-primary btn-sm" type="button">Focus in Knowledge Graph</button>
+      </div>
+      <div id="drawer-body" class="drawer-body"></div>
+    </aside>
+  </div>
+
+  <div id="load-error" class="load-error" hidden></div>
+
+  <!-- Preload offline data bundle when opened via file:// or local browser; falls back cleanly to fetch() -->
+  <script src="data/bundle.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
