@@ -1,0 +1,48 @@
+name: Correction
+description: Report an error in existing data
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: input
+    id: row_id
+    attributes:
+      label: Row ID
+      description: "The ID of the row to correct, e.g. CP-042 or AT-007"
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: File
+      description: "Which CSV or markdown file contains the error, e.g. data/concepts.csv"
+    validations:
+      required: true
+  - type: textarea
+    id: current_text
+    attributes:
+      label: Current (incorrect) text
+      description: Copy the exact text as it currently appears in the file
+    validations:
+      required: true
+  - type: textarea
+    id: correct_text
+    attributes:
+      label: Correct text
+      description: What it should say instead
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Source URL
+      description: Primary source that supports the correction (required)
+    validations:
+      required: true
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context (optional)
+      description: Any other relevant context, such as when the original was correct but has since changed
+    validations:
+      required: false
+

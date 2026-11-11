@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this knowledge base in your research or work, please cite it."
+type: dataset
+title: "AI Agent Hub"
+abstract: >
+  A structured, sourced, richly visual knowledge base about AI agent types, concepts, patterns,
+  protocols, frameworks, use cases, risks, and evaluation methods. Covers 120+ concepts,
+  35+ agent types, 600+ relationship edges, and 13 hand-crafted SVG diagrams.
+  Maintained by Automate Workflow.
+authors:
+  - alias: ayushcmd
+    name: "Automate Workflow"
+repository-code: "https://github.com/Automate-Workflow/ai-agent-hub"
+url: "https://automate-workflow.github.io/ai-agent-hub"
+license: MIT
+date-released: "2026-11-11"
+version: "1.0.0"
+keywords:
+  - ai-agents
+  - agentic-ai
+  - knowledge-base
+  - mcp
+  - rag
+  - llm
+  - multi-agent
+  - ai-safety
+  - dataset
+  - open-data
+  - agent-types
+  - agentic-patterns
+  - evaluation
+  - protocols
+

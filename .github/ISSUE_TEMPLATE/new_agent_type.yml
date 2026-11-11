@@ -1,0 +1,71 @@
+name: New Agent Type
+description: Propose a new agent type entry for the knowledge base
+title: "[New Agent Type] "
+labels: ["new-data", "agent-type"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Agent Type Name
+      description: The canonical name of this agent type as used in primary sources
+    validations:
+      required: true
+  - type: dropdown
+    id: view
+    attributes:
+      label: View / Lens
+      description: Which classification lens does this agent type use?
+      options:
+        - decision_logic
+        - job
+        - architecture
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: Definition
+      description: Plain language definition, maximum 280 characters. No hype or marketing language.
+    validations:
+      required: true
+  - type: textarea
+    id: capabilities
+    attributes:
+      label: Key Capabilities
+      description: What can this agent type do that distinguishes it from others?
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Known Limitations or Tradeoffs
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Primary Source URL
+      description: Official documentation, research paper, or specification defining this agent type
+    validations:
+      required: true
+  - type: dropdown
+    id: maturity
+    attributes:
+      label: Maturity
+      options:
+        - established
+        - growing
+        - emerging
+    validations:
+      required: true
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Implementation Difficulty
+      options:
+        - beginner
+        - intermediate
+        - advanced
+    validations:
+      required: true
+

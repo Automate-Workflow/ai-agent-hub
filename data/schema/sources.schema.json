@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Automate-Workflow/ai-agent-hub/blob/main/data/schema/sources.schema.json",
+  "title": "AI Agent Hub Source Entry",
+  "description": "Schema for a single row in data/sources.csv — a verified reference source for the AI Agent Hub knowledge base.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "publisher",
+    "author",
+    "url",
+    "source_type",
+    "published_date",
+    "accessed_date",
+    "reliability",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique source identifier in the format SRC-NNNN (zero-padded to 4 digits).",
+      "pattern": "^SRC-[0-9]{4}$",
+      "examples": ["SRC-0001", "SRC-0042", "SRC-0160"]
+    },
+    "title": {
+      "type": "string",
+      "description": "Full title of the source document, paper, repository, or resource.",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Organisation, institution, or platform that published or hosts the source.",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "author": {
+      "type": "string",
+      "description": "Individual author(s) or the publishing organisation when no individual is credited. Use 'et al.' for three or more co-authors.",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "url": {
+      "type": "string",
+      "description": "Canonical URL for the source. Must be a valid HTTP or HTTPS URL.",
+      "format": "uri",
+      "pattern": "^https?://",
+      "maxLength": 2048
+    },
+    "source_type": {
+      "type": "string",
+      "description": "Classification of the source material type.",
+      "enum": [
+        "official_docs",
+        "paper",
+        "standard",
+        "book",
+        "course",
+        "report",
+        "blog",
+        "repo"
+      ]
+    },
+    "published_date": {
+      "type": "string",
+      "description": "ISO 8601 date (YYYY-MM-DD) when the source was first published. Use an empty string when the publication date is unknown.",
+      "pattern": "^([0-9]{4}-[0-9]{2}-[0-9]{2}|)$",
+      "examples": ["2024-11-25", "2023-03-15", ""]
+    },
+    "accessed_date": {
+      "type": "string",
+      "description": "ISO 8601 date (YYYY-MM-DD) when this source was last verified and accessed by a contributor.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "examples": ["2026-11-11"]
+    },
+    "reliability": {
+      "type": "string",
+      "description": "Source reliability tier. 'primary' sources are original materials (specs, papers, official docs, repos). 'secondary' sources interpret or survey primary material (blogs, courses, surveys). 'tertiary' sources aggregate secondary material (encyclopedias, general overviews).",
+      "enum": ["primary", "secondary", "tertiary"]
+    },
+    "notes": {
+      "type": "string",
+      "description": "Brief human-readable annotation describing the source's relevance to the AI Agent Hub project. Use an empty string when no notes are needed.",
+      "maxLength": 1024
+    }
+  },
+  "examples": [
+    {
+      "id": "SRC-0001",
+      "title": "Model Context Protocol Specification",
+      "publisher": "Anthropic",
+      "author": "Anthropic",
+      "url": "https://spec.modelcontextprotocol.io",
+      "source_type": "standard",
+      "published_date": "2024-11-25",
+      "accessed_date": "2026-11-11",
+      "reliability": "primary",
+      "notes": "Canonical MCP wire-protocol spec"
+    },
+    {
+      "id": "SRC-0010",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "publisher": "arXiv",
+      "author": "Yao et al.",
+      "url": "https://arxiv.org/abs/2210.03629",
+      "source_type": "paper",
+      "published_date": "2022-10-06",
+      "accessed_date": "2026-11-11",
+      "reliability": "primary",
+      "notes": "ReAct agent reasoning-and-acting framework"
+    },
+    {
+      "id": "SRC-0157",
+      "title": "LLM Powered Autonomous Agents",
+      "publisher": "Lilian Weng",
+      "author": "Lilian Weng",
+      "url": "https://lilianweng.github.io/posts/2023-06-23-agent",
+      "source_type": "blog",
+      "published_date": "2023-06-23",
+      "accessed_date": "2026-11-11",
+      "reliability": "secondary",
+      "notes": "Comprehensive survey of LLM agent components"
+    }
+  ]
+}

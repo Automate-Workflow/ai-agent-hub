@@ -1,0 +1,161 @@
+id,title,publisher,author,url,source_type,published_date,accessed_date,reliability,notes
+SRC-0001,Model Context Protocol Specification,Anthropic,Anthropic,https://spec.modelcontextprotocol.io,standard,2024-11-25,2026-11-11,primary,Canonical MCP wire-protocol spec
+SRC-0002,Model Context Protocol Documentation,Anthropic,Anthropic,https://modelcontextprotocol.io/docs,official_docs,2024-11-25,2026-11-11,primary,Official MCP implementation guide
+SRC-0003,Agent2Agent Protocol,Google,Google,https://google.github.io/A2A,standard,2025-04-09,2026-11-11,primary,A2A interoperability protocol specification
+SRC-0004,OpenAPI Specification 3.1.0,OpenAPI Initiative,OpenAPI Initiative,https://spec.openapis.org/oas/v3.1.0,standard,2021-02-15,2026-11-11,primary,REST API description standard
+SRC-0005,JSON Schema Validation Draft 2020-12,JSON Schema org,JSON Schema org,https://json-schema.org/draft/2020-12/json-schema-validation,standard,2022-06-16,2026-11-11,primary,JSON Schema validation specification
+SRC-0006,The OAuth 2.0 Authorization Framework,IETF,IETF,https://www.rfc-editor.org/rfc/rfc6749,standard,2012-10-01,2026-11-11,primary,RFC 6749 OAuth 2.0 authorization standard
+SRC-0007,OpenTelemetry Specification,CNCF,CNCF,https://opentelemetry.io/docs/specs/otel,standard,2023-01-01,2026-11-11,primary,Observability signals specification
+SRC-0008,The OAuth 2.1 Authorization Framework,IETF,IETF,https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-12.txt,standard,2024-01-01,2026-11-11,primary,OAuth 2.1 draft consolidating best practices
+SRC-0009,Attention Is All You Need,arXiv,Vaswani et al.,https://arxiv.org/abs/1706.03762,paper,2017-06-12,2026-11-11,primary,Foundational transformer architecture paper
+SRC-0010,"ReAct: Synergizing Reasoning and Acting in Language Models",arXiv,Yao et al.,https://arxiv.org/abs/2210.03629,paper,2022-10-06,2026-11-11,primary,ReAct agent reasoning-and-acting framework
+SRC-0011,Chain-of-Thought Prompting Elicits Reasoning in Large Models,arXiv,Wei et al.,https://arxiv.org/abs/2201.11903,paper,2022-01-28,2026-11-11,primary,Chain-of-thought prompting methodology
+SRC-0012,Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,arXiv,Lewis et al.,https://arxiv.org/abs/2005.11401,paper,2020-05-22,2026-11-11,primary,Original RAG paper
+SRC-0013,"Toolformer: Language Models Can Teach Themselves to Use Tools",arXiv,Schick et al.,https://arxiv.org/abs/2302.04761,paper,2023-02-09,2026-11-11,primary,LLM self-supervised tool-use learning
+SRC-0014,"Constitutional AI: Harmlessness from AI Feedback",arXiv/Anthropic,Bai et al.,https://arxiv.org/abs/2212.08073,paper,2022-12-15,2026-11-11,primary,Constitutional AI alignment methodology
+SRC-0015,"Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",arXiv,Asai et al.,https://arxiv.org/abs/2310.11511,paper,2023-10-17,2026-11-11,primary,Self-reflective retrieval-augmented generation
+SRC-0016,"HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face",arXiv,Shen et al.,https://arxiv.org/abs/2303.17580,paper,2023-03-30,2026-11-11,primary,LLM-orchestrated multi-model task solving
+SRC-0017,"AgentBench: Evaluating LLMs as Agents",arXiv,Liu et al.,https://arxiv.org/abs/2308.03688,paper,2023-08-07,2026-11-11,primary,Multi-environment LLM agent evaluation benchmark
+SRC-0018,"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",arXiv,Jimenez et al.,https://arxiv.org/abs/2310.06770,paper,2023-10-10,2026-11-11,primary,Software engineering benchmark for LLMs
+SRC-0019,Corrective Retrieval Augmented Generation,arXiv,Yan et al.,https://arxiv.org/abs/2401.15884,paper,2024-01-29,2026-11-11,primary,CRAG corrective retrieval mechanism
+SRC-0020,"Tree of Thoughts: Deliberate Problem Solving with LLMs",arXiv,Yao et al.,https://arxiv.org/abs/2305.10601,paper,2023-05-17,2026-11-11,primary,Tree-structured reasoning for LLMs
+SRC-0021,Self-Consistency Improves Chain of Thought Reasoning in Language Models,arXiv,Wang et al.,https://arxiv.org/abs/2203.11171,paper,2022-03-21,2026-11-11,primary,Self-consistency decoding strategy
+SRC-0022,A Survey on Large Language Model based Autonomous Agents,arXiv,Wang et al.,https://arxiv.org/abs/2308.11432,paper,2023-08-22,2026-11-11,primary,Comprehensive survey of LLM-based agents
+SRC-0023,"Reflexion: Language Agents with Verbal Reinforcement Learning",arXiv,Shinn et al.,https://arxiv.org/abs/2303.11366,paper,2023-03-20,2026-11-11,primary,Verbal reinforcement learning for agents
+SRC-0024,Plan-and-Solve Prompting,arXiv,Wang et al.,https://arxiv.org/abs/2305.04091,paper,2023-05-06,2026-11-11,primary,Plan-and-solve zero-shot reasoning prompting
+SRC-0025,Training Language Models to Follow Instructions with Human Feedback,arXiv,Ouyang et al.,https://arxiv.org/abs/2203.02155,paper,2022-03-04,2026-11-11,primary,InstructGPT RLHF alignment paper
+SRC-0026,"Voyager: An Open-Ended Embodied Agent with LLMs",arXiv,Wang et al.,https://arxiv.org/abs/2305.16291,paper,2023-05-25,2026-11-11,primary,Lifelong learning embodied agent in Minecraft
+SRC-0027,"CAMEL: Communicative Agents for Mind Exploration",arXiv,Li et al.,https://arxiv.org/abs/2303.17760,paper,2023-03-31,2026-11-11,primary,Role-playing multi-agent communication framework
+SRC-0028,"AutoAgents: A Framework for Automatic Agent Generation",arXiv,Chen et al.,https://arxiv.org/abs/2309.17288,paper,2023-09-29,2026-11-11,primary,Automatic multi-agent generation framework
+SRC-0029,"AgentSims: An Open-Source Sandbox for LLM Evaluation",arXiv,Lin et al.,https://arxiv.org/abs/2308.04026,paper,2023-08-08,2026-11-11,primary,Simulation sandbox for LLM agent evaluation
+SRC-0030,Language Agent Tree Search Unifies Reasoning Acting and Planning,arXiv,Zhou et al.,https://arxiv.org/abs/2310.04406,paper,2023-10-06,2026-11-11,primary,LATS unified agent reasoning framework
+SRC-0031,"Gorilla: Large Language Model Connected with Massive APIs",arXiv,Patil et al.,https://arxiv.org/abs/2305.15334,paper,2023-05-24,2026-11-11,primary,LLM-API connection with retrieval awareness
+SRC-0032,Judging LLM-as-a-Judge with MT-Bench,arXiv,Zheng et al.,https://arxiv.org/abs/2306.05685,paper,2023-06-09,2026-11-11,primary,LLM-as-judge evaluation methodology
+SRC-0033,LangChain Python Documentation,LangChain,LangChain,https://python.langchain.com/docs,official_docs,2023-01-01,2026-11-11,primary,Official LangChain Python SDK documentation
+SRC-0034,LangGraph Documentation,LangChain,LangChain,https://langchain-ai.github.io/langgraph,official_docs,2024-01-01,2026-11-11,primary,Official LangGraph stateful agent framework docs
+SRC-0035,LlamaIndex Documentation,LlamaIndex,LlamaIndex,https://docs.llamaindex.ai,official_docs,2023-01-01,2026-11-11,primary,Official LlamaIndex data framework documentation
+SRC-0036,AutoGen Documentation,Microsoft,Microsoft,https://microsoft.github.io/autogen,official_docs,2023-10-01,2026-11-11,primary,Official AutoGen multi-agent framework docs
+SRC-0037,CrewAI Documentation,CrewAI,CrewAI,https://docs.crewai.com,official_docs,2024-01-01,2026-11-11,primary,Official CrewAI role-based agent framework docs
+SRC-0038,Semantic Kernel Documentation,Microsoft,Microsoft,https://learn.microsoft.com/en-us/semantic-kernel,official_docs,2023-01-01,2026-11-11,primary,Official Semantic Kernel SDK documentation
+SRC-0039,Haystack Documentation,deepset,deepset,https://haystack.deepset.ai/documentation,official_docs,2023-01-01,2026-11-11,primary,Official Haystack pipeline framework docs
+SRC-0040,OpenAI Assistants API Documentation,OpenAI,OpenAI,https://platform.openai.com/docs/assistants,official_docs,2023-11-06,2026-11-11,primary,OpenAI Assistants API official reference
+SRC-0041,Anthropic API Documentation,Anthropic,Anthropic,https://docs.anthropic.com,official_docs,2024-01-01,2026-11-11,primary,Official Anthropic Claude API documentation
+SRC-0042,Gemini API Documentation,Google,Google,https://ai.google.dev/api,official_docs,2024-02-01,2026-11-11,primary,Official Google Gemini API reference
+SRC-0043,OpenAI API Reference,OpenAI,OpenAI,https://platform.openai.com/docs/api-reference,official_docs,2023-01-01,2026-11-11,primary,OpenAI REST API complete reference
+SRC-0044,Mistral AI Documentation,Mistral AI,Mistral AI,https://docs.mistral.ai,official_docs,2023-12-01,2026-11-11,primary,Official Mistral AI API documentation
+SRC-0045,Cohere API Documentation,Cohere,Cohere,https://docs.cohere.com,official_docs,2023-01-01,2026-11-11,primary,Official Cohere API reference
+SRC-0046,Transformers Documentation,Hugging Face,Hugging Face,https://huggingface.co/docs/transformers,official_docs,2020-10-01,2026-11-11,primary,Official HuggingFace Transformers library docs
+SRC-0047,Ollama,Ollama,Ollama,https://github.com/ollama/ollama,repo,2023-07-01,2026-11-11,primary,Local LLM inference tool repository
+SRC-0048,vLLM Documentation,vLLM team,vLLM team,https://docs.vllm.ai,official_docs,2023-06-01,2026-11-11,primary,High-throughput LLM serving documentation
+SRC-0049,LiteLLM Documentation,BerriAI,BerriAI,https://docs.litellm.ai,official_docs,2023-10-01,2026-11-11,primary,Unified LLM API proxy documentation
+SRC-0050,DSPy: Programming with Foundation Models,Stanford NLP,Stanford NLP,https://dspy-docs.vercel.app,official_docs,2023-01-01,2026-11-11,primary,Declarative LLM programming framework docs
+SRC-0051,Instructor: Structured Outputs for LLMs,Jason Liu,Jason Liu,https://python.useinstructor.com,official_docs,2023-10-01,2026-11-11,primary,Pydantic-based structured LLM output library
+SRC-0052,PydanticAI Documentation,Pydantic,Pydantic,https://ai.pydantic.dev,official_docs,2024-11-01,2026-11-11,primary,Type-safe AI agent framework documentation
+SRC-0053,Agno Documentation,Agno,Agno,https://docs.agno.com,official_docs,2024-01-01,2026-11-11,primary,Agno high-performance agent framework docs
+SRC-0054,smolagents Documentation,Hugging Face,Hugging Face,https://huggingface.co/docs/smolagents,official_docs,2024-12-01,2026-11-11,primary,Minimal code-first agent framework docs
+SRC-0055,Phidata Documentation,Phidata,Phidata,https://docs.phidata.com,official_docs,2024-01-01,2026-11-11,primary,Phidata multi-modal agent framework docs
+SRC-0056,Pinecone Documentation,Pinecone,Pinecone,https://docs.pinecone.io,official_docs,2021-01-01,2026-11-11,primary,Managed vector database documentation
+SRC-0057,Weaviate Documentation,Weaviate,Weaviate,https://weaviate.io/developers/weaviate,official_docs,2021-01-01,2026-11-11,primary,Open-source vector search engine docs
+SRC-0058,Chroma Documentation,Chroma,Chroma,https://docs.trychroma.com,official_docs,2023-03-01,2026-11-11,primary,Open-source embedding database documentation
+SRC-0059,Qdrant Documentation,Qdrant,Qdrant,https://qdrant.tech/documentation,official_docs,2021-05-01,2026-11-11,primary,Rust-based vector search engine docs
+SRC-0060,Milvus Documentation,LF AI & Data,LF AI & Data,https://milvus.io/docs,official_docs,2019-10-01,2026-11-11,primary,Cloud-native vector database documentation
+SRC-0061,pgvector: Open-Source Vector Similarity Search for Postgres,pgvector,pgvector,https://github.com/pgvector/pgvector,repo,2021-01-01,2026-11-11,primary,PostgreSQL vector extension repository
+SRC-0062,Redis Vector Similarity Search,Redis,Redis,https://redis.io/docs/stack/search/reference/vectors,official_docs,2022-01-01,2026-11-11,primary,Redis vector search reference documentation
+SRC-0063,k-NN Plugin for OpenSearch,OpenSearch,OpenSearch,https://opensearch.org/docs/latest/search-plugins/knn,official_docs,2021-01-01,2026-11-11,primary,OpenSearch k-nearest-neighbor search plugin docs
+SRC-0064,LangSmith Documentation,LangChain,LangChain,https://docs.smith.langchain.com,official_docs,2023-07-01,2026-11-11,primary,LLM observability and evaluation platform docs
+SRC-0065,Weights and Biases Documentation,Weights & Biases,Weights & Biases,https://docs.wandb.ai,official_docs,2018-01-01,2026-11-11,primary,ML experiment tracking platform documentation
+SRC-0066,Phoenix: AI Observability and Evaluation,Arize AI,Arize AI,https://docs.arize.com/phoenix,official_docs,2024-01-01,2026-11-11,primary,Open-source LLM tracing and evaluation tool
+SRC-0067,Ragas: Evaluation Framework for RAG Pipelines,Exploding Gradients,Exploding Gradients,https://docs.ragas.io,official_docs,2023-07-01,2026-11-11,primary,RAG pipeline evaluation metrics framework
+SRC-0068,TruLens: Evaluation and Tracking for LLM Experiments,TruEra,TruEra,https://www.trulens.org/docs,official_docs,2023-01-01,2026-11-11,primary,LLM app quality evaluation framework
+SRC-0069,DeepEval: LLM Evaluation Framework,Confident AI,Confident AI,https://docs.confident-ai.com,official_docs,2023-10-01,2026-11-11,primary,Unit-testing style LLM evaluation framework
+SRC-0070,OpenTelemetry Python Documentation,CNCF,CNCF,https://opentelemetry.io/docs/languages/python,official_docs,2023-01-01,2026-11-11,primary,Python OpenTelemetry SDK documentation
+SRC-0071,Helicone Documentation,Helicone,Helicone,https://docs.helicone.ai,official_docs,2023-01-01,2026-11-11,primary,LLM observability proxy documentation
+SRC-0072,Langfuse Documentation,Langfuse,Langfuse,https://langfuse.com/docs,official_docs,2023-07-01,2026-11-11,primary,Open-source LLM engineering platform docs
+SRC-0073,OWASP Top 10 for Large Language Model Applications 2025,OWASP,OWASP,https://owasp.org/www-project-top-10-for-large-language-model-applications,report,2025-01-01,2026-11-11,primary,LLM application security risk catalog
+SRC-0074,AI Risk Management Framework 1.0,NIST,NIST,https://doi.org/10.6028/NIST.AI.100-1,standard,2023-01-26,2026-11-11,primary,US federal AI risk management standard
+SRC-0075,Regulation (EU) 2024/1689 on Artificial Intelligence,EU,EU,https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689,standard,2024-08-01,2026-11-11,primary,EU AI Act binding regulation
+SRC-0076,Anthropic Usage Policy,Anthropic,Anthropic,https://www.anthropic.com/legal/aup,official_docs,2024-01-01,2026-11-11,primary,Anthropic acceptable use policy
+SRC-0077,OpenAI Usage Policies,OpenAI,OpenAI,https://openai.com/policies/usage-policies,official_docs,2024-01-01,2026-11-11,primary,OpenAI acceptable use policy
+SRC-0078,MITRE ATLAS: Adversarial Threat Landscape for AI Systems,MITRE,MITRE,https://atlas.mitre.org,report,2021-01-01,2026-11-11,primary,AI/ML adversarial tactics knowledge base
+SRC-0079,Responsible AI Practices,Google,Google,https://ai.google/responsibilities/responsible-ai-practices,blog,2023-01-01,2026-11-11,secondary,Google guidelines for responsible AI development
+SRC-0080,Microsoft Responsible AI Standard,Microsoft,Microsoft,https://www.microsoft.com/en-us/ai/responsible-ai,report,2022-06-01,2026-11-11,primary,Microsoft responsible AI principles and standard
+SRC-0081,LangChain Repository,LangChain,LangChain,https://github.com/langchain-ai/langchain,repo,2022-10-01,2026-11-11,primary,LangChain Python framework source code
+SRC-0082,LlamaIndex Repository,LlamaIndex,LlamaIndex,https://github.com/run-llama/llama_index,repo,2022-11-01,2026-11-11,primary,LlamaIndex data framework source code
+SRC-0083,AutoGen Repository,Microsoft,Microsoft,https://github.com/microsoft/autogen,repo,2023-08-01,2026-11-11,primary,AutoGen multi-agent framework source code
+SRC-0084,CrewAI Repository,CrewAI,CrewAI,https://github.com/crewAIInc/crewAI,repo,2024-01-01,2026-11-11,primary,CrewAI framework source code
+SRC-0085,Semantic Kernel Repository,Microsoft,Microsoft,https://github.com/microsoft/semantic-kernel,repo,2023-02-01,2026-11-11,primary,Semantic Kernel SDK source code
+SRC-0086,Haystack Repository,deepset,deepset,https://github.com/deepset-ai/haystack,repo,2020-11-01,2026-11-11,primary,Haystack pipeline framework source code
+SRC-0087,LangGraph Repository,LangChain,LangChain,https://github.com/langchain-ai/langgraph,repo,2024-01-01,2026-11-11,primary,LangGraph stateful agent framework source code
+SRC-0088,DSPy Repository,Stanford NLP,Stanford NLP,https://github.com/stanfordnlp/dspy,repo,2022-11-01,2026-11-11,primary,DSPy declarative LLM programming source code
+SRC-0089,Chroma Repository,Chroma,Chroma,https://github.com/chroma-core/chroma,repo,2023-01-01,2026-11-11,primary,Chroma embedding database source code
+SRC-0090,Qdrant Repository,Qdrant,Qdrant,https://github.com/qdrant/qdrant,repo,2021-05-01,2026-11-11,primary,Qdrant vector search engine source code
+SRC-0091,Milvus Repository,LF AI & Data,LF AI & Data,https://github.com/milvus-io/milvus,repo,2019-10-01,2026-11-11,primary,Milvus vector database source code
+SRC-0092,Ragas Repository,Exploding Gradients,Exploding Gradients,https://github.com/explodinggradients/ragas,repo,2023-05-01,2026-11-11,primary,Ragas RAG evaluation framework source code
+SRC-0093,Guardrails AI Repository,Guardrails AI,Guardrails AI,https://github.com/guardrails-ai/guardrails,repo,2023-05-01,2026-11-11,primary,Guardrails AI output validation source code
+SRC-0094,NeMo Guardrails Repository,NVIDIA,NVIDIA,https://github.com/NVIDIA/NeMo-Guardrails,repo,2023-04-01,2026-11-11,primary,NVIDIA NeMo Guardrails source code
+SRC-0095,Instructor Repository,Jason Liu,Jason Liu,https://github.com/jxnl/instructor,repo,2023-05-01,2026-11-11,primary,Instructor structured output library source code
+SRC-0096,PydanticAI Repository,Pydantic,Pydantic,https://github.com/pydantic/pydantic-ai,repo,2024-11-01,2026-11-11,primary,PydanticAI agent framework source code
+SRC-0097,Agno Repository,Agno,Agno,https://github.com/agno-agi/agno,repo,2024-01-01,2026-11-11,primary,Agno agent framework source code
+SRC-0098,smolagents Repository,Hugging Face,Hugging Face,https://github.com/huggingface/smolagents,repo,2024-12-01,2026-11-11,primary,smolagents minimal agent framework source code
+SRC-0099,AI Agents in LangGraph,DeepLearning.AI,DeepLearning.AI,https://learn.deeplearning.ai/courses/ai-agents-in-langgraph,course,2024-01-01,2026-11-11,secondary,Practical course on building agents with LangGraph
+SRC-0100,Multi AI Agent Systems with crewAI,DeepLearning.AI,DeepLearning.AI,https://learn.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai,course,2024-01-01,2026-11-11,secondary,Practical course on multi-agent systems with CrewAI
+SRC-0101,Building and Evaluating Advanced RAG,DeepLearning.AI,DeepLearning.AI,https://learn.deeplearning.ai/courses/building-evaluating-advanced-rag,course,2023-10-01,2026-11-11,secondary,Advanced RAG pipeline design and evaluation course
+SRC-0102,ChatGPT Prompt Engineering for Developers,DeepLearning.AI,DeepLearning.AI,https://learn.deeplearning.ai/courses/chatgpt-prompt-eng-for-devs,course,2023-04-01,2026-11-11,secondary,Prompt engineering fundamentals course
+SRC-0103,Functions Tools and Agents with LangChain,DeepLearning.AI,DeepLearning.AI,https://learn.deeplearning.ai/courses/functions-tools-agents-langchain,course,2023-10-01,2026-11-11,secondary,LangChain function calling and agent tools course
+SRC-0104,Practical Deep Learning for Coders,fast.ai,fast.ai,https://course.fast.ai,course,2022-07-01,2026-11-11,secondary,Practical deep learning foundations course
+SRC-0105,Anthropic Research,Anthropic,Anthropic,https://www.anthropic.com/research,blog,2021-01-01,2026-11-11,secondary,Anthropic research publications and updates
+SRC-0106,OpenAI Research,OpenAI,OpenAI,https://openai.com/research,blog,2015-12-01,2026-11-11,secondary,OpenAI research publications and updates
+SRC-0107,Google DeepMind Research,Google DeepMind,Google DeepMind,https://deepmind.google/research,blog,2010-09-01,2026-11-11,secondary,Google DeepMind research publications
+SRC-0108,LangChain Blog,LangChain,LangChain,https://blog.langchain.dev,blog,2022-10-01,2026-11-11,secondary,LangChain engineering and product blog
+SRC-0109,Hugging Face Blog,Hugging Face,Hugging Face,https://huggingface.co/blog,blog,2019-01-01,2026-11-11,secondary,Hugging Face research and engineering blog
+SRC-0110,Simon Willison's Weblog,Simon Willison,Simon Willison,https://simonwillison.net,blog,2002-01-01,2026-11-11,secondary,LLM analysis and AI engineering commentary
+SRC-0111,Chip Huyen's Blog,Chip Huyen,Chip Huyen,https://huyenchip.com/blog,blog,2016-01-01,2026-11-11,secondary,ML systems and LLM production engineering blog
+SRC-0112,Lilian Weng's Blog,Lilian Weng,Lilian Weng,https://lilianweng.github.io,blog,2017-01-01,2026-11-11,secondary,In-depth AI and agent systems technical blog
+SRC-0113,Weights & Biases Reports: LLM and Agents,Weights & Biases,Weights & Biases,https://wandb.ai/fully-connected/reports,blog,2018-01-01,2026-11-11,secondary,LLM and agent experiment reports from W&B
+SRC-0114,Microsoft AI Blog,Microsoft,Microsoft,https://www.microsoft.com/en-us/ai/blog,blog,2018-01-01,2026-11-11,secondary,Microsoft AI research and product announcements
+SRC-0115,GPT-4 Technical Report,arXiv/OpenAI,OpenAI,https://arxiv.org/abs/2303.08774,paper,2023-03-15,2026-11-11,primary,GPT-4 model capabilities and evaluation report
+SRC-0116,Gemini: A Family of Highly Capable Multimodal Models,arXiv/Google,Google,https://arxiv.org/abs/2312.11805,paper,2023-12-18,2026-11-11,primary,Google Gemini multimodal model paper
+SRC-0117,The Claude 3 Model Family,Anthropic,Anthropic,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,paper,2024-03-07,2026-11-11,primary,Claude 3 model card and evaluation report
+SRC-0118,Llama 2: Open Foundation and Fine-Tuned Chat Models,arXiv/Meta,Touvron et al.,https://arxiv.org/abs/2307.09288,paper,2023-07-18,2026-11-11,primary,Meta Llama 2 open model paper
+SRC-0119,The Llama 3 Herd of Models,arXiv/Meta,Meta AI,https://arxiv.org/abs/2407.21783,paper,2024-07-31,2026-11-11,primary,Meta Llama 3 model family paper
+SRC-0120,Mixtral of Experts,arXiv/Mistral AI,Jiang et al.,https://arxiv.org/abs/2401.04088,paper,2024-01-08,2026-11-11,primary,Mistral mixture-of-experts model paper
+SRC-0121,Measuring Massive Multitask Language Understanding,arXiv,Hendrycks et al.,https://arxiv.org/abs/2009.03300,paper,2020-09-07,2026-11-11,primary,MMLU evaluation benchmark paper
+SRC-0122,Evaluating Large Language Models Trained on Code,arXiv/OpenAI,Chen et al.,https://arxiv.org/abs/2107.03374,paper,2021-07-07,2026-11-11,primary,HumanEval code generation benchmark
+SRC-0123,Beyond the Imitation Game Benchmark,arXiv,Srivastava et al.,https://arxiv.org/abs/2206.04615,paper,2022-06-09,2026-11-11,primary,BIG-Bench diverse LLM evaluation benchmark
+SRC-0124,MT-Bench and Chatbot Arena for Evaluating LLM Alignment,arXiv,Zheng et al.,https://arxiv.org/abs/2306.05685,paper,2023-06-09,2026-11-11,primary,MT-Bench multi-turn conversation evaluation
+SRC-0125,Prompt Injection Attacks Against GPT-3,arXiv,Perez and Ribeiro,https://arxiv.org/abs/2302.12173,paper,2023-02-23,2026-11-11,primary,Prompt injection vulnerability analysis
+SRC-0126,Text Embeddings Reveal (Almost) As Much As Text,arXiv,Morris et al.,https://arxiv.org/abs/2310.06816,paper,2023-10-10,2026-11-11,primary,Embedding privacy and information leakage study
+SRC-0127,Risks from Learned Optimization in Advanced Machine Learning Systems,arXiv,Hubinger et al.,https://arxiv.org/abs/1906.01820,paper,2019-06-05,2026-11-11,primary,Inner alignment and mesa-optimization risks
+SRC-0128,WebGPT: Browser-Assisted Question-Answering with RLHF,arXiv/OpenAI,Nakano et al.,https://arxiv.org/abs/2112.09332,paper,2021-12-17,2026-11-11,primary,Web-browsing agent with human feedback training
+SRC-0129,Fast Inference from Transformers via Speculative Decoding,arXiv/Google,Leviathan et al.,https://arxiv.org/abs/2211.17192,paper,2022-11-30,2026-11-11,primary,Speculative decoding inference acceleration
+SRC-0130,"FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",arXiv,Dao et al.,https://arxiv.org/abs/2205.14135,paper,2022-05-27,2026-11-11,primary,IO-aware attention computation optimization
+SRC-0131,Groq API Documentation,Groq,Groq,https://console.groq.com/docs,official_docs,2024-01-01,2026-11-11,primary,Groq LPU inference API documentation
+SRC-0132,Together AI Documentation,Together AI,Together AI,https://docs.together.ai,official_docs,2023-01-01,2026-11-11,primary,Together AI cloud inference documentation
+SRC-0133,Fireworks AI Documentation,Fireworks AI,Fireworks AI,https://docs.fireworks.ai,official_docs,2023-06-01,2026-11-11,primary,Fireworks AI fast inference documentation
+SRC-0134,Replicate Documentation,Replicate,Replicate,https://replicate.com/docs,official_docs,2021-01-01,2026-11-11,primary,Replicate model hosting API documentation
+SRC-0135,Browser Use: Enable AI to Control Browsers,BrowserUse,BrowserUse,https://github.com/browser-use/browser-use,repo,2024-01-01,2026-11-11,primary,Browser automation library for AI agents
+SRC-0136,Playwright Documentation,Microsoft,Microsoft,https://playwright.dev/docs/intro,official_docs,2020-01-28,2026-11-11,primary,Cross-browser automation framework documentation
+SRC-0137,E2B Documentation: Code Execution for AI Agents,E2B,E2B,https://e2b.dev/docs,official_docs,2023-07-01,2026-11-11,primary,Secure sandboxed code execution for agents
+SRC-0138,Composio Documentation,Composio,Composio,https://docs.composio.dev,official_docs,2024-01-01,2026-11-11,primary,Managed tool integrations for AI agents
+SRC-0139,Modal Documentation,Modal Labs,Modal Labs,https://modal.com/docs,official_docs,2022-01-01,2026-11-11,primary,Serverless cloud functions and GPU docs
+SRC-0140,Mem0: Memory Layer for AI Agents,Mem0,Mem0,https://github.com/mem0ai/mem0,repo,2024-01-01,2026-11-11,primary,Persistent memory layer for AI agents
+SRC-0141,Zep: Memory for AI Assistants,Zep AI,Zep AI,https://docs.getzep.com,official_docs,2023-01-01,2026-11-11,primary,Long-term memory service for AI assistants
+SRC-0142,LangMem: Long-Term Memory Service,LangChain,LangChain,https://langchain-ai.github.io/langmem,official_docs,2024-06-01,2026-11-11,primary,LangChain long-term agent memory documentation
+SRC-0143,NeMo Guardrails Documentation,NVIDIA,NVIDIA,https://docs.nvidia.com/nemo/guardrails,official_docs,2023-04-01,2026-11-11,primary,NVIDIA dialogue guardrails documentation
+SRC-0144,Guardrails AI Documentation,Guardrails AI,Guardrails AI,https://www.guardrailsai.com/docs,official_docs,2023-05-01,2026-11-11,primary,LLM output validation framework documentation
+SRC-0145,Langfuse Repository,Langfuse,Langfuse,https://github.com/langfuse/langfuse,repo,2023-07-01,2026-11-11,primary,Langfuse observability platform source code
+SRC-0146,BentoML Documentation,BentoML,BentoML,https://docs.bentoml.org,official_docs,2020-06-01,2026-11-11,primary,ML model serving framework documentation
+SRC-0147,OpenGPTs: An Open-Source Effort to Create a Similar Experience to OpenAI GPTs,LangChain,LangChain,https://github.com/langchain-ai/opengpts,repo,2023-11-01,2026-11-11,primary,Open-source GPT-like assistant framework
+SRC-0148,AgentOps Documentation,AgentOps,AgentOps,https://docs.agentops.ai,official_docs,2024-01-01,2026-11-11,primary,AI agent observability and replay documentation
+SRC-0149,Braintrust Documentation,Braintrust Data,Braintrust Data,https://www.braintrustdata.com/docs,official_docs,2023-01-01,2026-11-11,primary,LLM evaluation and logging platform docs
+SRC-0150,Build AI agents with Gemini,Google,Google,https://ai.google.dev/gemini-api/docs/agentic-behavior,official_docs,2024-01-01,2026-11-11,primary,Google Gemini agentic capabilities guide
+SRC-0151,OpenAI Function Calling Guide,OpenAI,OpenAI,https://platform.openai.com/docs/guides/function-calling,official_docs,2023-06-13,2026-11-11,primary,OpenAI function calling official guide
+SRC-0152,Anthropic Tool Use Documentation,Anthropic,Anthropic,https://docs.anthropic.com/en/docs/tool-use,official_docs,2024-04-01,2026-11-11,primary,Anthropic Claude tool use reference
+SRC-0153,Gemini Function Calling Documentation,Google,Google,https://ai.google.dev/gemini-api/docs/function-calling,official_docs,2024-02-01,2026-11-11,primary,Gemini function calling API guide
+SRC-0154,Introduction to AI Safety,AI Safety Fundamentals,AI Safety Fundamentals,https://aisafetyfundamentals.com,course,2022-01-01,2026-11-11,secondary,Introductory AI safety concepts course
+SRC-0155,Introducing the Model Context Protocol,Anthropic,Anthropic,https://www.anthropic.com/news/model-context-protocol,blog,2024-11-25,2026-11-11,secondary,Anthropic MCP announcement blog post
+SRC-0156,Introducing Agent2Agent: A New Era of Agent Interoperability,Google,Google,https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability,blog,2025-04-09,2026-11-11,secondary,Google A2A protocol announcement blog post
+SRC-0157,LLM Powered Autonomous Agents,Lilian Weng,Lilian Weng,https://lilianweng.github.io/posts/2023-06-23-agent,blog,2023-06-23,2026-11-11,secondary,Comprehensive survey of LLM agent components
+SRC-0158,Introducing Agents in the API,OpenAI,OpenAI,https://platform.openai.com/docs/assistants/overview,official_docs,2023-11-06,2026-11-11,primary,OpenAI Assistants API overview documentation
+SRC-0159,Building LLM Applications for Production,Chip Huyen,Chip Huyen,https://huyenchip.com/2023/04/11/llm-engineering.html,blog,2023-04-11,2026-11-11,secondary,LLM engineering and production challenges analysis
+SRC-0160,"AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework",arXiv/Microsoft,Wu et al.,https://arxiv.org/abs/2308.08155,paper,2023-08-16,2026-11-11,primary,AutoGen multi-agent conversation framework paper

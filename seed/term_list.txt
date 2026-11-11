@@ -1,0 +1,133 @@
+# Required concepts (add more as sources support them)
+agent
+agentic AI
+LLM
+prompt
+system prompt
+context window
+context engineering
+tool calling (function calling)
+structured output
+JSON Schema
+planning
+ReAct
+chain of thought
+reflection
+short-term memory
+long-term memory
+episodic memory
+semantic memory
+RAG
+embeddings
+vector store
+chunking
+reranking
+hybrid search
+knowledge graph
+MCP (Model Context Protocol)
+A2A (Agent2Agent)
+agent card
+tool registry
+orchestration
+orchestrator and workers
+handoff
+supervisor
+multi-agent system
+swarm
+human-in-the-loop
+approval gate
+guardrails
+prompt injection
+indirect prompt injection
+data exfiltration
+least privilege
+sandboxing
+permission scopes
+secrets management
+audit log
+observability
+tracing
+evaluation
+eval set
+LLM-as-judge
+benchmark
+regression testing
+hallucination
+grounding
+citation
+latency
+token cost
+caching
+rate limiting
+retries
+fallbacks
+small language models
+fine-tuning
+distillation
+multimodal
+speech-to-text
+text-to-speech
+computer use
+browser agent
+long-horizon task
+autonomy levels
+agent identity
+agent payments and commerce
+verifiability
+red teaming
+model routing
+
+# Required agent types
+simple reflex agent
+model-based reflex agent
+goal-based agent
+utility-based agent
+learning agent
+hierarchical agent
+multi-agent system
+conversational agent
+workflow or task agent
+voice agent
+knowledge (RAG) agent
+vision or multimodal agent
+research agent
+coding agent
+computer-use or browser agent
+personal assistant agent
+vertical (industry) agent
+autonomous long-horizon agent
+supervisor or orchestrator agent
+worker or specialist agent
+evaluator or critic agent
+planner agent
+router agent
+tool-using agent
+memory-augmented agent
+embodied or robotic agent
+simulation or game agent
+commerce or transaction agent
+security or monitoring agent
+data analysis agent
+
+# Required patterns
+single call
+prompt chaining
+routing
+parallelization
+orchestrator-workers
+evaluator-optimizer
+tool-calling loop
+ReAct loop
+plan-and-execute
+reflection loop
+human approval gate
+fallback chain
+map-reduce summarization
+agentic RAG
+corrective RAG
+memory write-back
+supervisor
+swarm handoff
+debate or critic
+guardrail wrapper
+sandboxed code execution

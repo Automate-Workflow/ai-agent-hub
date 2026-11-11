@@ -1,0 +1,77 @@
+name: New Concept
+description: Propose a new concept entry for the knowledge base
+title: "[New Concept] "
+labels: ["new-data", "concept"]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Concept Term
+      description: The term or phrase to add (use the canonical name from primary sources)
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this concept belong to?
+      options:
+        - foundations
+        - reasoning
+        - tools_and_actions
+        - memory_and_knowledge
+        - orchestration
+        - protocols
+        - safety_and_security
+        - evaluation_and_ops
+        - models
+        - interfaces
+        - business
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: Definition
+      description: Plain language definition, maximum 280 characters. No hype or marketing language.
+    validations:
+      required: true
+  - type: textarea
+    id: why_it_matters
+    attributes:
+      label: Why It Matters
+      description: >
+        Brief explanation of why this concept is relevant to AI agent practitioners.
+        2-4 sentences maximum.
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Primary Source URL
+      description: >
+        A verifiable primary source for this concept (official documentation, specification,
+        or peer-reviewed paper). Required — entries without a primary source will not be accepted.
+    validations:
+      required: true
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Confidence
+      description: >
+        How confident are you in this entry? high = primary source confirmed;
+        medium = multiple reliable secondary sources; low = single or tertiary source.
+      options:
+        - high
+        - medium
+        - low
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Entries (optional)
+      description: Row IDs of related concepts, agent types, or patterns, comma-separated.
+    validations:
+      required: false
+

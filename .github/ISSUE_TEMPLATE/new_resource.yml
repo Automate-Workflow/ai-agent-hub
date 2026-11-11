@@ -1,0 +1,63 @@
+name: New Resource
+description: Suggest a learning resource to add to the knowledge base
+title: "[New Resource] "
+labels: ["new-data", "resource"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Resource Title
+      description: The exact title of the resource as it appears at the source
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      description: What type of resource is this?
+      options:
+        - doc
+        - paper
+        - course
+        - book
+        - video
+        - repo
+        - spec
+        - tool
+        - newsletter
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Must be a working, verified link at the time of submission
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author or Organization
+      description: Who created this resource?
+    validations:
+      required: true
+  - type: textarea
+    id: why_it_helps
+    attributes:
+      label: Why It Helps
+      description: >
+        Why should this resource be in the knowledge base? What does it teach or explain that
+        is not already well-covered? 2-4 sentences.
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Recommended Level
+      options:
+        - beginner
+        - intermediate
+        - advanced
+    validations:
+      required: true
+

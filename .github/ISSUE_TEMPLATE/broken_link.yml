@@ -1,0 +1,43 @@
+name: Broken Link
+description: Report a broken or dead link in the data
+title: "[Broken Link] "
+labels: ["broken-link"]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: File
+      description: "Which file contains the broken link, e.g. data/resources.csv"
+    validations:
+      required: true
+  - type: input
+    id: row_id
+    attributes:
+      label: Row ID
+      description: "The ID of the row with the broken link, e.g. RL-0042"
+    validations:
+      required: true
+  - type: input
+    id: broken_url
+    attributes:
+      label: Broken URL
+      description: The exact URL that is not working
+    validations:
+      required: true
+  - type: input
+    id: suggested_replacement
+    attributes:
+      label: Suggested Replacement URL (if known)
+      description: >
+        If you know of a working replacement (e.g. a Wayback Machine archive, a new canonical URL,
+        or a mirror), provide it here. Leave blank if unknown.
+    validations:
+      required: false
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context (optional)
+      description: When did you notice the link was broken? Any relevant details about the failure.
+    validations:
+      required: false
+
