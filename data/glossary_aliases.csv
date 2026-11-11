@@ -1,0 +1,61 @@
+alias,canonical_id,note
+MCP,PS-001,Acronym for Model Context Protocol (concept CP-054)
+Model Context Protocol,CP-054,Concept entry for the Model Context Protocol standard (protocol PS-001)
+A2A,PS-002,Acronym for Agent2Agent Protocol (concept CP-055)
+Agent2Agent,CP-055,Canonical A2A interoperability concept (protocol PS-002)
+RAG,CP-035,Acronym for Retrieval-Augmented Generation
+Retrieval-Augmented Generation,CP-035,Canonical RAG concept
+HITL,CP-016,Acronym for human-in-the-loop oversight
+human-in-the-loop,CP-016,Canonical human oversight concept
+LLM-as-judge,CP-083,Hyphenated synonym for LLM-as-a-judge evaluation
+LLM-as-a-judge,CP-083,Evaluation pattern using calibrated language models as graders (method EV-010)
+function calling,CP-022,Provider terminology for structured tool calling (API spec PS-008)
+tool use,CP-022,Anthropic and ecosystem terminology for model tool calling
+CoT,CP-061,Abbreviation for chain of thought reasoning
+chain-of-thought,CP-061,Hyphenated form of chain of thought
+ToT,CP-062,Abbreviation for Tree of Thoughts branching search reasoning
+Tree of Thoughts,CP-062,Deliberative tree search reasoning technique
+ReAct prompting,CP-060,Reasoning and Acting interleaved loop
+LATS,CP-062,"Language Agent Tree Search unifying reasoning, acting, and planning"
+SLM,CP-096,Abbreviation for small language models
+PEFT,CP-112,Parameter-Efficient Fine-Tuning (including LoRA)
+LoRA,CP-112,Low-Rank Adaptation fine-tuning technique
+ASR,CP-098,Automatic Speech Recognition (speech-to-text)
+STT,CP-098,Abbreviation for speech-to-text transcription
+TTS,CP-099,Abbreviation for text-to-speech synthesis
+CUA,CP-027,Abbreviation for computer-use agent GUI control
+ACI,CP-105,Acronym for Agent-Computer Interface
+ACP,PS-009,Acronym for Agentic Commerce Protocol (concept CP-103)
+OTEL,PS-007,Abbreviation for OpenTelemetry observability standard
+JWT,PS-010,Abbreviation for JSON Web Token (RFC 7519)
+OIDC,PS-013,Abbreviation for OpenID Connect Core identity layer
+SSE,PS-012,Abbreviation for Server-Sent Events streaming transport (concept CP-057)
+CRAG,CP-136,Acronym for Corrective Retrieval-Augmented Generation (pattern PT-015)
+MAS,CP-046,Abbreviation for multi-agent system (agent type AT-022)
+vector DB,CP-037,Common shorthand for vector database / vector store
+vector database,CP-037,Synonym for vector store
+working memory,CP-031,Cognitive term for short-term in-session agent memory
+prefix caching,CP-091,KV-cache reuse optimization for recurring prompt prefixes
+prompt caching,CP-091,Vendor API feature implementing prefix caching
+TTFT,EV-009,Time to First Token latency metric
+BFCL,EV-023,Berkeley Function Calling Leaderboard benchmark
+HELM,EV-016,Holistic Evaluation of Language Models methodology
+ASI01,RS-011,OWASP Agentic Top 10 identifier for Agent Goal Hijack
+ASI02,RS-012,OWASP Agentic Top 10 identifier for Tool Misuse and Exploitation
+ASI03,RS-013,OWASP Agentic Top 10 identifier for Identity and Privilege Abuse
+ASI04,RS-014,OWASP Agentic Top 10 identifier for Agentic Supply Chain Vulnerabilities
+ASI05,RS-015,OWASP Agentic Top 10 identifier for Unexpected Code Execution
+ASI06,RS-016,OWASP Agentic Top 10 identifier for Memory and Context Poisoning
+ASI07,RS-017,OWASP Agentic Top 10 identifier for Insecure Inter-Agent Communication
+ASI08,RS-018,OWASP Agentic Top 10 identifier for Cascading Failures
+ASI09,RS-019,OWASP Agentic Top 10 identifier for Human-Agent Trust Exploitation / Approval Fatigue
+ASI10,RS-020,OWASP Agentic Top 10 identifier for Rogue Agents
+Phidata,FW-012,"Legacy name of Agno framework (FW-010), deprecated after 2025-01-29 rebrand"
+RLAIF,CP-124,Reinforcement Learning from AI Feedback (Constitutional AI)
+indirect prompt injection,CP-069,Untrusted retrieved-content injection attack (risk RS-001)
+prompt engineering,CP-008,Iterative craft of prompts and demonstrations (distinct from context engineering CP-024)
+context rot,RS-027,Attention degradation across long context windows
+denial of wallet,RS-021,Token exhaustion cost attack against inference APIs
+OAuth 2.1,PS-006,Updated OAuth framework draft consolidating security best practices
+guardrail,CP-066,Singular form of guardrails runtime checks
+JSON mode,CP-017,Provider structured JSON output constraint
